@@ -4,12 +4,25 @@ import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 
 export default function Home() {
-  const [isDark, setIsDark] = useState(true)
+  const [isDark, setIsDark] = useState(false)
   const [activeSection, setActiveSection] = useState("")
   const sectionsRef = useRef<(HTMLElement | null)[]>([])
 
   useEffect(() => {
+    // Check system preference
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+    const savedTheme = localStorage.getItem("theme")
+
+    if (savedTheme) {
+      setIsDark(savedTheme === "dark")
+    } else {
+      setIsDark(prefersDark)
+    }
+  }, [])
+
+  useEffect(() => {
     document.documentElement.classList.toggle("dark", isDark)
+    localStorage.setItem("theme", isDark ? "dark" : "light")
   }, [isDark])
 
   useEffect(() => {
@@ -148,6 +161,52 @@ export default function Home() {
                       </div>
                     ) : null}
                   </div>
+
+                  <button
+                    onClick={toggleTheme}
+                    className="p-3 rounded-xl border border-border hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-lg"
+                    aria-label="Toggle theme"
+                  >
+                    {isDark ? (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-foreground"
+                      >
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M12 2v2" />
+                        <path d="M12 20v2" />
+                        <path d="m4.93 4.93 1.41 1.41" />
+                        <path d="m17.66 17.66 1.41 1.41" />
+                        <path d="M2 12h2" />
+                        <path d="M20 12h2" />
+                        <path d="m6.34 17.66-1.41 1.41" />
+                        <path d="m19.07 4.93-1.41 1.41" />
+                      </svg>
+                    ) : (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-foreground"
+                      >
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                      </svg>
+                    )}
+                  </button>
 
                   {isDownloading ? <div className="text-sm text-muted-foreground">Preparing download…</div> : null}
                 </div>
@@ -498,7 +557,7 @@ export default function Home() {
                   skills: ["Agency", "Portfolio", "CMS"],
                 },
                 {
-                  title: "Legado Advocacia",
+                  title: "Longo Costa Franco Advocacia",
                   image: "https://api.apify.com/v2/key-value-stores/hl9NbYHtINbUwMB3p/records/k299gn8zqgkagl4l.jpeg",
                   url: "https://legado-advocacia-site-27.vercel.app",
                   category: "WEB DEVELOPMENT",
