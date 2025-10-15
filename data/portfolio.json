@@ -1,0 +1,619 @@
+{
+  "personalInfo": {
+    "name": "João Vitor",
+    "lastName": "Moitinho",
+    "title": {
+      "en": "Mid‑level Web Developer",
+      "pt": "Desenvolvedor Web Pleno"
+    },
+    "description": {
+      "en": "Mid‑level Web Developer with a degree in Computer Engineering and a background in graphic design. I build frontends, PWAs and full‑stack solutions that combine design, performance, and usability.",
+      "pt": "Desenvolvedor Web Pleno com formação em Engenharia da Computação e experiência em design gráfico. Construo frontends, PWAs e soluções full-stack que combinam design, performance e usabilidade."
+    },
+    "email": "contato@moitinho.dev",
+    "location": "Curitiba, Paraná, Brazil",
+    "availableForWork": true,
+    "currentRole": {
+      "en": "Web Developer (Mid)",
+      "pt": "Desenvolvedor Web (Pleno)"
+    },
+    "currentCompany": "Ninetwo Performance",
+    "currentPeriod": "Mar 2025 — Present",
+    "photoUrl": "/uploads/1760509798048-juncgf.jpeg"
+  },
+  "skills": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "PWA",
+    "Redux",
+    "Node.js",
+    "Firebase"
+  ],
+  "socials": [
+    {
+      "name": "GitHub",
+      "handle": "@eumoitinho",
+      "url": "https://github.com/eumoitinho"
+    },
+    {
+      "name": "LinkedIn",
+      "handle": "joaovitormoitinho",
+      "url": "https://www.linkedin.com/in/eumoitinho"
+    },
+    {
+      "name": "Behance",
+      "handle": "eumoitinho",
+      "url": "https://www.behance.net/eumoitinho"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "1",
+      "year": "Mar 2025 — Present",
+      "role": {
+        "en": "Web Developer (Mid)",
+        "pt": "Web Developer (Mid)"
+      },
+      "company": "Ninetwo Performance",
+      "location": "Curitiba, Brasil",
+      "description": {
+        "en": "Led prototyping, UI/UX design, and development of e‑commerce platforms, institutional sites, landing pages, and SPAs for clients like Live Academia, Roberto Navarro, Porto de Itapoá, and Rede Web, delivering projects on tight deadlines.\nDeveloped interactive dashboards for metrics analysis, integrating Google Analytics and Meta Business, enhancing data‑driven decisions.\nOptimized advanced tagging and dashboards for paid traffic, boosting campaign ROI by up to 25%.\nOperated as sole developer, managing full cycle from concept to deployment, ensuring scalability and quality.",
+        "pt": "Led prototyping, UI/UX design, and development of e‑commerce platforms, institutional sites, landing pages, and SPAs for clients like Live Academia, Roberto Navarro, Porto de Itapoá, and Rede Web, delivering projects on tight deadlines.\nDeveloped interactive dashboards for metrics analysis, integrating Google Analytics and Meta Business, enhancing data‑driven decisions.\nOptimized advanced tagging and dashboards for paid traffic, boosting campaign ROI by up to 25%.\nOperated as sole developer, managing full cycle from concept to deployment, ensuring scalability and quality."
+      },
+      "tech": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "GA4"
+      ]
+    },
+    {
+      "id": "2",
+      "year": "Jan 2015 — Present",
+      "role": {
+        "en": "Founder & Senior Graphic Designer",
+        "pt": "Founder & Senior Graphic Designer"
+      },
+      "company": "MSync Creative Studio",
+      "location": "Dourados, Brasil",
+      "description": {
+        "en": "Founded studio specializing in social media, print, motion graphics, and artist portfolios, serving 50+ clients.\nCreated press kits and EPKs for artists like Welker (2024), Berg (2023), and Silver Panda (2023), boosting tour visibility.\nDesigned promotional materials that increased social engagement by 40%, growing client audiences.\nManaged social platforms and online presence, optimizing organic and paid growth strategies.",
+        "pt": "Founded studio specializing in social media, print, motion graphics, and artist portfolios, serving 50+ clients.\nCreated press kits and EPKs for artists like Welker (2024), Berg (2023), and Silver Panda (2023), boosting tour visibility.\nDesigned promotional materials that increased social engagement by 40%, growing client audiences.\nManaged social platforms and online presence, optimizing organic and paid growth strategies."
+      },
+      "tech": [
+        "Adobe Suite",
+        "Figma",
+        "Illustration"
+      ]
+    },
+    {
+      "id": "3",
+      "year": "Aug 2022 — Jan 2025",
+      "role": {
+        "en": "Senior Social Media Designer",
+        "pt": "Senior Social Media Designer"
+      },
+      "company": "Lemonde Turismo",
+      "location": "Campo Grande, Brasil",
+      "description": {
+        "en": "Produced digital art for travel promotion on social media, raising engagement rates by 35% through visual marketing.\nBuilt a landing page and Google Sheets API automation, cutting content production time by 50%.\nOptimized campaigns with Meta Business tools and managed Instagram, WhatsApp, Google Business, and Facebook, driving conversions.",
+        "pt": "Produced digital art for travel promotion on social media, raising engagement rates by 35% through visual marketing.\nBuilt a landing page and Google Sheets API automation, cutting content production time by 50%.\nOptimized campaigns with Meta Business tools and managed Instagram, WhatsApp, Google Business, and Facebook, driving conversions."
+      },
+      "tech": [
+        "Photoshop",
+        "Illustrator",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "id": "4",
+      "year": "Mar 2024 — Jul 2024",
+      "role": {
+        "en": "Graphic Designer (Contract)",
+        "pt": "Graphic Designer (Contract)"
+      },
+      "company": "Inspirare Media",
+      "location": "Dourados, Brasil",
+      "description": {
+        "en": "Created social media assets as temporary designer, driving organic interactions.\nDeveloped strategic content and paid traffic media, enhancing reach and conversions.\nProduced print media for World BT Rio Brilhante 2024 via outsourcing.",
+        "pt": "Created social media assets as temporary designer, driving organic interactions.\nDeveloped strategic content and paid traffic media, enhancing reach and conversions.\nProduced print media for World BT Rio Brilhante 2024 via outsourcing."
+      },
+      "tech": [
+        "Adobe Suite",
+        "Print"
+      ]
+    },
+    {
+      "id": "5",
+      "year": "Feb 2022 — Nov 2022",
+      "role": {
+        "en": "Clinical Engineering Intern",
+        "pt": "Clinical Engineering Intern"
+      },
+      "company": "CERDIL",
+      "location": "Mato Grosso do Sul, Brasil",
+      "description": {
+        "en": "Supported maintenance of MRI, CT, and X‑ray systems, achieving 99% operational uptime.\nGained expertise in PACS systems (Phillips, Siemens, GE), streamlining medical imaging management.\nCollaborated with GE engineers on device maintenance, reducing critical failures.",
+        "pt": "Supported maintenance of MRI, CT, and X‑ray systems, achieving 99% operational uptime.\nGained expertise in PACS systems (Phillips, Siemens, GE), streamlining medical imaging management.\nCollaborated with GE engineers on device maintenance, reducing critical failures."
+      },
+      "tech": [
+        "PACS",
+        "Medical Devices"
+      ]
+    },
+    {
+      "id": "6",
+      "year": "Sep 2019 — Feb 2022",
+      "role": {
+        "en": "Marketing & Design Manager",
+        "pt": "Marketing & Design Manager"
+      },
+      "company": "IncludeMe (Junior Enterprise, UFGD)",
+      "location": "Dourados, Brasil",
+      "description": {
+        "en": "Created visual identities and prospecting projects, strengthening brand and acquiring 20+ clients.\nImplemented Google Workspace for cloud collaboration, boosting team efficiency.\nApplied Kanban and Scrum methodologies, accelerating project deliveries by 30%.",
+        "pt": "Created visual identities and prospecting projects, strengthening brand and acquiring 20+ clients.\nImplemented Google Workspace for cloud collaboration, boosting team efficiency.\nApplied Kanban and Scrum methodologies, accelerating project deliveries by 30%."
+      },
+      "tech": [
+        "Figma",
+        "Google Workspace",
+        "Agile"
+      ]
+    },
+    {
+      "id": "7",
+      "year": "Jul 2018 — Dec 2018",
+      "role": {
+        "en": "IT Intern",
+        "pt": "IT Intern"
+      },
+      "company": "Federal University of Grande Dourados - COIN",
+      "location": "Dourados, Brasil",
+      "description": {
+        "en": "Resolved university system issues, reducing support tickets by 40%.\nManaged Active Directory registrations, securing access for 500+ users.\nPerformed preventive maintenance on IT equipment, minimizing downtime.",
+        "pt": "Resolved university system issues, reducing support tickets by 40%.\nManaged Active Directory registrations, securing access for 500+ users.\nPerformed preventive maintenance on IT equipment, minimizing downtime."
+      },
+      "tech": [
+        "Active Directory",
+        "Support"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": {
+        "en": "EPK - WELKER 2024",
+        "pt": "EPK - WELKER 2024"
+      },
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/2896a8209254549.Y3JvcCw2OTYsNTQ0LDYwLDI0.png",
+      "url": "https://www.behance.net/gallery/209254549/PRESSKIT-WELKER-2024",
+      "category": "PRESS KIT",
+      "type": "Design & Photography",
+      "featured": true,
+      "description": {
+        "en": "Comprehensive press kit for artist Welker — includes biography, high‑res photography, press images and tour assets used for media outreach and promotional campaigns.",
+        "pt": "Comprehensive press kit for artist Welker — includes biography, high‑res photography, press images and tour assets used for media outreach and promotional campaigns."
+      },
+      "skills": [
+        "Photography",
+        "Graphic Design",
+        "Branding"
+      ]
+    },
+    {
+      "id": "2",
+      "title": {
+        "en": "Mundial de Beach Tennis - World BT Rio Brilhante ITF®",
+        "pt": "Mundial de Beach Tennis - World BT Rio Brilhante ITF®"
+      },
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/473506221045579.Y3JvcCwxMjAwLDkzOCwwLDI5.jpg",
+      "url": "https://www.behance.net/gallery/221045579/Mundial-de-Beach-Tennis-World-BT-Rio-Brilhante-ITF",
+      "category": "EVENT BRANDING",
+      "type": "Print & Digital",
+      "featured": false,
+      "description": {
+        "en": "Visual identity and promotional campaign for the World BT Rio Brilhante ITF event — posters, social cards and print media designed to increase event visibility and ticket sales.",
+        "pt": "Visual identity and promotional campaign for the World BT Rio Brilhante ITF event — posters, social cards and print media designed to increase event visibility and ticket sales."
+      },
+      "skills": [
+        "Advertising",
+        "Product Design",
+        "Graphic Design"
+      ]
+    },
+    {
+      "id": "3",
+      "title": {
+        "en": "EPK - Silver Panda 2023",
+        "pt": "EPK - Silver Panda 2023"
+      },
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/ac80b8175649747.Y3JvcCw3MTMsNTU4LDMxMiwxOTk.png",
+      "url": "https://www.behance.net/gallery/175649747/EPK-SILVER-PANDA-2023",
+      "category": "PRESS KIT",
+      "type": "Graphic Design",
+      "featured": false,
+      "description": {
+        "en": "Electronic press kit (EPK) and promotional package for Silver Panda — includes release artwork, EPK PDF and social visuals for the 2023 campaign.",
+        "pt": "Electronic press kit (EPK) and promotional package for Silver Panda — includes release artwork, EPK PDF and social visuals for the 2023 campaign."
+      },
+      "skills": [
+        "Graphic Design",
+        "Poster Design"
+      ]
+    },
+    {
+      "id": "4",
+      "title": {
+        "en": "WELKER - Website",
+        "pt": "WELKER - Website"
+      },
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/46c5e2220863273.Y3JvcCwyMzgwLDE4NjIsMTQ3Myww.png",
+      "url": "https://www.behance.net/gallery/220863273/WELKER-Website",
+      "category": "WEB DEVELOPMENT",
+      "type": "Design & Development",
+      "featured": false,
+      "description": {
+        "en": "Responsive website for artist Welker — landing pages for press, tour dates and streaming links, optimized for mobile and SEO.",
+        "pt": "Responsive website for artist Welker — landing pages for press, tour dates and streaming links, optimized for mobile and SEO."
+      },
+      "skills": [
+        "Web Design",
+        "Photography",
+        "Next.js"
+      ]
+    },
+    {
+      "id": "5",
+      "title": {
+        "en": "Universe - Berg (2023)",
+        "pt": "Universe - Berg (2023)"
+      },
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/6220fd175722695.Y3JvcCwxMTIzLDg3OCwxNTIsNDAz.png",
+      "url": "https://www.behance.net/gallery/175722695/SINGLE-COVER-UNIVERSE-BERG-2023",
+      "category": "COVER ART",
+      "type": "Music Artwork",
+      "featured": false,
+      "description": {
+        "en": "Single cover art design for 'Universe' by Berg (2023). Artwork created for streaming platforms and social promotion. Metrics: 1.202.000 Spotify streams.",
+        "pt": "Single cover art design for 'Universe' by Berg (2023). Artwork created for streaming platforms and social promotion. Metrics: 1.202.000 Spotify streams."
+      },
+      "skills": [
+        "Graphic Design",
+        "Illustration",
+        "Advertising"
+      ]
+    },
+    {
+      "id": "6",
+      "title": {
+        "en": "Rede Web TV — News Portal",
+        "pt": "Rede Web TV — Portal de Notícias"
+      },
+      "image": "https://api.apify.com/v2/key-value-stores/hl9NbYHtINbUwMB3p/records/ji1q6ebtnm4lmfu4.jpeg",
+      "url": "https://rwtv.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Next.js Platform",
+      "featured": false,
+      "description": {
+        "en": "Developed a high‑performance news portal for Rede Web TV using Next.js 15 and TypeScript. The platform delivers real‑time news to thousands of daily users and serves 15+ cities across multiple regions.",
+        "pt": "Desenvolvimento de portal de notícias de alto desempenho para Rede Web TV usando Next.js 15 e TypeScript. A plataforma entrega notícias em tempo real para milhares de usuários diários e atende 15+ cidades em múltiplas regiões."
+      },
+      "skills": [
+        "Next.js",
+        "Sanity",
+        "SEO",
+        "Localization"
+      ]
+    },
+    {
+      "id": "7",
+      "title": {
+        "en": "Roberto Navarro — Financial Coach",
+        "pt": "Roberto Navarro — Coach Financeiro"
+      },
+      "image": "https://api.apify.com/v2/key-value-stores/hl9NbYHtINbUwMB3p/records/xfhs7lvxdhehm1lv.jpeg",
+      "url": "https://robertonavarro.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "SaaS Platform",
+      "featured": false,
+      "description": {
+        "en": "Built a high‑performance financial coaching platform using Next.js 15, TypeScript and Tailwind CSS. Integrated Vercel Analytics, PostgreSQL and authentication, delivering a conversion‑focused platform with events and WhatsApp integration.",
+        "pt": "Construção de plataforma de coaching financeiro de alto desempenho usando Next.js 15, TypeScript e Tailwind CSS. Integração com Vercel Analytics, PostgreSQL e autenticação, entregando plataforma focada em conversão com eventos e integração WhatsApp."
+      },
+      "skills": [
+        "Vercel",
+        "PostgreSQL",
+        "Tailwind",
+        "Next.js"
+      ]
+    },
+    {
+      "id": "8",
+      "title": {
+        "en": "Porto de Itapoá — Port Platform",
+        "pt": "Porto de Itapoá — Plataforma Portuária"
+      },
+      "image": "https://api.apify.com/v2/key-value-stores/hl9NbYHtINbUwMB3p/records/h8f2mgbv9hbrfj2w.jpeg",
+      "url": "https://portoitapoa.catalisti.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Enterprise Platform",
+      "featured": false,
+      "description": {
+        "en": "Platform for vessel tracking, cargo management and customer portals using Next.js, TypeScript and Tailwind. Implemented interactive dashboards, scheduling integrations and multilingual support.",
+        "pt": "Plataforma para rastreamento de navios, gestão de carga e portais de clientes usando Next.js, TypeScript e Tailwind. Implementação de dashboards interativos, integrações de agendamento e suporte multilíngue."
+      },
+      "skills": [
+        "Next.js",
+        "CI/CD",
+        "Tailwind",
+        "Figma"
+      ]
+    },
+    {
+      "id": "9",
+      "title": {
+        "en": "Live Academia — Gym Network",
+        "pt": "Live Academia — Rede de Academias"
+      },
+      "image": "https://api.apify.com/v2/key-value-stores/hl9NbYHtINbUwMB3p/records/acj6chua1ltmtrmr.jpeg",
+      "url": "https://liveacademia.vercel.app",
+      "category": "WEB DEVELOPMENT",
+      "type": "PWA Platform",
+      "featured": false,
+      "description": {
+        "en": "Ongoing development of a unified member experience with scheduling, QR check‑in, PWA features and multi‑location management for Live Academia.",
+        "pt": "Desenvolvimento contínuo de experiência unificada para membros com agendamento, check-in via QR, recursos PWA e gestão multi-unidades para Live Academia."
+      },
+      "skills": [
+        "Next.js",
+        "PWA",
+        "Analytics",
+        "GTM"
+      ]
+    },
+    {
+      "id": "10",
+      "title": {
+        "en": "Motin Films — Audiovisual Portfolio",
+        "pt": "Motin Films — Portfólio Audiovisual"
+      },
+      "image": "https://api.apify.com/v2/key-value-stores/hl9NbYHtINbUwMB3p/records/x5bbjzu0ykwzl140.jpeg",
+      "url": "https://motinfilms.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Creative Portfolio",
+      "featured": false,
+      "description": {
+        "en": "Cinematic portfolio platform with dynamic video galleries, adaptive streaming and client booking system.",
+        "pt": "Plataforma de portfólio cinematográfico com galerias de vídeo dinâmicas, streaming adaptativo e sistema de reservas para clientes."
+      },
+      "skills": [
+        "Next.js",
+        "Video Optimization",
+        "Streaming"
+      ]
+    },
+    {
+      "id": "11",
+      "title": {
+        "en": "WELKER — Official Website",
+        "pt": "WELKER — Site Oficial"
+      },
+      "image": "/image.png",
+      "url": "https://welkermusic.com",
+      "category": "WEB DEVELOPMENT",
+      "type": "Artist Portfolio",
+      "featured": false,
+      "description": {
+        "en": "Official website for artist WELKER with bio, press kit, tour dates and streaming links. Built with Next.js for optimal performance and SEO.",
+        "pt": "Site oficial do artista WELKER com bio, press kit, datas de turnê e links de streaming. Construído com Next.js para performance e SEO otimizados."
+      },
+      "skills": [
+        "Next.js",
+        "Design",
+        "SEO"
+      ]
+    },
+    {
+      "id": "12",
+      "title": {
+        "en": "Skincare Esthetic Beauty — Japan Clinic",
+        "pt": "Skincare Esthetic Beauty — Clínica Japonesa"
+      },
+      "image": "/image copy.png",
+      "url": "https://skincareestheticbeauty.com",
+      "category": "WEB DEVELOPMENT",
+      "type": "Beauty & Wellness",
+      "featured": false,
+      "description": {
+        "en": "Modern e-commerce and booking platform for Japan Clinic skincare services. Features online scheduling, product catalog and customer portal.",
+        "pt": "Plataforma moderna de e-commerce e agendamento para serviços de skincare da Clínica Japonesa. Recursos incluem agendamento online, catálogo de produtos e portal do cliente."
+      },
+      "skills": [
+        "E-commerce",
+        "Booking System",
+        "UI/UX"
+      ]
+    },
+    {
+      "id": "13",
+      "title": {
+        "en": "LJ Santos — Law Firm",
+        "pt": "LJ Santos — Escritório de Advocacia"
+      },
+      "image": "/image copy 2.png",
+      "url": "https://ljsantos.com",
+      "category": "WEB DEVELOPMENT",
+      "type": "Corporate Website",
+      "featured": false,
+      "description": {
+        "en": "Professional law firm website with practice areas showcase, attorney profiles and client contact system.",
+        "pt": "Site profissional de escritório de advocacia com showcase de áreas de atuação, perfis de advogados e sistema de contato com clientes."
+      },
+      "skills": [
+        "Next.js",
+        "Corporate",
+        "Forms"
+      ]
+    },
+    {
+      "id": "14",
+      "title": {
+        "en": "Diray — Corporate Platform",
+        "pt": "Diray — Plataforma Corporativa"
+      },
+      "image": "https://api.apify.com/v2/key-value-stores/hl9NbYHtINbUwMB3p/records/naljyxm1zvll6urx.jpeg",
+      "url": "https://diray.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Corporate Website",
+      "featured": false,
+      "description": {
+        "en": "Corporate website for Diray with company information, services portfolio and client portal.",
+        "pt": "Site corporativo para Diray com informações da empresa, portfólio de serviços e portal do cliente."
+      },
+      "skills": [
+        "Next.js",
+        "Corporate",
+        "CMS"
+      ]
+    },
+    {
+      "id": "15",
+      "title": {
+        "en": "Pedro Barros — Personal Portfolio",
+        "pt": "Pedro Barros — Portfólio Pessoal"
+      },
+      "image": "https://api.apify.com/v2/key-value-stores/hl9NbYHtINbUwMB3p/records/1yd89xpbekzqy0rk.jpeg",
+      "url": "https://pedrobarros.catalisti.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Personal Brand",
+      "featured": false,
+      "description": {
+        "en": "Personal portfolio and brand website showcasing work, achievements and professional services.",
+        "pt": "Portfólio pessoal e site de marca apresentando trabalhos, conquistas e serviços profissionais."
+      },
+      "skills": [
+        "Portfolio",
+        "Design",
+        "Branding"
+      ]
+    },
+    {
+      "id": "16",
+      "title": {
+        "en": "Provedor Conect — ISP Platform",
+        "pt": "Provedor Conect — Plataforma ISP"
+      },
+      "image": "https://api.apify.com/v2/key-value-stores/hl9NbYHtINbUwMB3p/records/d6aoecjvb58p5gfd.jpeg",
+      "url": "https://provedorconect.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Service Provider",
+      "featured": false,
+      "description": {
+        "en": "Internet service provider platform with plan showcase, coverage maps and customer support portal.",
+        "pt": "Plataforma de provedor de internet com showcase de planos, mapas de cobertura e portal de suporte ao cliente."
+      },
+      "skills": [
+        "Next.js",
+        "Service Portal",
+        "Maps"
+      ]
+    },
+    {
+      "id": "17",
+      "title": {
+        "en": "Metal Carbon Hub",
+        "pt": "Metal Carbon Hub"
+      },
+      "image": "https://api.apify.com/v2/key-value-stores/hl9NbYHtINbUwMB3p/records/t6lrfsp14l9l33tw.jpeg",
+      "url": "https://www.metalcarbonhub.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Industrial Platform",
+      "featured": false,
+      "description": {
+        "en": "Industrial platform for metal and carbon trading hub with market data, product catalog and B2B portal.",
+        "pt": "Plataforma industrial para hub de comercialização de metal e carbono com dados de mercado, catálogo de produtos e portal B2B."
+      },
+      "skills": [
+        "B2B",
+        "Industrial",
+        "Trading"
+      ]
+    },
+    {
+      "id": "18",
+      "title": {
+        "en": "Catalisti — Digital Agency",
+        "pt": "Catalisti — Agência Digital"
+      },
+      "image": "https://api.apify.com/v2/key-value-stores/hl9NbYHtINbUwMB3p/records/uj1sdg8mj9rnk5ao.jpeg",
+      "url": "https://catalisti.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Agency Website",
+      "featured": false,
+      "description": {
+        "en": "Digital agency showcase with portfolio, services and client case studies. Built with modern web technologies.",
+        "pt": "Showcase de agência digital com portfólio, serviços e casos de clientes. Construído com tecnologias web modernas."
+      },
+      "skills": [
+        "Agency",
+        "Portfolio",
+        "CMS"
+      ]
+    },
+    {
+      "id": "19",
+      "title": {
+        "en": "Longo Costa Franco Advocacia",
+        "pt": "Longo Costa Franco Advocacia"
+      },
+      "image": "https://api.apify.com/v2/key-value-stores/hl9NbYHtINbUwMB3p/records/k299gn8zqgkagl4l.jpeg",
+      "url": "https://legado-advocacia-site-27.vercel.app",
+      "category": "WEB DEVELOPMENT",
+      "type": "Law Firm",
+      "featured": false,
+      "description": {
+        "en": "Legal services platform with practice areas, attorney profiles and client intake forms.",
+        "pt": "Plataforma de serviços jurídicos com áreas de atuação, perfis de advogados e formulários de entrada de clientes."
+      },
+      "skills": [
+        "Legal",
+        "Forms",
+        "CMS"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "1",
+      "title": {
+        "en": "Test",
+        "pt": "Teste"
+      },
+      "slug": {
+        "en": "test",
+        "pt": "teste"
+      },
+      "excerpt": {
+        "en": "yay",
+        "pt": "uhul"
+      },
+      "content": {
+        "en": "<p>testtttt</p>",
+        "pt": "<p>testeeeee</p>"
+      },
+      "coverImage": "",
+      "category": "Dev",
+      "tags": [
+        "react"
+      ],
+      "publishedAt": "2025-10-15T05:21:49.505Z",
+      "updatedAt": "2025-10-15T06:25:08.205Z",
+      "published": true,
+      "readTime": 1
+    }
+  ]
+}

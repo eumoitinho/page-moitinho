@@ -136,3 +136,59 @@
     }
   }
 }
+
+/* TipTap Editor Styles */
+@layer components {
+  .prose {
+    @apply max-w-none text-foreground;
+  }
+
+  .prose h2 {
+    @apply text-2xl font-semibold mt-8 mb-4;
+  }
+
+  .prose h3 {
+    @apply text-xl font-semibold mt-6 mb-3;
+  }
+
+  .prose p {
+    @apply mb-4 leading-relaxed;
+  }
+
+  .prose ul,
+  .prose ol {
+    @apply mb-4 pl-6;
+  }
+
+  .prose ul li {
+    @apply list-disc mb-2;
+  }
+
+  .prose ol li {
+    @apply list-decimal mb-2;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-muted-foreground/30 pl-4 italic my-4;
+  }
+
+  .prose a {
+    @apply text-foreground underline hover:opacity-70 transition-opacity;
+  }
+
+  .prose code {
+    @apply bg-muted px-2 py-1 rounded text-sm font-mono;
+  }
+
+  .prose pre {
+    @apply bg-muted p-4 rounded-lg overflow-x-auto my-4;
+  }
+
+  .prose pre code {
+    @apply bg-transparent p-0;
+  }
+
+  .prose img {
+    @apply rounded-lg my-6 max-w-full h-auto;
+  }
+}

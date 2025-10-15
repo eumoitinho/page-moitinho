@@ -1,0 +1,227 @@
+{
+  "personalInfo": {
+    "name": "João Vitor",
+    "lastName": "Moitinho",
+    "title": "Mid‑level Web Developer",
+    "description": "Mid‑level Web Developer with a degree in Computer Engineering and a background in graphic design. I build frontends, PWAs and full‑stack solutions that combine design, performance, and usability.",
+    "email": "contato@moitinho.dev",
+    "location": "Curitiba, Paraná, Brazil",
+    "availableForWork": true,
+    "currentRole": "Web Developer (Mid)",
+    "currentCompany": "Ninetwo Performance",
+    "currentPeriod": "Mar 2025 — Present"
+  },
+  "skills": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "PWA",
+    "Redux",
+    "Node.js",
+    "Firebase"
+  ],
+  "socials": [
+    {
+      "name": "GitHub",
+      "handle": "@eumoitinho",
+      "url": "https://github.com/eumoitinho"
+    },
+    {
+      "name": "LinkedIn",
+      "handle": "joaovitormoitinho",
+      "url": "https://www.linkedin.com/in/eumoitinho"
+    },
+    {
+      "name": "Behance",
+      "handle": "eumoitinho",
+      "url": "https://www.behance.net/eumoitinho"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "1",
+      "year": "Mar 2025 — Present",
+      "role": "Web Developer (Mid)",
+      "company": "Ninetwo Performance",
+      "location": "Curitiba, Brasil",
+      "description": "Led prototyping, UI/UX design, and development of e‑commerce platforms, institutional sites, landing pages, and SPAs for clients like Live Academia, Roberto Navarro, Porto de Itapoá, and Rede Web, delivering projects on tight deadlines.\nDeveloped interactive dashboards for metrics analysis, integrating Google Analytics and Meta Business, enhancing data‑driven decisions.\nOptimized advanced tagging and dashboards for paid traffic, boosting campaign ROI by up to 25%.\nOperated as sole developer, managing full cycle from concept to deployment, ensuring scalability and quality.",
+      "tech": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "GA4"
+      ]
+    },
+    {
+      "id": "2",
+      "year": "Jan 2015 — Present",
+      "role": "Founder & Senior Graphic Designer",
+      "company": "MSync Creative Studio",
+      "location": "Dourados, Brasil",
+      "description": "Founded studio specializing in social media, print, motion graphics, and artist portfolios, serving 50+ clients.\nCreated press kits and EPKs for artists like Welker (2024), Berg (2023), and Silver Panda (2023), boosting tour visibility.\nDesigned promotional materials that increased social engagement by 40%, growing client audiences.\nManaged social platforms and online presence, optimizing organic and paid growth strategies.",
+      "tech": [
+        "Adobe Suite",
+        "Figma",
+        "Illustration"
+      ]
+    },
+    {
+      "id": "3",
+      "year": "Aug 2022 — Jan 2025",
+      "role": "Senior Social Media Designer",
+      "company": "Lemonde Turismo",
+      "location": "Campo Grande, Brasil",
+      "description": "Produced digital art for travel promotion on social media, raising engagement rates by 35% through visual marketing.\nBuilt a landing page and Google Sheets API automation, cutting content production time by 50%.\nOptimized campaigns with Meta Business tools and managed Instagram, WhatsApp, Google Business, and Facebook, driving conversions.",
+      "tech": [
+        "Photoshop",
+        "Illustrator",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "id": "4",
+      "year": "Mar 2024 — Jul 2024",
+      "role": "Graphic Designer (Contract)",
+      "company": "Inspirare Media",
+      "location": "Dourados, Brasil",
+      "description": "Created social media assets as temporary designer, driving organic interactions.\nDeveloped strategic content and paid traffic media, enhancing reach and conversions.\nProduced print media for World BT Rio Brilhante 2024 via outsourcing.",
+      "tech": [
+        "Adobe Suite",
+        "Print"
+      ]
+    },
+    {
+      "id": "5",
+      "year": "Feb 2022 — Nov 2022",
+      "role": "Clinical Engineering Intern",
+      "company": "CERDIL",
+      "location": "Mato Grosso do Sul, Brasil",
+      "description": "Supported maintenance of MRI, CT, and X‑ray systems, achieving 99% operational uptime.\nGained expertise in PACS systems (Phillips, Siemens, GE), streamlining medical imaging management.\nCollaborated with GE engineers on device maintenance, reducing critical failures.",
+      "tech": [
+        "PACS",
+        "Medical Devices"
+      ]
+    },
+    {
+      "id": "6",
+      "year": "Sep 2019 — Feb 2022",
+      "role": "Marketing & Design Manager",
+      "company": "IncludeMe (Junior Enterprise, UFGD)",
+      "location": "Dourados, Brasil",
+      "description": "Created visual identities and prospecting projects, strengthening brand and acquiring 20+ clients.\nImplemented Google Workspace for cloud collaboration, boosting team efficiency.\nApplied Kanban and Scrum methodologies, accelerating project deliveries by 30%.",
+      "tech": [
+        "Figma",
+        "Google Workspace",
+        "Agile"
+      ]
+    },
+    {
+      "id": "7",
+      "year": "Jul 2018 — Dec 2018",
+      "role": "IT Intern",
+      "company": "Federal University of Grande Dourados - COIN",
+      "location": "Dourados, Brasil",
+      "description": "Resolved university system issues, reducing support tickets by 40%.\nManaged Active Directory registrations, securing access for 500+ users.\nPerformed preventive maintenance on IT equipment, minimizing downtime.",
+      "tech": [
+        "Active Directory",
+        "Support"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "EPK - WELKER 2024",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/2896a8209254549.Y3JvcCw2OTYsNTQ0LDYwLDI0.png",
+      "url": "https://www.behance.net/gallery/209254549/PRESSKIT-WELKER-2024",
+      "category": "PRESS KIT",
+      "type": "Design & Photography",
+      "featured": true,
+      "description": "Comprehensive press kit for artist Welker — includes biography, high‑res photography, press images and tour assets used for media outreach and promotional campaigns.",
+      "skills": [
+        "Photography",
+        "Graphic Design",
+        "Branding"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Mundial de Beach Tennis - World BT Rio Brilhante ITF®",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/473506221045579.Y3JvcCwxMjAwLDkzOCwwLDI5.jpg",
+      "url": "https://www.behance.net/gallery/221045579/Mundial-de-Beach-Tennis-World-BT-Rio-Brilhante-ITF",
+      "category": "EVENT BRANDING",
+      "type": "Print & Digital",
+      "featured": false,
+      "description": "Visual identity and promotional campaign for the World BT Rio Brilhante ITF event — posters, social cards and print media designed to increase event visibility and ticket sales.",
+      "skills": [
+        "Advertising",
+        "Product Design",
+        "Graphic Design"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "EPK - Silver Panda 2023",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/ac80b8175649747.Y3JvcCw3MTMsNTU4LDMxMiwxOTk.png",
+      "url": "https://www.behance.net/gallery/175649747/EPK-SILVER-PANDA-2023",
+      "category": "PRESS KIT",
+      "type": "Graphic Design",
+      "featured": false,
+      "description": "Electronic press kit (EPK) and promotional package for Silver Panda — includes release artwork, EPK PDF and social visuals for the 2023 campaign.",
+      "skills": [
+        "Graphic Design",
+        "Poster Design"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "WELKER - Website",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/46c5e2220863273.Y3JvcCwyMzgwLDE4NjIsMTQ3Myww.png",
+      "url": "https://www.behance.net/gallery/220863273/WELKER-Website",
+      "category": "WEB DEVELOPMENT",
+      "type": "Design & Development",
+      "featured": false,
+      "description": "Responsive website for artist Welker — landing pages for press, tour dates and streaming links, optimized for mobile and SEO.",
+      "skills": [
+        "Web Design",
+        "Photography",
+        "Next.js"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Universe - Berg (2023)",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808/6220fd175722695.Y3JvcCwxMTIzLDg3OCwxNTIsNDAz.png",
+      "url": "https://www.behance.net/gallery/175722695/SINGLE-COVER-UNIVERSE-BERG-2023",
+      "category": "COVER ART",
+      "type": "Music Artwork",
+      "featured": false,
+      "description": "Single cover art design for 'Universe' by Berg (2023). Artwork created for streaming platforms and social promotion. Metrics: 1.202.000 Spotify streams.",
+      "skills": [
+        "Graphic Design",
+        "Illustration",
+        "Advertising"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "1",
+      "title": "Teste",
+      "slug": "teste",
+      "excerpt": "uhul",
+      "content": "<p>testeeeee</p>",
+      "coverImage": "",
+      "category": "Dev",
+      "tags": [
+        "react"
+      ],
+      "publishedAt": "2025-10-15T05:21:49.505Z",
+      "updatedAt": "2025-10-15T05:21:49.505Z",
+      "published": true,
+      "readTime": 1
+    }
+  ]
+}
