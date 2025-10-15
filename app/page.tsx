@@ -58,6 +58,18 @@ export default function Home() {
   const [cvMenuOpen, setCvMenuOpen] = useState(false)
   const [isDownloading, setIsDownloading] = useState(false)
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement
+      if (cvMenuOpen && !target.closest(".cv-menu-container")) {
+        setCvMenuOpen(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [cvMenuOpen])
+
   const downloadResume = async (lang: "en" | "pt") => {
     try {
       setIsDownloading(true)
@@ -100,19 +112,19 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-16">
+      <main className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-16 pt-8 sm:pt-0">
         <header
           id="intro"
           ref={(el) => {
             sectionsRef.current[0] = el
           }}
-          className="min-h-screen flex items-center opacity-0"
+          className="min-h-[calc(100vh-4rem)] sm:min-h-screen flex items-center"
         >
-          <div className="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full">
-            <div className="lg:col-span-3 space-y-6 sm:space-y-8">
+          <div className="grid lg:grid-cols-5 gap-8 sm:gap-12 lg:gap-16 w-full">
+            <div className="lg:col-span-3 space-y-5 sm:space-y-6 lg:space-y-8">
               <div className="space-y-3 sm:space-y-2">
-                <div className="text-sm text-muted-foreground font-mono tracking-wider">PORTFOLIO / 2025</div>
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
+                <div className="text-xs sm:text-sm text-muted-foreground font-mono tracking-wider">PORTFOLIO / 2025</div>
+                <h1 className="text-4xl sm:text-6xl lg:text-7xl font-light tracking-tight leading-tight">
                   João Vitor
                   <br />
                   <span className="text-muted-foreground">Moitinho</span>
@@ -120,14 +132,14 @@ export default function Home() {
               </div>
 
               <div className="space-y-6 max-w-md">
-                <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+                <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed">
                   Mid‑level Web Developer with a degree in Computer Engineering and a background in
                   graphic design. I build frontends, PWAs and full‑stack solutions that combine
                   <span className="text-foreground"> design</span>, <span className="text-foreground">performance</span>, and
                   <span className="text-foreground"> usability</span>.
                 </p>
 
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                     Available for work
@@ -135,26 +147,26 @@ export default function Home() {
                   <div>Curitiba, Paraná, Brazil</div>
                 </div>
 
-                <div className="mt-6 flex items-center gap-4">
-                  <div className="relative inline-block">
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <div className="relative inline-block cv-menu-container">
                     <button
                       onClick={() => setCvMenuOpen((v) => !v)}
-                      className="relative z-10 overflow-hidden transition-transform duration-150 ease-out active:scale-[0.98] text-white bg-neutral-900/60 border-white/20 border rounded-xl py-3 px-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"
+                      className="relative z-10 overflow-hidden transition-transform duration-150 ease-out active:scale-[0.98] text-white bg-neutral-900/60 border-white/20 border rounded-xl py-2.5 px-5 text-sm sm:text-base shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"
                     >
                       <span className="inline-flex items-center gap-2 font-semibold">Download CV</span>
                     </button>
 
                     {cvMenuOpen ? (
-                      <div className="absolute left-0 mt-2 w-44 bg-popover border border-border rounded-lg shadow-lg p-2">
+                      <div className="absolute left-0 mt-2 w-40 sm:w-44 bg-popover border border-border rounded-lg shadow-lg p-1.5 sm:p-2 z-50">
                         <button
                           onClick={() => downloadResume("pt")}
-                          className="w-full text-left px-3 py-2 rounded hover:bg-muted-foreground/5"
+                          className="w-full text-left px-2.5 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm rounded hover:bg-muted-foreground/5"
                         >
                           Portuguese (PT)
                         </button>
                         <button
                           onClick={() => downloadResume("en")}
-                          className="w-full text-left px-3 py-2 rounded hover:bg-muted-foreground/5"
+                          className="w-full text-left px-2.5 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm rounded hover:bg-muted-foreground/5"
                         >
                           English (EN)
                         </button>
@@ -164,21 +176,21 @@ export default function Home() {
 
                   <button
                     onClick={toggleTheme}
-                    className="p-3 rounded-xl border border-border hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-lg"
+                    className="p-2.5 sm:p-3 rounded-xl border border-border hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-lg"
                     aria-label="Toggle theme"
                   >
                     {isDark ? (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
+                        width="18"
+                        height="18"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="text-foreground"
+                        className="text-foreground sm:w-5 sm:h-5"
                       >
                         <circle cx="12" cy="12" r="4" />
                         <path d="M12 2v2" />
@@ -193,15 +205,15 @@ export default function Home() {
                     ) : (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
+                        width="18"
+                        height="18"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="text-foreground"
+                        className="text-foreground sm:w-5 sm:h-5"
                       >
                         <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
                       </svg>
@@ -213,23 +225,23 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lg:col-span-2 flex flex-col justify-end space-y-6 sm:space-y-8 mt-8 lg:mt-0">
-              <div className="space-y-4">
-                <div className="text-sm text-muted-foreground font-mono">CURRENTLY</div>
-                <div className="space-y-2">
-                  <div className="text-foreground">Web Developer (Mid)</div>
-                  <div className="text-muted-foreground">@ Ninetwo Performance</div>
+            <div className="lg:col-span-2 flex flex-col justify-end space-y-6 sm:space-y-8 mt-12 lg:mt-0">
+              <div className="space-y-3 sm:space-y-4">
+                <div className="text-xs sm:text-sm text-muted-foreground font-mono">CURRENTLY</div>
+                <div className="space-y-1.5 sm:space-y-2">
+                  <div className="text-sm sm:text-base text-foreground">Web Developer (Mid)</div>
+                  <div className="text-sm sm:text-base text-muted-foreground">@ Ninetwo Performance</div>
                   <div className="text-xs text-muted-foreground">Mar 2025 — Present</div>
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <div className="text-sm text-muted-foreground font-mono">FOCUS</div>
+              <div className="space-y-3 sm:space-y-4">
+                <div className="text-xs sm:text-sm text-muted-foreground font-mono">FOCUS</div>
                 <div className="flex flex-wrap gap-2">
                   {["React", "Next.js", "TypeScript", "PWA", "Redux", "Node.js", "Firebase"].map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 text-xs border border-border rounded-full hover:border-muted-foreground/50 transition-colors duration-300"
+                      className="px-2.5 py-1 text-[11px] sm:text-xs border border-border rounded-full hover:border-muted-foreground/50 transition-colors duration-300"
                     >
                       {skill}
                     </span>
@@ -245,12 +257,12 @@ export default function Home() {
           ref={(el) => {
             sectionsRef.current[1] = el
           }}
-          className="min-h-screen py-20 sm:py-32 opacity-0"
+          className="py-16 sm:py-24 lg:py-32"
         >
-          <div className="space-y-12 sm:space-y-16">
-            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-              <h2 className="text-3xl sm:text-4xl font-light">Experience</h2>
-              <div className="text-sm text-muted-foreground font-mono">2018 — 2025</div>
+          <div className="space-y-8 sm:space-y-12 lg:space-y-16">
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 sm:gap-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light">Experience</h2>
+              <div className="text-xs sm:text-sm text-muted-foreground font-mono">2018 — 2025</div>
             </div>
 
             <div className="space-y-8 sm:space-y-12">
@@ -330,28 +342,28 @@ export default function Home() {
               ].map((job, index) => (
                 <div
                   key={index}
-                  className="group grid lg:grid-cols-12 gap-4 sm:gap-8 py-6 sm:py-8 border-b border-border/50 hover:border-border transition-colors duration-500"
+                  className="group grid lg:grid-cols-12 gap-3 sm:gap-6 lg:gap-8 py-5 sm:py-6 lg:py-8 border-b border-border/50 hover:border-border transition-colors duration-500"
                 >
                   <div className="lg:col-span-2">
-                    <div className="text-xl sm:text-2xl font-light text-muted-foreground group-hover:text-foreground transition-colors duration-500">
+                    <div className="text-sm sm:text-base lg:text-xl font-light text-muted-foreground group-hover:text-foreground transition-colors duration-500">
                       {job.year}
                     </div>
                   </div>
 
-                  <div className="lg:col-span-6 space-y-3">
+                  <div className="lg:col-span-6 space-y-2 sm:space-y-3">
                     <div>
-                      <h3 className="text-lg sm:text-xl font-medium">{job.role}</h3>
-                      <div className="text-muted-foreground">{job.company}</div>
+                      <h3 className="text-base sm:text-lg lg:text-xl font-medium">{job.role}</h3>
+                      <div className="text-sm sm:text-base text-muted-foreground">{job.company}</div>
                       {job.location ? <div className="text-xs text-muted-foreground">{job.location}</div> : null}
                     </div>
-                    <p className="text-muted-foreground leading-relaxed max-w-lg">{job.description}</p>
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-lg">{job.description}</p>
                   </div>
 
-                  <div className="lg:col-span-4 flex flex-wrap gap-2 lg:justify-end mt-2 lg:mt-0">
+                  <div className="lg:col-span-4 flex flex-wrap gap-1.5 sm:gap-2 lg:justify-end mt-1 lg:mt-0">
                     {job.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
+                        className="px-2 py-0.5 text-[11px] sm:text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
                       >
                         {tech}
                       </span>
@@ -368,12 +380,12 @@ export default function Home() {
           ref={(el) => {
             sectionsRef.current[2] = el
           }}
-          className="min-h-screen py-20 sm:py-32 opacity-0"
+          className="py-16 sm:py-24 lg:py-32"
         >
-          <div className="space-y-12 sm:space-y-16">
-            <h2 className="text-3xl sm:text-4xl font-light">Portfolio</h2>
+          <div className="space-y-8 sm:space-y-12 lg:space-y-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light">Portfolio</h2>
 
-            <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
+            <div className="grid gap-4 sm:gap-6 lg:gap-8 grid-cols-1 md:grid-cols-2">
               {[
                 {
                   title: "EPK - WELKER 2024",
@@ -584,30 +596,30 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
-                  <div className="p-6 space-y-3">
+                  <div className="p-4 sm:p-5 lg:p-6 space-y-2.5 sm:space-y-3">
                     <div className="flex items-center gap-2 flex-wrap">
                       {item.category ? (
-                        <span className="inline-flex items-center text-xs font-medium px-3 py-1 bg-muted-foreground/10 border border-muted-foreground/20 rounded-full">
+                        <span className="inline-flex items-center text-[10px] sm:text-xs font-medium px-2 sm:px-3 py-0.5 sm:py-1 bg-muted-foreground/10 border border-muted-foreground/20 rounded-full">
                           {item.category}
                         </span>
                       ) : null}
                       {item.type ? (
-                        <span className="text-xs text-muted-foreground">{item.type}</span>
+                        <span className="text-[10px] sm:text-xs text-muted-foreground">{item.type}</span>
                       ) : null}
                     </div>
                     <h3 className={`font-medium tracking-tight group-hover:text-muted-foreground transition-colors duration-300 ${
-                      item.featured ? "text-2xl sm:text-3xl" : "text-xl sm:text-2xl"
+                      item.featured ? "text-lg sm:text-2xl lg:text-3xl" : "text-base sm:text-xl lg:text-2xl"
                     }`}>
                       {item.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
+                    <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed line-clamp-3">
                       {item.description}
                     </p>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-1.5 sm:gap-2">
                       {item.skills?.slice(0, 3).map((skill) => (
                         <span
                           key={skill}
-                          className="text-xs text-muted-foreground px-2 py-1 border border-border rounded"
+                          className="text-[10px] sm:text-xs text-muted-foreground px-1.5 sm:px-2 py-0.5 sm:py-1 border border-border rounded"
                         >
                           {skill}
                         </span>
@@ -625,25 +637,25 @@ export default function Home() {
           ref={(el) => {
             sectionsRef.current[3] = el
           }}
-          className="py-20 sm:py-32 opacity-0"
+          className="py-16 sm:py-24 lg:py-32 pb-24 sm:pb-32"
         >
-          <div className="grid lg:grid-cols-2 gap-12 sm:gap-16">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
             <div className="space-y-6 sm:space-y-8">
-              <h2 className="text-3xl sm:text-4xl font-light">Let's Connect</h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light">Let's Connect</h2>
 
               <div className="space-y-6">
-                <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+                <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed">
                   Always interested in new opportunities, collaborations, and conversations about technology and design.
                 </p>
 
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   <Link
                       href="mailto:contato@moitinho.dev"
-                      className="group flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors duration-300"
+                      className="group flex items-center gap-2 sm:gap-3 text-foreground hover:text-muted-foreground transition-colors duration-300"
                     >
-                      <span className="text-base sm:text-lg">contato@moitinho.dev</span>
+                      <span className="text-sm sm:text-base lg:text-lg break-all">contato@moitinho.dev</span>
                       <svg
-                        className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
+                        className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 transform group-hover:translate-x-1 transition-transform duration-300"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -655,10 +667,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="space-y-6 sm:space-y-8">
-              <div className="text-sm text-muted-foreground font-mono">ELSEWHERE</div>
+              <div className="space-y-5 sm:space-y-6 lg:space-y-8">
+              <div className="text-xs sm:text-sm text-muted-foreground font-mono">ELSEWHERE</div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 {[
                   { name: "GitHub", handle: "@eumoitinho", url: "https://github.com/eumoitinho" },
                   { name: "LinkedIn", handle: "joaovitormoitinho", url: "https://www.linkedin.com/in/eumoitinho" },
@@ -667,19 +679,19 @@ export default function Home() {
                   <Link
                     key={social.name}
                     href={social.url}
-                    className="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm"
+                    className="group p-3 sm:p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm"
                   >
-                    <div className="space-y-2">
-                      <div className="text-foreground group-hover:text-muted-foreground transition-colors duration-300">{social.name}</div>
-                      <div className="text-sm text-muted-foreground">{social.handle}</div>
+                    <div className="space-y-1.5 sm:space-y-2">
+                      <div className="text-sm sm:text-base text-foreground group-hover:text-muted-foreground transition-colors duration-300">{social.name}</div>
+                      <div className="text-xs sm:text-sm text-muted-foreground">{social.handle}</div>
                     </div>
                   </Link>
                 ))}
               </div>
 
-              <button className="group p-3 rounded-lg border border-border hover:border-muted-foreground/50 transition-all duration-300">
+              <button className="group p-2.5 sm:p-3 rounded-lg border border-border hover:border-muted-foreground/50 transition-all duration-300">
                 <svg
-                  className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors duration-300"
+                  className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-muted-foreground group-hover:text-foreground transition-colors duration-300"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -697,7 +709,7 @@ export default function Home() {
         </section>
       </main>
 
-      <div className="fixed bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none"></div>
+      <div className="fixed bottom-0 left-0 right-0 h-16 sm:h-20 lg:h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none"></div>
     </div>
   )
 }
