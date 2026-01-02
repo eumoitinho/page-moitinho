@@ -14,11 +14,12 @@ const geist = Geist({
 export const metadata: Metadata = {
   title: "João Vitor | Portfolio",
   description: "Web Developer from Brazil with 5 years of experience.",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
+}
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 }
 
 export default function RootLayout({
