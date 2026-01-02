@@ -52,7 +52,6 @@ export const translations = {
     edit: "Edit",
     delete: "Delete",
     new: "New",
-    viewSite: "View Site",
     basicInfo: "Basic Information",
     name: "Name",
     lastName: "Last Name",
@@ -215,7 +214,6 @@ export const translations = {
     
     // Mensagens de status
     preparingDownload: "Preparando download…",
-    viewSite: "Ver Site",
   },
 }
 

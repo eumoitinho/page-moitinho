@@ -1,0 +1,329 @@
+{
+  "projects": [
+    {
+      "projectId": "prj_TBuYlJmeMgnpHhXnDWnQiYC86Uan",
+      "projectName": "motin-site",
+      "url": "motinfilms.com.br",
+      "title": "Motin Films - Filmes de alto impacto",
+      "industryType": "Film Production / Audiovisual",
+      "descriptionPT": "Produtora audiovisual especializada em criar filmes de alto impacto com qualidade cinematográfica, conectando marcas e pessoas através de histórias memoráveis.",
+      "descriptionEN": "Audiovisual production company specialized in creating high-impact films with cinematographic quality, connecting brands and people through memorable stories.",
+      "screenshotId": "ss_4717vxf74"
+    },
+    {
+      "projectId": "prj_ZjXMbej7dCpluRDfbf7xAfnWh3YX",
+      "projectName": "metalcarbon",
+      "url": "metalcarbonhub.com.br",
+      "title": "Metal Carbon Hub",
+      "industryType": "Recycling / Sustainability",
+      "descriptionPT": "Empresa especializada em reciclagem e processamento de sucata ferrosa, unindo inovação, tecnologia e responsabilidade ambiental para construir um futuro circular e sustentável.",
+      "descriptionEN": "Company specialized in recycling and processing ferrous scrap, combining innovation, technology and environmental responsibility to build a circular and sustainable future.",
+      "screenshotId": "ss_1641epeqh"
+    },
+    {
+      "projectId": "prj_UCgBODgWjQLejeB79eUN7avPxiPh",
+      "projectName": "autosocorro",
+      "url": "autosocorronobre.com.br",
+      "title": "Autosocorro Nobre",
+      "industryType": "Automotive Services / Towing",
+      "descriptionPT": "Serviço de guincho 24 horas em Ortigueira, oferecendo atendimento ágil e de confiança. Seu chamado é a prioridade da empresa, disponível 24/7.",
+      "descriptionEN": "24-hour towing service in Ortigueira, offering fast and reliable assistance. Your call is the company's priority, available 24/7.",
+      "screenshotId": "ss_7615cyw2a"
+    },
+    {
+      "projectId": "prj_T3KphrOOldXzk0UZQRMwDf14m6L3",
+      "projectName": "skincare-site-kgvu",
+      "url": "skincareestheticbeauty.com",
+      "title": "Skin Care Esthetic Beauty",
+      "industryType": "Beauty / Aesthetics",
+      "descriptionPT": "Clínica de estética localizada no Japão com mais de 10 anos de experiência, oferecendo procedimentos estéticos exclusivos para realçar a beleza natural e restaurar a autoestima.",
+      "descriptionEN": "Esthetics clinic located in Japan with over 10 years of experience, offering exclusive aesthetic procedures to enhance natural beauty and restore self-esteem.",
+      "screenshotId": "ss_3021535j5"
+    },
+    {
+      "projectId": "prj_T2rzpAZMdEBelg0eEqekaVzo7T28",
+      "projectName": "portoitapoa",
+      "url": "portoitapoa.catalisti.com.br",
+      "title": "Porto Itapoá - Gateway da América Latina",
+      "industryType": "Ports / Logistics",
+      "descriptionPT": "Terminal portuário moderno que conecta o Brasil ao mundo com eficiência, tecnologia e sustentabilidade. Um dos terminais mais modernos da América do Sul.",
+      "descriptionEN": "Modern port terminal connecting Brazil to the world with efficiency, technology and sustainability. One of the most modern terminals in South America.",
+      "screenshotId": "ss_7404pfaly"
+    },
+    {
+      "projectId": "prj_Q9laR6LYoVtaFJFb18csZWuvFocQ",
+      "projectName": "provedor-conect",
+      "url": "provedorconect.com.br",
+      "title": "Provedor Conect - Internet Fibra Óptica",
+      "industryType": "Telecommunications / ISP",
+      "descriptionPT": "Provedor de internet fibra óptica e telefonia fixa localizado em Simplício Mendes. Oferece planos para residências e empresas, conectando clientes ao mundo com qualidade.",
+      "descriptionEN": "Fiber optic internet and landline phone provider located in Simplício Mendes. Offers plans for homes and businesses, connecting customers to the world with quality.",
+      "screenshotId": "ss_72539kzg8"
+    },
+    {
+      "projectId": "prj_PyyXzan8VBT4zixUw53NxNGRFdA4",
+      "projectName": "protege",
+      "url": "protege.ind.br",
+      "title": "Protege - Liderança e inovação em proteção contra incêndios",
+      "industryType": "Fire Safety / Industrial",
+      "descriptionPT": "Empresa referência na fabricação de extintores de incêndio com o mais alto padrão de qualidade, garantindo proteção e segurança para patrimônio e vidas.",
+      "descriptionEN": "Leading company in fire extinguisher manufacturing with the highest quality standards, ensuring protection and safety for property and lives.",
+      "screenshotId": "ss_28366yh9i"
+    },
+    {
+      "projectId": "prj_M9VaY0fVt45ljayXzbWBjfKbmgP9",
+      "projectName": "diray-site",
+      "url": "diray.com.br",
+      "title": "DI.RAY",
+      "industryType": "HR / People Management",
+      "descriptionPT": "Plataforma de gestão de pessoas que oferece metodologia '4 cafés' para ajudar equipes a entregar resultados sustentáveis e fazer times funcionarem melhor.",
+      "descriptionEN": "People management platform offering the '4 coffees' methodology to help teams deliver sustainable results and make teams work better.",
+      "screenshotId": "ss_13821wc8x"
+    },
+    {
+      "projectId": "prj_EDeunDvQNZppEhSRvXlG1qIWMyXe",
+      "projectName": "aquilafcrsite",
+      "url": "aquilafcr.com",
+      "title": "Aquila Fund FCR - Investimentos de Valor em Portugal",
+      "industryType": "Investment / Finance",
+      "descriptionPT": "Fundo de investimento português focado no programa Golden Visa, oferecendo soluções tailor-made para proteger o futuro financeiro dos investidores em Portugal.",
+      "descriptionEN": "Portuguese investment fund focused on the Golden Visa program, offering tailor-made solutions to protect investors' financial future in Portugal.",
+      "screenshotId": "ss_08959oikh"
+    },
+    {
+      "projectId": "prj_ED1hy1KVnoorp4vc5ifXlLplhGdl",
+      "projectName": "24h3",
+      "url": "24h.tur.br",
+      "title": "24H Turismo Corporate - Gestão de Viagens Corporativas",
+      "industryType": "Travel / Corporate Tourism",
+      "descriptionPT": "Plataforma de gestão de viagens corporativas que combina tecnologia de self-booking com suporte humano personalizado 24/7, oferecendo controle total sobre viagens de negócios.",
+      "descriptionEN": "Corporate travel management platform combining self-booking technology with personalized 24/7 human support, offering total control over business trips.",
+      "screenshotId": "ss_3936by0bq"
+    },
+    {
+      "projectId": "prj_9ovYCGT09182p4iFb054Wdg2xkjG",
+      "projectName": "catalisti-site",
+      "url": "catalisti.com.br",
+      "title": "Catalisti Holding - Ecossistema Martech",
+      "industryType": "Marketing Technology",
+      "descriptionPT": "Holding de ecossistema Martech oferecendo serviços de marketing e tecnologia, com certificações e depoimentos de clientes.",
+      "descriptionEN": "Martech ecosystem holding company offering marketing and technology services, with certifications and client testimonials.",
+      "screenshotId": "ss_9584zgqzk"
+    },
+    {
+      "projectId": "prj_5zefgIAo0Wb41VUhBM7lYUS0iqDm",
+      "projectName": "v0-instituto-avance-project",
+      "url": "avanceemsaude.com.br",
+      "title": "Instituto Avance - Cursos de Ultrassom com Dr. Joney",
+      "industryType": "Healthcare Education",
+      "descriptionPT": "Centro de formação em saúde dedicado a profissionais da área, oferecendo cursos de ultrassonografia, treinamentos, mentorias e conteúdos atualizados.",
+      "descriptionEN": "Healthcare training center dedicated to professionals, offering ultrasound courses, training, mentoring and updated content.",
+      "screenshotId": "ss_3327fkbiq"
+    },
+    {
+      "projectId": "prj_52vJRLazKaW5FlI0kBMVGRnaOwHW",
+      "projectName": "site-ljsantos",
+      "url": "ljsantos.com",
+      "title": "LJ Santos - Sustainable Industrial Solutions",
+      "industryType": "Industrial / Manufacturing",
+      "descriptionPT": "Empresa de soluções industriais sustentáveis com qualidade e confiabilidade comprovadas, fabricando produtos como filtros de carvão para aplicações industriais.",
+      "descriptionEN": "Sustainable industrial solutions company with proven quality and reliability, manufacturing products like carbon filters for industrial applications.",
+      "screenshotId": "ss_544133ksb"
+    },
+    {
+      "projectId": "prj_0XQXXqSTtwQGBcW2gQ9Q9uyETOkJ",
+      "projectName": "v0-marketplace-platform",
+      "url": "pedrobarros.catalisti.com.br",
+      "title": "ServiçosJá - Marketplace de Serviços",
+      "industryType": "Marketplace / Services",
+      "descriptionPT": "Marketplace de serviços que conecta clientes aos melhores prestadores de serviços qualificados da região, com mais de 50.000 prestadores cadastrados.",
+      "descriptionEN": "Services marketplace connecting customers to the best qualified service providers in their region, with over 50,000 registered providers.",
+      "screenshotId": "ss_4852jpskq"
+    },
+    {
+      "projectId": "prj_04quRlROrgmK8EyXsYlOSMg89dIe",
+      "projectName": "robertonavarro",
+      "url": "robertonavarrooficial.com.br",
+      "title": "Roberto Navarro | Transforme sua Mentalidade",
+      "industryType": "Financial Coaching / Education",
+      "descriptionPT": "Instituto de Coaching Financeiro (ICF) liderado por Roberto Navarro, com métodos exclusivos para transformar mentalidade e conquistar nova realidade financeira. Mais de 300.000 vidas transformadas.",
+      "descriptionEN": "Financial Coaching Institute (ICF) led by Roberto Navarro, with exclusive methods to transform mindset and achieve new financial reality. Over 300,000 lives transformed.",
+      "screenshotId": "ss_3396bh0ka"
+    },
+    {
+      "projectId": "prj_yUopP87zqQ4AQi1jLcbtpHgD6SmV",
+      "projectName": "macbar-spa",
+      "url": "macbarspa.com",
+      "title": "MacBar Spa by Helen",
+      "industryType": "Spa / Wellness",
+      "descriptionPT": "Spa premium oferecendo tratamentos de luxo e serviços especializados de drenagem linfática personalizados para cada cliente.",
+      "descriptionEN": "Premium spa offering luxury treatments and specialized lymphatic drainage services tailored to each client's unique needs.",
+      "screenshotId": "ss_2527wgsay"
+    },
+    {
+      "projectId": "prj_xj2xatSUbSnmDlj7AQiED97EwZ97",
+      "projectName": "site-vtelco",
+      "url": "vtelco.com.br/olt-control",
+      "title": "VTelco - Simplifique sua rede",
+      "industryType": "Telecommunications / Software",
+      "descriptionPT": "Solução para gestão de redes de fibra óptica com monitoramento em tempo real, análise preditiva e automação inteligente. Mais de 300 provedores atendidos.",
+      "descriptionEN": "Fiber optic network management solution with real-time monitoring, predictive analytics and intelligent automation. Over 300 providers served.",
+      "screenshotId": "ss_9641ls9ha"
+    },
+    {
+      "projectId": "prj_vaMQtpCTPRx4gdZdV8XsikpSuGLA",
+      "projectName": "rede-web-tv",
+      "url": "rwtv.com.br",
+      "title": "RWTV - A informação que aproxima! | Portal de Notícias",
+      "industryType": "News / Media",
+      "descriptionPT": "Portal de notícias regional com cobertura ao vivo, seções de política, economia, esportes, cultura, saúde e agricultura.",
+      "descriptionEN": "Regional news portal with live coverage, sections on politics, economy, sports, culture, health and agriculture.",
+      "screenshotId": "ss_40960ct6c"
+    },
+    {
+      "projectId": "prj_rjAnyAXiqYBoH95RduRSJpYAJX6Y",
+      "projectName": "infiniti-grass-lp",
+      "url": "infinitigrass.m2z.com.br",
+      "title": "Infiniti Grass - Grama Sintética Esportiva dos Campeões",
+      "industryType": "Sports / Turf Manufacturing",
+      "descriptionPT": "Empresa de grama sintética esportiva com padrão FIFA Quality, mais de 10 anos de garantia. Ideal para campos de futebol e projetos de alto rendimento.",
+      "descriptionEN": "Sports synthetic grass company with FIFA Quality standard, over 10 years warranty. Ideal for soccer fields and high-performance projects.",
+      "screenshotId": "ss_0924olfko"
+    },
+    {
+      "projectId": "prj_IHLJbs580DnVjNdZM73exTt5aQW1",
+      "projectName": "aurion",
+      "url": "aurion.m2z.com.br",
+      "title": "Aurion Partners | Estratégia em Movimento",
+      "industryType": "Consulting / Strategy",
+      "descriptionPT": "Consultoria estratégica especializada em acelerar resultados e desbloquear o potencial máximo de negócios. Mais de 40 anos de experiência, 200+ projetos em 15+ países.",
+      "descriptionEN": "Strategic consulting specialized in accelerating results and unlocking maximum business potential. Over 40 years of experience, 200+ projects in 15+ countries.",
+      "screenshotId": "ss_44520dzol"
+    },
+    {
+      "projectId": "prj_cehsUUiydQZYqOR3vSGpeYeXg2lq",
+      "projectName": "pesados-web-4",
+      "url": "pesados-web-app.azurewebsites.net/",
+      "title": "Pesados Web - Classificados de Caminhões",
+      "industryType": "Automotive / Classifieds",
+      "descriptionPT": "Plataforma de classificados de caminhões e transporte rodoviário com blog de notícias, dicas e informações sobre o mercado.",
+      "descriptionEN": "Truck and road transport classifieds platform with news blog, tips and market information.",
+      "screenshotId": "ss_3914am2l8"
+    },
+    {
+      "projectId": "prj_LOxZ3iZS5AALerWjHx7LIedRumC4",
+      "projectName": "althion",
+      "url": "althion.m2z.com.br",
+      "title": "Althion",
+      "industryType": "Pharmaceutical / Industrial Automation",
+      "descriptionPT": "Especialistas em indústria farmacêutica, oferecendo soluções em automação, instrumentação e controle para ciências da vida.",
+      "descriptionEN": "Specialists in pharmaceutical industry, offering automation, instrumentation and control solutions for life sciences.",
+      "screenshotId": "ss_76285uxun"
+    },
+    {
+      "projectId": "prj_KnXY8wxNAxfUPU7hRbzB1t3pQggO",
+      "projectName": "omma-lps",
+      "url": "lp.omma.com.br",
+      "title": "NEOOMMA Engenharia - Ambientes corporativos",
+      "industryType": "Engineering / Construction",
+      "descriptionPT": "Engenharia corporativa com inovação e excelência em obras corporativas, transformando a visão de empresas em ambientes funcionais e de alta performance.",
+      "descriptionEN": "Corporate engineering with innovation and excellence in corporate construction, transforming company vision into functional and high-performance environments.",
+      "screenshotId": "ss_6885z1nxm"
+    },
+    {
+      "projectId": "prj_rNVOIzArO7SByixVklsfZEjARLoa",
+      "projectName": "liveacademia",
+      "url": "liveacademia.m2z.com.br",
+      "title": "Live Academia | Rede de Academias em Manaus",
+      "industryType": "Fitness / Gym",
+      "descriptionPT": "A maior rede de academias de Manaus com planos flexíveis e estrutura completa. Transformando treino em rotina e resultado real.",
+      "descriptionEN": "The largest gym chain in Manaus with flexible plans and complete structure. Transforming workout into routine and real results.",
+      "screenshotId": "ss_20341ilqq"
+    },
+    {
+      "projectId": "prj_vkZckJSn1YY4Q1BuW2It2J3NnIhw",
+      "projectName": "cvc-assai-tatuape",
+      "url": "cvc.m2z.com.br",
+      "title": "CVC Assaí Tatuapé - Eurotrip",
+      "industryType": "Travel / Tourism",
+      "descriptionPT": "Landing page da CVC Assaí Tatuapé especializada em roteiros personalizados para a Europa, oferecendo atendimento exclusivo e consultoria de viagem.",
+      "descriptionEN": "CVC Assaí Tatuapé landing page specialized in personalized Europe itineraries, offering exclusive service and travel consulting.",
+      "screenshotId": "ss_2324qwy3u"
+    },
+    {
+      "projectId": "prj_IBvQ1miqyf9ZP96KOsxut2w0Mvvr",
+      "projectName": "omma2",
+      "url": "www.omma.com.br",
+      "title": "OMMA Engenharia",
+      "industryType": "Engineering / Construction",
+      "descriptionPT": "Construindo espaços de alta performance para o sucesso empresarial. Soluções de engenharia com gestão completa de projetos.",
+      "descriptionEN": "Building high-performance spaces for business success. Engineering solutions with complete project management.",
+      "screenshotId": "ss_0324qduto"
+    },
+    {
+      "projectId": "prj_bidrxlSuBJxhpuGAH0ocs5tFtcYv",
+      "projectName": "bangtoys",
+      "url": "bangtoys.m2z.com.br",
+      "title": "Bang Toys - Veículos Elétricos Infantis | Distribuidora Líder no Brasil",
+      "industryType": "Toys / E-commerce",
+      "descriptionPT": "Distribuidora líder no Brasil em veículos elétricos infantis, com mais de 150 produtos estratégicos incluindo carros, motos, scooters e quadriciclos.",
+      "descriptionEN": "Leading distributor in Brazil for children's electric vehicles, with over 150 strategic products including cars, motorcycles, scooters and ATVs.",
+      "screenshotId": "ss_8403bw6a2"
+    },
+    {
+      "projectId": "prj_fpBZeDUmLBymuatiN1eYAVdTFEy4",
+      "projectName": "frontend",
+      "url": "insights.ninetwo.com.br/dashboard",
+      "title": "Insights Dashboard",
+      "industryType": "Marketing / Analytics SaaS",
+      "descriptionPT": "Dashboard de análise de marketing digital desenvolvido pela NineTwo, com métricas de Google Ads, Meta Ads, comportamento de site e performance de campanhas.",
+      "descriptionEN": "Digital marketing analytics dashboard developed by NineTwo, with Google Ads, Meta Ads, site behavior and campaign performance metrics.",
+      "screenshotId": "ss_1537qwida"
+    },
+    {
+      "projectId": "prj_fpBZeDUmLBymuatiN1e",
+      "projectName": "frontend",
+      "url": "silverpanda.moitinho.dev",
+      "title": "Silver Panda",
+      "industryType": "Music",
+      "descriptionPT": "Presskit digital para a dupla de DJ's Brasileiro e Israelense, Leonardo e Shalomi Berg: Silver Panda. 3 Milhões de ouvintes mensais no Spotify.",
+      "descriptionEN": "Presskit digital for the Brazilian and Israeli DJ duo, Leonardo and Shalomi Berg: Silver Panda. 3 million monthly listeners on Spotify.",
+      "screenshotId": "ss_1537qwida"
+    }
+  ],
+  "summary": {
+    "totalProjects": 32,
+    "industries": [
+      "Film Production / Audiovisual",
+      "Recycling / Sustainability",
+      "Automotive Services / Towing",
+      "Beauty / Aesthetics",
+      "Ports / Logistics",
+      "Investment / Finance",
+      "Telecommunications / ISP",
+      "Fire Safety / Industrial",
+      "HR / People Management",
+      "Travel / Corporate Tourism",
+      "Technology / Data & Automation",
+      "Marketing / Analytics",
+      "Marketing Technology",
+      "Healthcare Education",
+      "Industrial / Manufacturing",
+      "Music",
+      "Marketplace / Services",
+      "Financial Coaching / Education",
+      "Spa / Wellness",
+      "News / Media",
+      "Sports / Turf Manufacturing",
+      "Consulting / Strategy",
+      "Automotive / Classifieds",
+      "Pharmaceutical / Industrial Automation",
+      "Engineering / Construction",
+      "Fitness / Gym",
+      "Tourism",
+      "Toys / E-commerce",
+      "Marketing / Analytics SaaS"
+    ],
+    "capturedAt": "2026-01-01"
+  }
+}

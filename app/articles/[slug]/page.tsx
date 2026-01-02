@@ -40,7 +40,7 @@ export default function ArticlePage() {
       <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
         <div className="text-center space-y-4">
           <div className="w-8 h-8 border-2 border-foreground border-t-transparent rounded-full animate-spin mx-auto"></div>
-          <p className="text-muted-foreground">{t("loading") || "Loading..."}</p>
+          <p className="text-muted-foreground">{(t("loading" as any) as string) || "Loading..."}</p>
         </div>
       </div>
     )
@@ -80,7 +80,7 @@ export default function ArticlePage() {
           <div className="mb-8 sm:mb-12 -mx-4 sm:mx-0">
             <img
               src={article.coverImage}
-              alt={article.title}
+              alt={typeof article.title === 'string' ? article.title : getLocalizedText(article.title, locale)}
               className="w-full h-64 sm:h-96 object-cover sm:rounded-xl"
             />
           </div>
