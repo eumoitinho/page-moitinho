@@ -44,7 +44,7 @@
     {
       "name": "Behance",
       "handle": "eumoitinho",
-      "url": "https://www.behance.net/eumoitinho"
+      "url": "https://www.behance.net/joaomoitinh1"
     }
   ],
   "experiences": [
@@ -180,6 +180,31 @@
         "Active Directory",
         "Support"
       ]
+    }
+  ],
+  "education": [
+    {
+      "id": "1",
+      "year": "2018 — 2022",
+      "institution": "UFGD - Federal University of Grande Dourados",
+      "course": {
+        "en": "Bachelor in Computer Engineering",
+        "pt": "Bacharelado em Engenharia de Computação"
+      }
+    }
+  ],
+  "certifications": [
+    {
+      "id": "1",
+      "name": "Ignite ReactJS",
+      "issuer": "Rocketseat",
+      "year": "2023"
+    },
+    {
+      "id": "2",
+      "name": "Ignite Node.js",
+      "issuer": "Rocketseat",
+      "year": "2023"
     }
   ],
   "projects": [

@@ -151,7 +151,7 @@ export default function InfoPage() {
                <BlurReveal>
                   <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-12">Expertise</h2>
                </BlurReveal>
-               <div className="flex flex-wrap gap-x-8 gap-y-4">
+               <div className="flex flex-wrap gap-x-8 gap-y-4 mb-24">
                  {skills.map((skill, index) => (
                    <BlurReveal key={skill} delay={index * 0.05} width="fit-content">
                      <span className="text-xl text-foreground/80 hover:text-foreground transition-colors cursor-default">
@@ -159,6 +159,53 @@ export default function InfoPage() {
                      </span>
                    </BlurReveal>
                  ))}
+               </div>
+
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+                 {/* Education */}
+                 {data.education && (
+                   <div>
+                      <BlurReveal>
+                        <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-8">
+                          {locale === 'en' ? 'Education' : 'Formação'}
+                        </h2>
+                      </BlurReveal>
+                      <div className="space-y-8">
+                        {data.education.map((edu) => (
+                          <BlurReveal key={edu.id} delay={0.1}>
+                            <div className="group">
+                              <span className="text-sm text-muted-foreground block mb-1">{edu.year}</span>
+                              <h3 className="text-xl font-medium mb-1">{edu.institution}</h3>
+                              <p className="text-muted-foreground">{getLocalizedText(edu.course, locale)}</p>
+                            </div>
+                          </BlurReveal>
+                        ))}
+                      </div>
+                   </div>
+                 )}
+
+                 {/* Certifications */}
+                 {data.certifications && (
+                   <div>
+                      <BlurReveal>
+                        <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-8">
+                          {locale === 'en' ? 'Certifications' : 'Certificações'}
+                        </h2>
+                      </BlurReveal>
+                      <ul className="space-y-4">
+                        {data.certifications.map((cert) => (
+                          <BlurReveal key={cert.id} delay={0.1}>
+                             <li className="flex flex-col">
+                               <span className="text-lg font-medium">{cert.name}</span>
+                               <span className="text-muted-foreground text-sm">
+                                 {cert.issuer} • {cert.year}
+                               </span>
+                             </li>
+                          </BlurReveal>
+                        ))}
+                      </ul>
+                   </div>
+                 )}
                </div>
             </section>
 

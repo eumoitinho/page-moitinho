@@ -60,11 +60,28 @@ export interface Article {
   readTime: number
 }
 
+export interface Education {
+  id: string
+  year: string
+  institution: string
+  course: LocalizedText
+}
+
+export interface Certification {
+  id: string
+  name: string
+  issuer: string
+  year: string
+  url?: string
+}
+
 export interface PortfolioData {
   personalInfo: PersonalInfo
   skills: string[]
   socials: Social[]
   experiences: Experience[]
+  education: Education[]
+  certifications: Certification[]
   projects: Project[]
   articles: Article[]
 }

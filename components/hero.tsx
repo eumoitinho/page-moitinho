@@ -39,7 +39,7 @@ export function Hero({ personalInfo }: HeroProps) {
                  : "Especializado em construir experiências digitais excepcionais. Atualmente focado em produtos acessíveis e centrados no ser humano na Ninetwo Performance."}
              </p>
           </div>
-          <div className="pt-8">
+          <div className="pt-8 flex flex-col sm:flex-row gap-4">
             <Link 
               href="/info" 
               className="inline-flex items-center gap-2 text-lg font-medium hover:text-muted-foreground transition-colors group"
@@ -47,6 +47,24 @@ export function Hero({ personalInfo }: HeroProps) {
               {locale === 'en' ? "More Information" : "Mais Informações"}
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Link>
+            
+            <div className="flex gap-4 items-center pl-0 sm:pl-8 border-l-0 sm:border-l border-border/50">
+               <a 
+                 href="/resume.pdf" 
+                 target="_blank"
+                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider"
+               >
+                 Resume (EN)
+               </a>
+               <span className="text-muted-foreground/30">•</span>
+               <a 
+                 href="/curriculum.pdf" 
+                 target="_blank"
+                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider"
+               >
+                 Currículo (PT)
+               </a>
+            </div>
           </div>
         </div>
       </div>
