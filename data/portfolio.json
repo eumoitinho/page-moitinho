@@ -209,6 +209,27 @@
   ],
   "projects": [
     {
+      "id": "goup",
+      "title": {
+        "en": "G.O UP Company",
+        "pt": "G.O UP Company"
+      },
+      "image": "/screenshots/30_goup.png.png",
+      "url": "https://preview.goupcompany.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Marketing / Tech",
+      "featured": true,
+      "description": {
+        "en": "Marketing agency specialized in traffic, landing pages, and results. Next.js project with blog, landing page, and SPA features.",
+        "pt": "Agência de marketing especializada em tráfego, landing pages, resultados. Projeto em Next.js com blog, landing page e SPA."
+      },
+      "skills": [
+        "Next.js",
+        "SPA",
+        "React"
+      ]
+    },
+    {
       "id": "1",
       "title": {
         "en": "EPK - WELKER 2024",
