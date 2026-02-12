@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
@@ -26,11 +25,13 @@ export default function WorkPage() {
     <main className="min-h-screen bg-background text-foreground font-sans">
       <Header />
       <div className="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-medium mb-16">Selected Work</h1>
-        
+        <h1 className="text-4xl md:text-6xl font-medium mb-16">
+          {locale === 'en' ? 'All Projects' : 'Todos os Projetos'}
+        </h1>
+
         <div className="grid grid-cols-1 gap-16">
           {projects.map((project) => (
-            <Link 
+            <Link
               key={project.id}
               href={project.url || "#"}
               target="_blank"
@@ -38,8 +39,8 @@ export default function WorkPage() {
             >
               <div className="aspect-[4/3] bg-muted relative overflow-hidden">
                 {project.image ? (
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={getLocalizedText(project.title, locale)}
                     className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
                   />
@@ -49,11 +50,14 @@ export default function WorkPage() {
                   </div>
                 )}
               </div>
-              
+
               <div className="space-y-4">
-                <h2 className="text-3xl md:text-4xl font-medium group-hover:underline decoration-1 underline-offset-4">
-                  {getLocalizedText(project.title, locale)}
-                </h2>
+                <div className="flex items-start justify-between">
+                  <h2 className="text-3xl md:text-4xl font-medium group-hover:underline decoration-1 underline-offset-4">
+                    {getLocalizedText(project.title, locale)}
+                  </h2>
+                  <ArrowUpRight className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity shrink-0 mt-2" />
+                </div>
                 <p className="text-lg text-muted-foreground">
                   {getLocalizedText(project.description, locale)}
                 </p>

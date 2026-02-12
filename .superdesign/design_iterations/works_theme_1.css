@@ -1,0 +1,285 @@
+/* ═══════════════════════════════════════════════════════════
+   EDITORIAL TECH THEME — João Vitor Moitinho Works
+   Typography: Playfair Display / Space Grotesk / Space Mono
+   Palette: #f7f6f2 / #1c1c1c / #3d7068
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Core Palette ── */
+  --bg:             #f7f6f2;
+  --fg:             #1c1c1c;
+  --accent:         #3d7068;
+  --accent-light:   #4a8a80;
+  --accent-muted:   rgba(61, 112, 104, 0.12);
+  --border:         #e5e4de;
+  --border-dark:    #d4d3cd;
+  --muted:          #a09f99;
+  --card-bg:        #f0efea;
+  --card-hover:     #eae9e3;
+  --tag-bg:         rgba(28, 28, 28, 0.06);
+  --tag-hover-bg:   rgba(61, 112, 104, 0.10);
+  --overlay:        rgba(28, 28, 28, 0.04);
+
+  /* ── Typography ── */
+  --font-display:   'Playfair Display', Georgia, serif;
+  --font-body:      'Space Grotesk', system-ui, sans-serif;
+  --font-mono:      'Space Mono', 'JetBrains Mono', monospace;
+
+  /* ── Tracking ── */
+  --tracking-tight:   -0.03em;
+  --tracking-normal:   0em;
+  --tracking-wide:     0.12em;
+  --tracking-wider:    0.2em;
+  --tracking-widest:   0.3em;
+
+  /* ── Spacing (8px base) ── */
+  --space-1:   0.25rem;   /* 4px  */
+  --space-2:   0.5rem;    /* 8px  */
+  --space-3:   0.75rem;   /* 12px */
+  --space-4:   1rem;      /* 16px */
+  --space-6:   1.5rem;    /* 24px */
+  --space-8:   2rem;      /* 32px */
+  --space-12:  3rem;      /* 48px */
+  --space-16:  4rem;      /* 64px */
+  --space-24:  6rem;      /* 96px */
+  --space-32:  8rem;      /* 128px */
+
+  /* ── Borders & Radius ── */
+  --border-w:     1px;
+  --radius-sm:    4px;
+  --radius-md:    6px;
+  --radius-lg:    8px;
+
+  /* ── Shadows ── */
+  --shadow-sm:    0 1px 2px rgba(28, 28, 28, 0.04);
+  --shadow-md:    0 4px 12px rgba(28, 28, 28, 0.06);
+  --shadow-lg:    0 8px 30px rgba(28, 28, 28, 0.08);
+  --shadow-lift:  0 12px 40px rgba(28, 28, 28, 0.10);
+
+  /* ── Transitions ── */
+  --ease-editorial:  cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast:   400ms;
+  --duration-base:   700ms;
+  --duration-slow:   1000ms;
+
+  /* ── Grid ── */
+  --grid-size:    40px;
+  --grid-color:   rgba(28, 28, 28, 0.04);
+}
+
+/* ── Base Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html {
+  font-size: 16px !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: var(--bg) !important;
+  color: var(--fg) !important;
+  font-family: var(--font-body) !important;
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+  letter-spacing: var(--tracking-normal) !important;
+  overflow-x: hidden !important;
+}
+
+::selection {
+  background: var(--accent) !important;
+  color: var(--bg) !important;
+}
+
+/* ── Typography Hierarchy ── */
+h1, .h1 {
+  font-family: var(--font-display) !important;
+  font-weight: 300 !important;
+  letter-spacing: var(--tracking-tight) !important;
+  line-height: 0.95 !important;
+  color: var(--fg) !important;
+}
+
+h2, .h2 {
+  font-family: var(--font-display) !important;
+  font-weight: 400 !important;
+  letter-spacing: var(--tracking-tight) !important;
+  line-height: 1.1 !important;
+  color: var(--fg) !important;
+}
+
+h3, .h3 {
+  font-family: var(--font-body) !important;
+  font-weight: 500 !important;
+  letter-spacing: var(--tracking-normal) !important;
+  line-height: 1.3 !important;
+  color: var(--fg) !important;
+}
+
+p, .body {
+  font-family: var(--font-body) !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  color: var(--fg) !important;
+}
+
+/* ── Mono Labels ── */
+.label, .tag, .mono {
+  font-family: var(--font-mono) !important;
+  font-size: 0.7rem !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  letter-spacing: var(--tracking-widest) !important;
+  color: var(--muted) !important;
+}
+
+.label-accent {
+  color: var(--accent) !important;
+}
+
+/* ── Background Grid ── */
+.grid-bg {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  background-image:
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px) !important;
+  background-size: var(--grid-size) var(--grid-size) !important;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 70%) !important;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 70%) !important;
+}
+
+/* ── 4-Column Guide (dev reference) ── */
+.col-guides {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 0 !important;
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+  padding: 0 var(--space-8) !important;
+}
+
+.col-guides > div {
+  border-right: 1px solid rgba(61, 112, 104, 0.06) !important;
+}
+
+/* ── Buttons ── */
+.btn {
+  font-family: var(--font-mono) !important;
+  font-size: 0.7rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: var(--tracking-widest) !important;
+  padding: var(--space-3) var(--space-6) !important;
+  border: var(--border-w) solid var(--fg) !important;
+  background: transparent !important;
+  color: var(--fg) !important;
+  cursor: pointer !important;
+  transition: all var(--duration-base) var(--ease-editorial) !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: var(--space-2) !important;
+}
+
+.btn:hover {
+  background: var(--fg) !important;
+  color: var(--bg) !important;
+}
+
+.btn-accent {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+}
+
+.btn-accent:hover {
+  background: var(--accent) !important;
+  color: var(--bg) !important;
+}
+
+/* ── Dividers ── */
+.divider {
+  width: 100% !important;
+  height: var(--border-w) !important;
+  background: var(--border) !important;
+}
+
+/* ── Project Card ── */
+.project-card {
+  border: var(--border-w) solid var(--border) !important;
+  background: transparent !important;
+  transition: all var(--duration-base) var(--ease-editorial) !important;
+  overflow: hidden !important;
+}
+
+.project-card:hover {
+  border-color: var(--border-dark) !important;
+  box-shadow: var(--shadow-md) !important;
+  transform: translateY(-2px) !important;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.04) !important;
+}
+
+.project-image {
+  overflow: hidden !important;
+  border-bottom: var(--border-w) solid var(--border) !important;
+}
+
+.project-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform var(--duration-slow) var(--ease-editorial) !important;
+}
+
+/* ── Filter Pill ── */
+.filter-pill {
+  font-family: var(--font-mono) !important;
+  font-size: 0.65rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: var(--tracking-wider) !important;
+  padding: var(--space-2) var(--space-4) !important;
+  border: var(--border-w) solid var(--border) !important;
+  background: transparent !important;
+  color: var(--muted) !important;
+  cursor: pointer !important;
+  transition: all var(--duration-fast) var(--ease-editorial) !important;
+  white-space: nowrap !important;
+}
+
+.filter-pill:hover,
+.filter-pill.active {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  background: var(--accent-muted) !important;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-dark) !important;
+  border-radius: 3px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted) !important;
+}

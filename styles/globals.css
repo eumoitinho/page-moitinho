@@ -113,6 +113,21 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+/* ── Editorial Theme Variables ── */
+:root {
+  --editorial-bg: #f7f6f2;
+  --editorial-fg: #1c1c1c;
+  --editorial-accent: #3d7068;
+  --editorial-accent-light: #4a8a80;
+  --editorial-accent-muted: rgba(61, 112, 104, 0.12);
+  --editorial-border: #e5e4de;
+  --editorial-border-dark: #d4d3cd;
+  --editorial-muted: #a09f99;
+  --editorial-card-bg: #f0efea;
+  --editorial-grid-color: rgba(28, 28, 28, 0.04);
+  --editorial-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

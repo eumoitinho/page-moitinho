@@ -1,0 +1,4 @@
+[    3456ms] [ERROR] Attestation check for Attribution Reporting on https://www.facebook.com failed. @ https://robertonavarrooficial.com.br/:0
+[    3716ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://robertonavarrooficial.com.br/favicon.ico:0
+[   29665ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://maps.googleapis.com/maps-api-v3/api/js/63/14d/main.js:194
+[   29665ms] [WARNING] The deviceorientation events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://maps.googleapis.com/maps-api-v3/api/js/63/14d/main.js:194

@@ -7,13 +7,11 @@ import { useLanguage } from "@/contexts/language-context"
 import { getLocalizedText } from "@/lib/localized-text"
 import { BlurReveal } from "@/components/blur-reveal"
 import type { PortfolioData } from "@/types/portfolio"
-import { motion } from "framer-motion"
 
 export default function InfoPage() {
   const [data, setData] = useState<PortfolioData | null>(null)
   const { locale } = useLanguage()
-  const [activeYear, setActiveYear] = useState<string>("Present")
-  const [indicatorY, setIndicatorY] = useState(0)
+  const [activeIndex, setActiveIndex] = useState(0)
   const experienceRefs = useRef<(HTMLDivElement | null)[]>([])
 
   useEffect(() => {
@@ -23,43 +21,23 @@ export default function InfoPage() {
   useEffect(() => {
     if (!data?.experiences) return
 
-    // Set initial year from first experience if available
-    if (data.experiences.length > 0) {
-      const initialMatch = data.experiences[0].year.match(/\d{4}/)
-      if (initialMatch) setActiveYear(initialMatch[0])
-    }
-
     const handleScroll = () => {
-      const scrollY = window.scrollY
       const windowHeight = window.innerHeight
-      const triggerPoint = scrollY + windowHeight * 0.3
+      const triggerPoint = window.scrollY + windowHeight * 0.35
 
-      // Default to "Present" if at the very top
-      if (experienceRefs.current[0] && triggerPoint < experienceRefs.current[0].offsetTop) {
-         setActiveYear(new Date().getFullYear().toString())
-         setIndicatorY(0)
-         return
-      }
+      let foundIndex = 0
 
-      let foundIndex = -1
-      
-      data.experiences.forEach((exp, index) => {
+      data.experiences.forEach((_, index) => {
         const el = experienceRefs.current[index]
         if (el && triggerPoint >= el.offsetTop - 100) {
-           foundIndex = index
+          foundIndex = index
         }
       })
 
-      if (foundIndex !== -1) {
-         const exp = data.experiences[foundIndex]
-         const match = exp.year.match(/\d{4}/)
-         const year = match ? match[0] : "2024"
-         setActiveYear(year)
-         setIndicatorY(foundIndex * 40) 
-      }
+      setActiveIndex(foundIndex)
     }
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll, { passive: true })
     handleScroll()
     return () => window.removeEventListener("scroll", handleScroll)
   }, [data])
@@ -67,42 +45,59 @@ export default function InfoPage() {
   if (!data) return null
   const { personalInfo, experiences, skills } = data
 
+  // Extract year from period string (first 4 digits)
+  const getYear = (period: string) => {
+    const match = period.match(/\d{4}/)
+    return match ? match[0] : ""
+  }
+
   return (
     <main className="min-h-screen bg-background text-foreground font-sans">
       <Header />
       <div className="pt-32 pb-24 px-6 md:px-12 max-w-[1600px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[120px_1fr_400px] gap-16 relative">
-          
-          {/* Sticky Ruler Timeline */}
-          <div className="hidden lg:block h-[calc(100vh-200px)] sticky top-32">
-             <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-border/30" />
-             <div className="relative h-full flex flex-col py-10 overflow-hidden">
-                <motion.div 
-                  className="absolute left-0 flex items-center gap-4 z-10"
-                  animate={{ y: indicatorY }}
-                  transition={{ type: "spring", stiffness: 50, damping: 15 }}
-                  style={{ top: 40 }}
-                >
-                   <div className="w-12 h-[2px] bg-orange-500" />
-                   <span className="text-orange-500 font-medium text-lg tabular-nums">
-                     {activeYear}
-                   </span>
-                </motion.div>
 
-                <div className="space-y-10 opacity-20 pt-10">
-                   {experiences.map((_, i) => (
-                     <div key={i} className="h-[1px] bg-foreground w-8" />
-                   ))}
-                   {Array.from({ length: 15 }).map((_, i) => (
-                      <div key={`extra-${i}`} className="h-[1px] bg-foreground w-4" />
-                   ))}
-                </div>
-             </div>
+          {/* Sticky Ruler Timeline */}
+          <div className="hidden lg:block sticky top-32 self-start">
+            <div className="flex flex-col gap-5 py-6">
+              {experiences.map((exp, i) => {
+                const year = getYear(exp.year)
+                const isActive = i === activeIndex
+                return (
+                  <button
+                    key={exp.id}
+                    onClick={() => {
+                      const el = experienceRefs.current[i]
+                      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" })
+                    }}
+                    className="flex items-center gap-3 text-left transition-all duration-500 ease-out cursor-pointer"
+                    style={{ opacity: isActive ? 1 : 0.2 }}
+                  >
+                    <div
+                      className="h-[2px] shrink-0 transition-all duration-500 ease-out"
+                      style={{
+                        width: isActive ? "2rem" : "0.75rem",
+                        backgroundColor: isActive ? "#ea580c" : "currentColor",
+                      }}
+                    />
+                    <span
+                      className="font-medium tabular-nums whitespace-nowrap transition-all duration-500 ease-out"
+                      style={{
+                        color: isActive ? "#ea580c" : "inherit",
+                        fontSize: isActive ? "0.95rem" : "0.7rem",
+                      }}
+                    >
+                      {year}
+                    </span>
+                  </button>
+                )
+              })}
+            </div>
           </div>
 
           {/* Center Column: Content */}
           <div className="space-y-32">
-            
+
             <section className="min-h-[60vh] flex flex-col justify-center">
               <BlurReveal>
                 <h1 className="text-4xl md:text-5xl font-medium mb-8 leading-tight">
@@ -121,24 +116,35 @@ export default function InfoPage() {
 
             <section>
               <BlurReveal>
-                <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-12">Experience</h2>
+                <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-12">
+                  {locale === 'en' ? 'Experience' : 'Experiência'}
+                </h2>
               </BlurReveal>
               <div className="space-y-24">
                 {experiences.map((exp, index) => (
-                  <div 
-                    key={exp.id} 
+                  <div
+                    key={exp.id}
                     ref={el => { experienceRefs.current[index] = el }}
                     className="scroll-mt-48 relative pl-6 border-l md:border-l-0 border-border md:pl-0"
                   >
                     <BlurReveal delay={0.1}>
                       <div className="group flex flex-col gap-2">
-                        <span className="text-muted-foreground font-medium text-sm opacity-50 md:hidden">{exp.year}</span>
+                        <span className="text-muted-foreground font-medium text-sm opacity-50">{exp.year}</span>
                         <div>
                           <h3 className="text-2xl font-medium mb-2 group-hover:text-orange-500 transition-colors">{exp.company}</h3>
                           <p className="text-lg text-foreground mb-4">{getLocalizedText(exp.role, locale)}</p>
                           <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
                             {getLocalizedText(exp.description, locale)}
                           </p>
+                          {exp.tech && exp.tech.length > 0 && (
+                            <div className="flex flex-wrap gap-2 mt-4">
+                              {exp.tech.map(t => (
+                                <span key={t} className="text-xs uppercase tracking-wider text-muted-foreground/60 border border-border/50 px-2 py-1">
+                                  {t}
+                                </span>
+                              ))}
+                            </div>
+                          )}
                         </div>
                       </div>
                     </BlurReveal>
@@ -149,7 +155,9 @@ export default function InfoPage() {
 
             <section className="min-h-[40vh]">
                <BlurReveal>
-                  <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-12">Expertise</h2>
+                  <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-12">
+                    {locale === 'en' ? 'Expertise' : 'Competências'}
+                  </h2>
                </BlurReveal>
                <div className="flex flex-wrap gap-x-8 gap-y-4 mb-24">
                  {skills.map((skill, index) => (

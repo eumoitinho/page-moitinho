@@ -1,0 +1,85 @@
+[     223ms] [ERROR] Loading the script 'https://code.jivosite.com/widget/EqrtTMuMMc' violates the following Content Security Policy directive: "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.vercel-scripts.com https://vercel.live https://*.posthog.com https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://d335luupugsy2.cloudfront.net https://d1sag09wwfbul8.cloudfront.net https://cdn.jsdelivr.net https://*.rdstation.com.br". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked. @ https://pesadosweb.com.br/:0
+[    1271ms] [ERROR] Permissions policy violation: Geolocation access has been blocked because of a permissions policy applied to the current document. See https://crbug.com/414348233 for more details. @ https://pesadosweb.com.br/_next/static/chunks/5000-8b84b33064ebc5ea.js:0
+[    1281ms] [ERROR] Erro de geolocalização: GeolocationPositionError @ https://pesadosweb.com.br/_next/static/chunks/5000-8b84b33064ebc5ea.js:0
+[    1519ms] [ERROR] Access to fetch at 'https://ipwho.is/?fields=success,country,region,region_code,city,latitude,longitude' from origin 'https://pesadosweb.com.br' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://pesadosweb.com.br/:0
+[    1520ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://ipwho.is/?fields=success,country,region,region_code,city,latitude,longitude:0
+[    4153ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://pesadosweb.com.br/favicon.ico:0
+[ 1149948ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.youtube.com') does not match the recipient window's origin ('https://www.google.com'). @ https://www.youtube.com/s/player/475c090b/www-widgetapi.vflset/www-widgetapi.js:209
+[ 1151976ms] [WARNING] Missing translation key:embeddable_framework.messenger.sources_cited.title_and_button @ https://static.zdassets.com/web_widget/messenger/latest/web-widget-main-3f24de8.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1196873ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://codesandbox.io/static/js/common.91fe3179f.chunk.js:0
+[ 1196874ms] [WARNING] Unrecognized feature: 'vr'. @ https://codesandbox.io/static/js/common.91fe3179f.chunk.js:0
+[ 1200433ms] [WARNING] O serviço de métricas foi inciado no módulo de sinapse.prescricao @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1201399ms] [WARNING] O módulo  plataforma.sdk  está em execução. @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1202481ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1202481ms] [WARNING] The devicemotion events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1202693ms] [WARNING] O módulo  plataforma.usuario  está em execução. @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1202481ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1202481ms] [WARNING] The devicemotion events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1203595ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://sherlock-api.memed.com.br/v1/log:0
+[ 1203991ms] [WARNING] appName and environment are static. They can't be updated with updateContext. @ https://sherlock-api.memed.com.br/v1/logger.js:87
+[ 1203993ms] [WARNING] O módulo  platform.patient-management  está em execução. @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1202481ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1202481ms] [WARNING] The devicemotion events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1203595ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://sherlock-api.memed.com.br/v1/log:0
+[ 1205174ms] [WARNING] O módulo  plataforma.prescricao  está em execução. @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1205244ms] [WARNING] appName and environment are static. They can't be updated with updateContext. @ https://unpkg.com/unleash-proxy-client@3.3.2/build/main.min.js:0
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1202481ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1202481ms] [WARNING] The devicemotion events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1203595ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://sherlock-api.memed.com.br/v1/log:0
+[ 1206149ms] [WARNING] O módulo  platform.digital-signature  está em execução. @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1202481ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1202481ms] [WARNING] The devicemotion events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1203595ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://sherlock-api.memed.com.br/v1/log:0
+[ 1206940ms] [WARNING] O módulo  synapse.alert  está em execução. @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1202481ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1202481ms] [WARNING] The devicemotion events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1203595ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://sherlock-api.memed.com.br/v1/log:0
+[ 1207550ms] [WARNING] O módulo  plataforma.medicamento  está em execução. @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1202481ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1202481ms] [WARNING] The devicemotion events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1203595ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://sherlock-api.memed.com.br/v1/log:0
+[ 1208164ms] [WARNING] O módulo  platform.notification  está em execução. @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1202481ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1202481ms] [WARNING] The devicemotion events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1203595ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://sherlock-api.memed.com.br/v1/log:0
+[ 1208632ms] [WARNING] O módulo  plataforma.preview  está em execução. @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1202481ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1202481ms] [WARNING] The devicemotion events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1203595ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://sherlock-api.memed.com.br/v1/log:0
+[ 1209446ms] [WARNING] O módulo  platform.sms-modal  está em execução. @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1202481ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1202481ms] [WARNING] The devicemotion events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1203595ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://sherlock-api.memed.com.br/v1/log:0
+[ 1210163ms] [WARNING] O módulo  platform.voice-prescription  está em execução. @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1194899ms] [WARNING] Unrecognized feature: 'ambient-light-sensor'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1194899ms] [WARNING] Unrecognized feature: 'vr'. @ https://doc.memed.com.br/assets/js/main.3ed98557.js:1
+[ 1202481ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1202481ms] [WARNING] The devicemotion events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://unpkg.com/@castleio/castle-js@latest/dist/castle.browser.js:586
+[ 1203595ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://sherlock-api.memed.com.br/v1/log:0
+[ 1210688ms] [WARNING] O módulo  platform.onboarding-modal  está em execução. @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1210688ms] [WARNING] Todos os módulos da plataforma foram carregados com sucesso! @ https://codesandbox.io/static/js/vendors~embed~sandbox-startup.94f8a764c.chunk.js:0
+[ 1275237ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://col.csbops.io/data/sandpack:0

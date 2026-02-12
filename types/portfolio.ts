@@ -43,6 +43,7 @@ export interface Project {
   featured: boolean
   description: LocalizedText
   skills: string[]
+  highlight?: LocalizedText
 }
 
 export interface Article {

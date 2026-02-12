@@ -3,32 +3,39 @@
     "name": "João Vitor",
     "lastName": "Moitinho",
     "title": {
-      "en": "Mid‑level Web Developer",
-      "pt": "Desenvolvedor Web Pleno"
+      "en": "Tech Lead & Full‑stack Developer",
+      "pt": "Tech Lead & Desenvolvedor Full‑stack"
     },
     "description": {
-      "en": "Mid‑level Web Developer with a degree in Computer Engineering and a background in graphic design. I build frontends, PWAs and full‑stack solutions that combine design, performance, and usability.",
-      "pt": "Desenvolvedor Web Pleno com formação em Engenharia da Computação e experiência em design gráfico. Construo frontends, PWAs e soluções full-stack que combinam design, performance e usabilidade."
+      "en": "Full‑stack developer with a degree in Computer Engineering and a background spanning web development, system architecture, and design. I build end‑to‑end solutions from technical planning to production deployment with a focus on performance, clarity, and maintainability.",
+      "pt": "Desenvolvedor full‑stack com formação em Engenharia da Computação e experiência em desenvolvimento web, arquitetura de sistemas e design. Construo soluções de ponta a ponta, do planejamento técnico ao deploy em produção, com foco em performance, clareza e manutenibilidade."
     },
     "email": "contato@moitinho.dev",
     "location": "Curitiba, Paraná, Brazil",
     "availableForWork": true,
     "currentRole": {
-      "en": "Web Developer (Mid)",
-      "pt": "Desenvolvedor Web (Pleno)"
+      "en": "Tech Lead",
+      "pt": "Tech Lead"
     },
-    "currentCompany": "Ninetwo Performance",
-    "currentPeriod": "Mar 2025 — Present",
+    "currentCompany": "NineTwo Performance",
+    "currentPeriod": "Jan 2026 — Present",
     "photoUrl": "/1757035963485.jpeg"
   },
   "skills": [
     "React",
     "Next.js",
     "TypeScript",
-    "PWA",
-    "Redux",
     "Node.js",
-    "Firebase"
+    "Vue.js",
+    "Java",
+    "Azure",
+    "Docker",
+    "PostgreSQL",
+    "MongoDB",
+    "GraphQL",
+    "Prisma",
+    "Tailwind CSS",
+    "Figma"
   ],
   "socials": [
     {
@@ -50,76 +57,117 @@
   "experiences": [
     {
       "id": "1",
-      "year": "Mar 2025 — Present",
+      "year": "Jan 2026 — Present",
       "role": {
-        "en": "Web Developer (Mid)",
-        "pt": "Web Developer (Mid)"
+        "en": "Tech Lead",
+        "pt": "Tech Lead"
       },
-      "company": "Ninetwo Performance",
+      "company": "NineTwo Performance",
       "location": "Curitiba, Brasil",
       "description": {
-        "en": "Led prototyping, UI/UX design, and development of e‑commerce platforms, institutional sites, landing pages, and SPAs for clients like Live Academia, Roberto Navarro, Porto de Itapoá, and Rede Web, delivering projects on tight deadlines.\nDeveloped interactive dashboards for metrics analysis, integrating Google Analytics and Meta Business, enhancing data‑driven decisions.\nOptimized advanced tagging and dashboards for paid traffic, boosting campaign ROI by up to 25%.\nOperated as sole developer, managing full cycle from concept to deployment, ensuring scalability and quality.",
-        "pt": "Led prototyping, UI/UX design, and development of e‑commerce platforms, institutional sites, landing pages, and SPAs for clients like Live Academia, Roberto Navarro, Porto de Itapoá, and Rede Web, delivering projects on tight deadlines.\nDeveloped interactive dashboards for metrics analysis, integrating Google Analytics and Meta Business, enhancing data‑driven decisions.\nOptimized advanced tagging and dashboards for paid traffic, boosting campaign ROI by up to 25%.\nOperated as sole developer, managing full cycle from concept to deployment, ensuring scalability and quality."
+        "en": "Own the end-to-end technical strategy for a performance marketing agency from architecture design to production deployment. Build and ship full-stack applications using Next.js, Vue.js, Nest, Java, TypeScript, Prisma and Azure.\nDeveloping in-house martech products including a multi-tenant analytics platform (Google Ads, GA4, Meta Ads integrations) and a proprietary user tracking SDK published to npm.\nLead the dev team through code reviews, PR approvals and hands-on mentorship, having established the company's entire engineering ecosystem from scratch.",
+        "pt": "Responsável pela estratégia técnica de ponta a ponta de uma agência de marketing de performance, do design de arquitetura ao deploy em produção. Construo e entrego aplicações full-stack usando Next.js, Vue.js, Nest, Java, TypeScript, Prisma e Azure.\nDesenvolvendo produtos martech internos incluindo plataforma analytics multi-tenant (Google Ads, GA4, Meta Ads) e um SDK proprietário de rastreamento de usuários publicado no npm.\nLidero o time de dev com code reviews, aprovações de PR e mentoria hands-on, tendo estabelecido todo o ecossistema de engenharia da empresa do zero."
       },
       "tech": [
-        "React",
         "Next.js",
+        "Vue.js",
         "TypeScript",
-        "Node.js",
-        "GA4"
+        "Java",
+        "Prisma",
+        "Azure"
       ]
     },
     {
       "id": "2",
-      "year": "Jan 2015 — Present",
+      "year": "May 2025 — Jan 2026",
       "role": {
-        "en": "Founder & Senior Graphic Designer",
-        "pt": "Founder & Senior Graphic Designer"
+        "en": "Full-stack Developer",
+        "pt": "Desenvolvedor Full-stack"
       },
-      "company": "MSync Creative Studio",
-      "location": "Dourados, Brasil",
+      "company": "NineTwo Performance",
+      "location": "Curitiba, Brasil",
       "description": {
-        "en": "Founded studio specializing in social media, print, motion graphics, and artist portfolios, serving 50+ clients.\nCreated press kits and EPKs for artists like Welker (2024), Berg (2023), and Silver Panda (2023), boosting tour visibility.\nDesigned promotional materials that increased social engagement by 40%, growing client audiences.\nManaged social platforms and online presence, optimizing organic and paid growth strategies.",
-        "pt": "Founded studio specializing in social media, print, motion graphics, and artist portfolios, serving 50+ clients.\nCreated press kits and EPKs for artists like Welker (2024), Berg (2023), and Silver Panda (2023), boosting tour visibility.\nDesigned promotional materials that increased social engagement by 40%, growing client audiences.\nManaged social platforms and online presence, optimizing organic and paid growth strategies."
+        "en": "Complete stack migration from WordPress to Next.js/TypeScript. Built the development infrastructure from scratch (GitHub org, Vercel, CI/CD, Azure).\n29+ projects delivered: SaaS platforms, institutional websites and landing pages.",
+        "pt": "Migração completa do stack de WordPress para Next.js/TypeScript. Construí a infraestrutura de desenvolvimento do zero (GitHub org, Vercel, CI/CD, Azure).\n29+ projetos entregues: plataformas SaaS, sites institucionais e landing pages."
       },
       "tech": [
-        "Adobe Suite",
-        "Figma",
-        "Illustration"
+        "Next.js",
+        "TypeScript",
+        "Vercel",
+        "Azure",
+        "CI/CD"
       ]
     },
     {
       "id": "3",
-      "year": "Aug 2022 — Jan 2025",
+      "year": "Feb 2025 — May 2025",
       "role": {
-        "en": "Senior Social Media Designer",
-        "pt": "Senior Social Media Designer"
+        "en": "Web Designer",
+        "pt": "Web Designer"
       },
-      "company": "Lemonde Turismo",
-      "location": "Campo Grande, Brasil",
+      "company": "NineTwo Performance",
+      "location": "Curitiba, Brasil",
       "description": {
-        "en": "Produced digital art for travel promotion on social media, raising engagement rates by 35% through visual marketing.\nBuilt a landing page and Google Sheets API automation, cutting content production time by 50%.\nOptimized campaigns with Meta Business tools and managed Instagram, WhatsApp, Google Business, and Facebook, driving conversions.",
-        "pt": "Produced digital art for travel promotion on social media, raising engagement rates by 35% through visual marketing.\nBuilt a landing page and Google Sheets API automation, cutting content production time by 50%.\nOptimized campaigns with Meta Business tools and managed Instagram, WhatsApp, Google Business, and Facebook, driving conversions."
+        "en": "Interface design, social media and WordPress website development for agency clients.",
+        "pt": "Design de interfaces, mídias sociais e desenvolvimento de sites WordPress para clientes da agência."
       },
       "tech": [
-        "Photoshop",
-        "Illustrator",
-        "HTML",
-        "CSS"
+        "Figma",
+        "WordPress",
+        "UI/UX"
       ]
     },
     {
       "id": "4",
+      "year": "Nov 2021 — Present",
+      "role": {
+        "en": "Graphic Designer",
+        "pt": "Designer Gráfico"
+      },
+      "company": "MSync Creative Studio",
+      "location": "Dourados, Brasil",
+      "description": {
+        "en": "Run a small creative studio focused on visual design for digital media, print, motion graphics, and artist portfolios. Worked with 50+ clients across different industries.\nDesigned press kits and EPKs for artists such as Welker (2024), Berg (2023), and Silver Panda (2023).\nCreated visual strategies that helped clients increase social media engagement by 40%.",
+        "pt": "Gerencio um estúdio criativo focado em design visual para mídia digital, impressão, motion graphics e portfólios de artistas. Trabalhei com 50+ clientes de diferentes setores.\nDesenhei press kits e EPKs para artistas como Welker (2024), Berg (2023) e Silver Panda (2023).\nCriei estratégias visuais que ajudaram clientes a aumentar engajamento em 40%."
+      },
+      "tech": [
+        "Adobe Suite",
+        "Figma",
+        "Motion Graphics"
+      ]
+    },
+    {
+      "id": "5",
+      "year": "Aug 2022 — Jan 2025",
+      "role": {
+        "en": "Webmaster",
+        "pt": "Webmaster"
+      },
+      "company": "Donatti Turismo",
+      "location": "Campo Grande, Brasil",
+      "description": {
+        "en": "Created digital content and improved the company's online presence with a focus on conversion and engagement.\nBuilt a landing page with Google Sheets API automation, streamlining the content workflow.\nManaged integrated campaigns through Meta Business, coordinating Instagram, WhatsApp, Google Business, and Facebook.",
+        "pt": "Criei conteúdo digital e melhorei a presença online da empresa com foco em conversão e engajamento.\nConstruí uma landing page com automação Google Sheets API, otimizando o fluxo de conteúdo.\nGerenciei campanhas integradas via Meta Business, coordenando Instagram, WhatsApp, Google Business e Facebook."
+      },
+      "tech": [
+        "HTML",
+        "CSS",
+        "Meta Business",
+        "Google Sheets API"
+      ]
+    },
+    {
+      "id": "6",
       "year": "Mar 2024 — Jul 2024",
       "role": {
         "en": "Graphic Designer (Contract)",
-        "pt": "Graphic Designer (Contract)"
+        "pt": "Designer Gráfico (Contrato)"
       },
-      "company": "Inspirare Media",
+      "company": "Inspirare Mídia",
       "location": "Dourados, Brasil",
       "description": {
-        "en": "Created social media assets as temporary designer, driving organic interactions.\nDeveloped strategic content and paid traffic media, enhancing reach and conversions.\nProduced print media for World BT Rio Brilhante 2024 via outsourcing.",
-        "pt": "Created social media assets as temporary designer, driving organic interactions.\nDeveloped strategic content and paid traffic media, enhancing reach and conversions.\nProduced print media for World BT Rio Brilhante 2024 via outsourcing."
+        "en": "Created visual content for social media and digital marketing campaigns.\nDesigned digital assets that supported organic audience growth and engagement.\nDeveloped offline visuals for the World BT Rio Brilhante 2024 event.",
+        "pt": "Criei conteúdo visual para mídias sociais e campanhas de marketing digital.\nDesenhei assets digitais que apoiaram crescimento orgânico e engajamento.\nDesenvolvi materiais offline para o evento World BT Rio Brilhante 2024."
       },
       "tech": [
         "Adobe Suite",
@@ -127,17 +175,17 @@
       ]
     },
     {
-      "id": "5",
+      "id": "7",
       "year": "Feb 2022 — Nov 2022",
       "role": {
         "en": "Clinical Engineering Intern",
-        "pt": "Clinical Engineering Intern"
+        "pt": "Estagiário de Engenharia Clínica"
       },
       "company": "CERDIL",
-      "location": "Mato Grosso do Sul, Brasil",
+      "location": "Dourados, Brasil",
       "description": {
-        "en": "Supported maintenance of MRI, CT, and X‑ray systems, achieving 99% operational uptime.\nGained expertise in PACS systems (Phillips, Siemens, GE), streamlining medical imaging management.\nCollaborated with GE engineers on device maintenance, reducing critical failures.",
-        "pt": "Supported maintenance of MRI, CT, and X‑ray systems, achieving 99% operational uptime.\nGained expertise in PACS systems (Phillips, Siemens, GE), streamlining medical imaging management.\nCollaborated with GE engineers on device maintenance, reducing critical failures."
+        "en": "Provided technical support for the maintenance of critical medical equipment, ensuring continuous operation of hospital systems.\nAssisted in the maintenance of MRI, CT, and X-ray systems.\nGained hands-on experience with PACS solutions from Philips, Siemens, and GE.",
+        "pt": "Suporte técnico para manutenção de equipamentos médicos críticos, garantindo operação contínua dos sistemas hospitalares.\nAuxiliei na manutenção de sistemas de RM, TC e raio-X.\nExperiência prática com soluções PACS da Philips, Siemens e GE."
       },
       "tech": [
         "PACS",
@@ -145,17 +193,17 @@
       ]
     },
     {
-      "id": "6",
-      "year": "Sep 2019 — Feb 2022",
+      "id": "8",
+      "year": "Sep 2019 — Jul 2022",
       "role": {
-        "en": "Marketing & Design Manager",
-        "pt": "Marketing & Design Manager"
+        "en": "Marketing Lead",
+        "pt": "Líder de Marketing"
       },
-      "company": "IncludeMe (Junior Enterprise, UFGD)",
+      "company": "Include ME (Junior Enterprise, UFGD)",
       "location": "Dourados, Brasil",
       "description": {
-        "en": "Created visual identities and prospecting projects, strengthening brand and acquiring 20+ clients.\nImplemented Google Workspace for cloud collaboration, boosting team efficiency.\nApplied Kanban and Scrum methodologies, accelerating project deliveries by 30%.",
-        "pt": "Created visual identities and prospecting projects, strengthening brand and acquiring 20+ clients.\nImplemented Google Workspace for cloud collaboration, boosting team efficiency.\nApplied Kanban and Scrum methodologies, accelerating project deliveries by 30%."
+        "en": "Led the marketing and design areas of the junior enterprise, focusing on brand development and client acquisition.\nCreated visual identities and outreach strategies that supported new client partnerships.\nImplemented Google Workspace for the entire team, improving cloud collaboration.\nIntroduced agile methodologies (Kanban and Scrum) to speed up project delivery.",
+        "pt": "Liderei as áreas de marketing e design da empresa júnior, focando em desenvolvimento de marca e aquisição de clientes.\nCriei identidades visuais e estratégias de captação para novas parcerias.\nImplementei Google Workspace para todo o time, melhorando colaboração na nuvem.\nIntroduzi metodologias ágeis (Kanban e Scrum) para acelerar entregas."
       },
       "tech": [
         "Figma",
@@ -164,32 +212,41 @@
       ]
     },
     {
-      "id": "7",
+      "id": "9",
       "year": "Jul 2018 — Dec 2018",
       "role": {
-        "en": "IT Intern",
-        "pt": "IT Intern"
+        "en": "IT Support Intern",
+        "pt": "Estagiário de Suporte TI"
       },
-      "company": "Federal University of Grande Dourados - COIN",
+      "company": "Federal University of Grande Dourados (UFGD)",
       "location": "Dourados, Brasil",
       "description": {
-        "en": "Resolved university system issues, reducing support tickets by 40%.\nManaged Active Directory registrations, securing access for 500+ users.\nPerformed preventive maintenance on IT equipment, minimizing downtime.",
-        "pt": "Resolved university system issues, reducing support tickets by 40%.\nManaged Active Directory registrations, securing access for 500+ users.\nPerformed preventive maintenance on IT equipment, minimizing downtime."
+        "en": "Provided technical support for university systems and IT infrastructure.\nResolved technical issues, helping reduce support ticket volume.\nManaged user accounts through Active Directory for over 9,000 users.\nPerformed preventive maintenance on IT equipment.",
+        "pt": "Suporte técnico para sistemas universitários e infraestrutura de TI.\nResolvi problemas técnicos, ajudando a reduzir volume de tickets.\nGerenciei contas de usuários via Active Directory para mais de 9.000 usuários.\nRealizei manutenção preventiva em equipamentos de TI."
       },
       "tech": [
         "Active Directory",
-        "Support"
+        "IT Support"
       ]
     }
   ],
   "education": [
     {
       "id": "1",
-      "year": "2018 — 2022",
+      "year": "2018 — 2025",
       "institution": "UFGD - Federal University of Grande Dourados",
       "course": {
         "en": "Bachelor in Computer Engineering",
         "pt": "Bacharelado em Engenharia de Computação"
+      }
+    },
+    {
+      "id": "2",
+      "year": "2015 — 2017",
+      "institution": "ETEC - Escola Técnica Estadual de São Paulo",
+      "course": {
+        "en": "Technical Degree in IT",
+        "pt": "Técnico em Informática"
       }
     }
   ],
@@ -205,9 +262,111 @@
       "name": "Ignite Node.js",
       "issuer": "Rocketseat",
       "year": "2023"
+    },
+    {
+      "id": "3",
+      "name": "EF SET English Certificate (B2 Upper Intermediate)",
+      "issuer": "EF Education First",
+      "year": "2024"
+    },
+    {
+      "id": "4",
+      "name": "UI Design - Web & Mobile Applications",
+      "issuer": "Origamid",
+      "year": "2023"
     }
   ],
   "projects": [
+    {
+      "id": "26",
+      "title": { "en": "Pesados Web", "pt": "Pesados Web" },
+      "image": "/screenshots/pesados_scroll.gif",
+      "url": "https://pesadosweb.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Classifieds Platform",
+      "featured": true,
+      "highlight": {
+        "en": "Brazil's largest truck classifieds since 2021 — co-founded with MMA legend Wanderlei Silva",
+        "pt": "Maior classificados de caminhões do Brasil desde 2021 — co-fundado com Wanderlei Silva"
+      },
+      "description": {
+        "en": "Brazil's largest truck classifieds platform since 2021. Rebuilt from scratch with Next.js 14 (App Router), PostgreSQL + Drizzle ORM, Asaas checkout (PIX/boleto/card), geolocation search, protected contacts, seller dashboard and admin panel. Co-founded with Wanderlei Silva.",
+        "pt": "Maior classificados de caminhões do Brasil desde 2021. Reconstruído do zero com Next.js 14 (App Router), PostgreSQL + Drizzle ORM, checkout Asaas (PIX/boleto/cartão), busca por geolocalização, contato protegido, dashboard do vendedor e painel admin. Co-fundado com Wanderlei Silva."
+      },
+      "skills": ["Next.js 14", "TypeScript", "PostgreSQL", "Drizzle ORM", "Asaas", "Sanity CMS", "Azure"]
+    },
+    {
+      "id": "23",
+      "title": { "en": "RWTV", "pt": "RWTV" },
+      "image": "/screenshots/rwtv_scroll.gif",
+      "url": "https://rwtv.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "News Platform",
+      "featured": true,
+      "highlight": {
+        "en": "Full news platform with Sanity CMS — location-based articles and regional ad system",
+        "pt": "Plataforma de notícias completa com Sanity CMS — artigos por localização e sistema de ads regional"
+      },
+      "description": {
+        "en": "Full-featured news platform built with Next.js and fully integrated with Sanity CMS. Location-based news delivery shows articles relevant to the user's region. Custom regional advertising system allowing targeted ad placements by geographic area. Covers politics, economy, sports, culture, health and agriculture with real-time content management.",
+        "pt": "Plataforma de notícias completa construída com Next.js e totalmente integrada com Sanity CMS. Entrega de notícias baseada em localização mostra artigos relevantes para a região do usuário. Sistema de publicidade regional personalizado permitindo anúncios direcionados por área geográfica. Cobre política, economia, esportes, cultura, saúde e agricultura com gestão de conteúdo em tempo real."
+      },
+      "skills": ["Next.js", "Sanity CMS", "TypeScript", "Geolocation", "Ad System"]
+    },
+    {
+      "id": "29",
+      "title": { "en": "Live Academia", "pt": "Live Academia" },
+      "image": "/screenshots/live_scroll.gif",
+      "url": "https://liveacademia.m2z.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Fitness / Headless CMS",
+      "featured": true,
+      "highlight": {
+        "en": "Gym chain platform with Sanity CMS — per-unit plan filtering and integrated checkout",
+        "pt": "Plataforma de rede de academias com Sanity CMS — filtro de planos por unidade e checkout integrado"
+      },
+      "description": {
+        "en": "The largest gym chain in Manaus. Built with Sanity CMS integration to filter and manage gym plans per unit — data comes from their internal system, is editable in Sanity, and displays with live preview. Features integrated checkout directly on the site. Content editors manage plans, pricing and unit-specific offerings without touching code.",
+        "pt": "A maior rede de academias de Manaus. Construído com integração Sanity CMS para filtrar e gerenciar planos por unidade — dados vêm do sistema interno, são editáveis no Sanity e exibidos com preview ao vivo. Checkout integrado diretamente no site. Editores de conteúdo gerenciam planos, preços e ofertas por unidade sem tocar no código."
+      },
+      "skills": ["Next.js", "Sanity CMS", "TypeScript", "Checkout", "Headless"]
+    },
+    {
+      "id": "33",
+      "title": { "en": "NineTwo Insights", "pt": "NineTwo Insights" },
+      "image": "/screenshots/ninetwo_scroll.gif",
+      "url": "https://insights.ninetwo.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Multi-tenant SaaS",
+      "featured": true,
+      "highlight": {
+        "en": "Multi-tenant analytics platform — Google Ads, Meta Ads & GA4 in one place",
+        "pt": "Plataforma analytics multi-tenant — Google Ads, Meta Ads & GA4 em um só lugar"
+      },
+      "description": {
+        "en": "Multi-tenant marketing analytics platform built from scratch. Each agency creates client workspaces with isolated dashboards. Integrates Google Ads, Meta Ads, and GA4 data sources with real-time sync. Custom proprietary user tracking SDK published to npm. Role-based access control, data source management, and campaign performance analysis across channels.",
+        "pt": "Plataforma de analytics de marketing multi-tenant construída do zero. Cada agência cria workspaces de clientes com dashboards isolados. Integra fontes de dados Google Ads, Meta Ads e GA4 com sincronização em tempo real. SDK proprietário de rastreamento publicado no npm. Controle de acesso por papel, gestão de fontes de dados e análise de performance de campanhas cross-channel."
+      },
+      "skills": ["Next.js", "TypeScript", "Prisma", "Azure", "Google Ads API", "Meta API", "GA4"]
+    },
+    {
+      "id": "20",
+      "title": { "en": "Roberto Navarro | Transforme sua Mentalidade", "pt": "Roberto Navarro | Transforme sua Mentalidade" },
+      "image": "/screenshots/navarro_scroll.gif",
+      "url": "https://robertonavarrooficial.com.br",
+      "category": "WEB DEVELOPMENT",
+      "type": "Financial Coaching / Education",
+      "featured": true,
+      "description": {
+        "en": "Institutional platform for Roberto Navarro's Financial Coaching Institute (ICF), built with Payload CMS for full content autonomy. Integrated e-commerce for books, online courses and mentoring programs with secure checkout. Over 300,000 lives transformed through exclusive mindset methods.",
+        "pt": "Plataforma institucional do Instituto de Coaching Financeiro (ICF) de Roberto Navarro, construída com Payload CMS para autonomia total de conteúdo. E-commerce integrado para livros, cursos online e programas de mentoria com checkout seguro. Mais de 300.000 vidas transformadas através de métodos exclusivos de mentalidade."
+      },
+      "skills": ["Next.js", "Payload CMS", "E-commerce", "TypeScript", "Tailwind CSS"],
+      "highlight": {
+        "en": "Headless CMS with integrated sales funnel for books, courses and mentoring",
+        "pt": "CMS headless com funil de vendas integrado para livros, cursos e mentoria"
+      }
+    },
     {
       "id": "goup",
       "title": {
@@ -218,7 +377,7 @@
       "url": "https://preview.goupcompany.com.br",
       "category": "WEB DEVELOPMENT",
       "type": "Marketing / Tech",
-      "featured": true,
+      "featured": false,
       "description": {
         "en": "Marketing agency specialized in traffic, landing pages, and results. Next.js project with blog, landing page, and SPA features.",
         "pt": "Agência de marketing especializada em tráfego, landing pages, resultados. Projeto em Next.js com blog, landing page e SPA."
@@ -239,7 +398,7 @@
       "url": "https://www.behance.net/gallery/209254549/PRESSKIT-WELKER-2024",
       "category": "PRESS KIT",
       "type": "Design & Photography",
-      "featured": true,
+      "featured": false,
       "description": {
         "en": "Comprehensive press kit for artist Welker — includes biography, high‑res photography, press images and tour assets used for media outreach and promotional campaigns.",
         "pt": "Comprehensive press kit for artist Welker — includes biography, high‑res photography, press images and tour assets used for media outreach and promotional campaigns."
@@ -530,20 +689,6 @@
       "skills": ["Next.js", "Marketplace"]
     },
     {
-      "id": "20",
-      "title": { "en": "Roberto Navarro | Transforme sua Mentalidade", "pt": "Roberto Navarro | Transforme sua Mentalidade" },
-      "image": "/screenshots/15_robertonavarro.png",
-      "url": "https://robertonavarrooficial.com.br",
-      "category": "WEB DEVELOPMENT",
-      "type": "Financial Coaching / Education",
-      "featured": false,
-      "description": {
-        "en": "Financial Coaching Institute (ICF) led by Roberto Navarro, with exclusive methods to transform mindset and achieve new financial reality. Over 300,000 lives transformed.",
-        "pt": "Instituto de Coaching Financeiro (ICF) liderado por Roberto Navarro, com métodos exclusivos para transformar mentalidade e conquistar nova realidade financeira. Mais de 300.000 vidas transformadas."
-      },
-      "skills": ["Next.js", "EdTech", "Finance"]
-    },
-    {
       "id": "21",
       "title": { "en": "MacBar Spa by Helen", "pt": "MacBar Spa by Helen" },
       "image": "/screenshots/16_macbar_spa.png",
@@ -570,20 +715,6 @@
         "pt": "Solução para gestão de redes de fibra óptica com monitoramento em tempo real, análise preditiva e automação inteligente. Mais de 300 provedores atendidos."
       },
       "skills": ["Next.js", "SaaS"]
-    },
-    {
-      "id": "23",
-      "title": { "en": "RWTV - A informação que aproxima! | Portal de Notícias", "pt": "RWTV - A informação que aproxima! | Portal de Notícias" },
-      "image": "/screenshots/18_rede_web_tv.png",
-      "url": "https://rwtv.com.br",
-      "category": "WEB DEVELOPMENT",
-      "type": "News / Media",
-      "featured": false,
-      "description": {
-        "en": "Regional news portal with live coverage, sections on politics, economy, sports, culture, health and agriculture.",
-        "pt": "Portal de notícias regional com cobertura ao vivo, seções de política, economia, esportes, cultura, saúde e agricultura."
-      },
-      "skills": ["Next.js", "Media", "News"]
     },
     {
       "id": "24",
@@ -614,20 +745,6 @@
       "skills": ["Next.js", "Consulting"]
     },
     {
-      "id": "26",
-      "title": { "en": "Pesados Web - Classificados de Caminhões", "pt": "Pesados Web - Classificados de Caminhões" },
-      "image": "/screenshots/21_pesados-web-4.png",
-      "url": "https://pesados-web-app.azurewebsites.net",
-      "category": "WEB DEVELOPMENT",
-      "type": "Automotive / Classifieds",
-      "featured": false,
-      "description": {
-        "en": "Truck and road transport classifieds platform with news blog, tips and market information.",
-        "pt": "Plataforma de classificados de caminhões e transporte rodoviário com blog de notícias, dicas e informações sobre o mercado."
-      },
-      "skills": ["Next.js", "Classifieds"]
-    },
-    {
       "id": "27",
       "title": { "en": "Althion", "pt": "Althion" },
       "image": "/screenshots/22_althion.png",
@@ -654,20 +771,6 @@
         "pt": "Engenharia corporativa com inovação e excelência em obras corporativas, transformando a visão de empresas em ambientes funcionais e de alta performance."
       },
       "skills": ["Next.js", "Engineering"]
-    },
-    {
-      "id": "29",
-      "title": { "en": "Live Academia | Rede de Academias em Manaus", "pt": "Live Academia | Rede de Academias em Manaus" },
-      "image": "/screenshots/24_liveacademia.png",
-      "url": "https://liveacademia.m2z.com.br",
-      "category": "WEB DEVELOPMENT",
-      "type": "Fitness / Gym",
-      "featured": false,
-      "description": {
-        "en": "The largest gym chain in Manaus with flexible plans and complete structure. Transforming workout into routine and real results.",
-        "pt": "A maior rede de academias de Manaus com planos flexíveis e estrutura completa. Transformando treino em rotina e resultado real."
-      },
-      "skills": ["Next.js", "Fitness"]
     },
     {
       "id": "30",
@@ -710,20 +813,6 @@
         "pt": "Distribuidora líder no Brasil em veículos elétricos infantis, com mais de 150 produtos estratégicos incluindo carros, motos, scooters e quadriciclos."
       },
       "skills": ["Next.js", "E-commerce"]
-    },
-    {
-      "id": "33",
-      "title": { "en": "Insights Dashboard", "pt": "Insights Dashboard" },
-      "image": "/screenshots/28_frontend_1.png",
-      "url": "https://insights.ninetwo.com.br/dashboard",
-      "category": "WEB DEVELOPMENT",
-      "type": "Marketing / Analytics SaaS",
-      "featured": false,
-      "description": {
-        "en": "Digital marketing analytics dashboard developed by NineTwo, with Google Ads, Meta Ads, site behavior and campaign performance metrics.",
-        "pt": "Dashboard de análise de marketing digital desenvolvido pela NineTwo, com métricas de Google Ads, Meta Ads, comportamento de site e performance de campanhas."
-      },
-      "skills": ["Next.js", "Analytics"]
     },
     {
       "id": "34",
