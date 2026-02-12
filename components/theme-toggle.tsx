@@ -2,20 +2,20 @@
 
 import { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
+import { Sun, Moon } from "lucide-react"
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
-  // Avoid hydration mismatch
   useEffect(() => {
     setMounted(true)
   }, [])
 
   if (!mounted) {
     return (
-      <button className="w-12 h-6 rounded-full border border-border flex items-center px-1 opacity-50 cursor-default">
-        <span className="w-4 h-4 bg-muted-foreground/20 rounded-full" />
+      <button className="w-8 h-8 flex items-center justify-center opacity-50 cursor-default">
+        <Sun className="w-4 h-4" />
       </button>
     )
   }
@@ -25,13 +25,10 @@ export function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="relative w-12 h-6 bg-muted border border-border flex items-center p-0.5 cursor-pointer hover:border-foreground transition-colors group"
+      className="w-8 h-8 flex items-center justify-center hover:text-muted-foreground transition-colors cursor-pointer"
       aria-label="Toggle theme"
     >
-      <div 
-        className={`w-4 h-4 bg-foreground transition-all duration-300 ease-in-out absolute top-1 ${isDark ? "left-[calc(100%-1.25rem)]" : "left-1"}`}
-      />
-      <span className="sr-only">Toggle theme</span>
+      {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
     </button>
   )
 }

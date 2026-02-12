@@ -96,14 +96,15 @@ function CaseStudyCard({
         >
           {project.image ? (
             <img
-              src={project.image}
+              src={isHovered && project.gifImage ? project.gifImage : project.image}
               alt={getLocalizedText(project.title, locale as "en" | "pt")}
-              className="w-full h-full object-cover transition-transform"
+              className={`w-full h-full transition-all ${isHovered && project.gifImage ? "object-contain" : "object-cover"}`}
               style={{
-                transitionDuration: "1200ms",
+                transitionDuration: "700ms",
                 transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-                transform: isHovered ? "scale(1.05)" : "scale(1)",
+                transform: isHovered && !project.gifImage ? "scale(1.05)" : "scale(1)",
                 minHeight: "400px",
+                backgroundColor: isHovered && project.gifImage ? "#1c1c1c" : "transparent",
               }}
             />
           ) : (
@@ -302,20 +303,21 @@ export function WorksEditorial({ personalInfo, projects, socials }: WorksEditori
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: DURATION_BASE, delay: 0.4, ease: EDITORIAL_EASE }}
-              className="flex flex-col gap-4"
+              className="flex flex-col gap-3"
             >
               {personalInfo.availableForWork && (
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 shrink-0">
                   <span
-                    className="w-2 h-2 rounded-full animate-pulse"
+                    className="w-1.5 h-1.5 rounded-full animate-pulse shrink-0"
                     style={{ backgroundColor: "var(--editorial-accent)" }}
                   />
                   <span
+                    className="whitespace-nowrap"
                     style={{
                       fontFamily: "var(--font-space-mono)",
-                      fontSize: "0.65rem",
+                      fontSize: "0.6rem",
                       textTransform: "uppercase",
-                      letterSpacing: "0.3em",
+                      letterSpacing: "0.15em",
                       color: "var(--editorial-accent)",
                     }}
                   >
@@ -350,6 +352,33 @@ export function WorksEditorial({ personalInfo, projects, socials }: WorksEditori
                 onMouseLeave={(e) => (e.currentTarget.style.color = "var(--editorial-muted)")}
               >
                 {personalInfo.email}
+              </a>
+              <a
+                href={locale === "en" ? "/resume.pdf" : "/curriculum.pdf"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 transition-colors"
+                style={{
+                  fontFamily: "var(--font-space-mono)",
+                  fontSize: "0.65rem",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.2em",
+                  color: "var(--editorial-muted)",
+                  borderBottom: "1px solid var(--editorial-border)",
+                  paddingBottom: "2px",
+                  transitionDuration: "400ms",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = "var(--editorial-accent)"
+                  e.currentTarget.style.borderBottomColor = "var(--editorial-accent)"
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = "var(--editorial-muted)"
+                  e.currentTarget.style.borderBottomColor = "var(--editorial-border)"
+                }}
+              >
+                {locale === "en" ? "Download CV" : "Baixar Currículo"}
+                <ArrowUpRight className="w-3 h-3" />
               </a>
             </motion.div>
           </div>

@@ -280,7 +280,7 @@
     {
       "id": "26",
       "title": { "en": "Pesados Web", "pt": "Pesados Web" },
-      "image": "/screenshots/21_pesados-web-4.png",
+      "image": "/screenshots/pesados_static.png",
       "gifImage": "/screenshots/pesados_scroll.gif",
       "url": "https://pesadosweb.com.br",
       "category": "WEB DEVELOPMENT",
@@ -403,7 +403,11 @@
       "url": "https://www.behance.net/gallery/209254549/PRESSKIT-WELKER-2024",
       "category": "PRESS KIT",
       "type": "Design & Photography",
-      "featured": false,
+      "featured": true,
+      "highlight": {
+        "en": "Comprehensive press kit for artist Welker — photography, biography and tour assets",
+        "pt": "Press kit completo para o artista Welker — fotografia, biografia e materiais de turnê"
+      },
       "description": {
         "en": "Comprehensive press kit for artist Welker — includes biography, high‑res photography, press images and tour assets used for media outreach and promotional campaigns.",
         "pt": "Comprehensive press kit for artist Welker — includes biography, high‑res photography, press images and tour assets used for media outreach and promotional campaigns."
@@ -490,7 +494,11 @@
       "url": "https://www.behance.net/gallery/175722695/SINGLE-COVER-UNIVERSE-BERG-2023",
       "category": "COVER ART",
       "type": "Music Artwork",
-      "featured": false,
+      "featured": true,
+      "highlight": {
+        "en": "Single cover art for Berg — 1.2M+ Spotify streams",
+        "pt": "Capa de single para Berg — 1.2M+ streams no Spotify"
+      },
       "description": {
         "en": "Single cover art design for 'Universe' by Berg (2023). Artwork created for streaming platforms and social promotion. Metrics: 1.202.000 Spotify streams.",
         "pt": "Single cover art design for 'Universe' by Berg (2023). Artwork created for streaming platforms and social promotion. Metrics: 1.202.000 Spotify streams."
