@@ -23,6 +23,9 @@ export function Header() {
           <Link href="/work" className="hidden md:inline-block hover:text-muted-foreground transition-colors">
             {t("work")}
           </Link>
+          <Link href="/bio" className="hidden md:inline-block hover:text-muted-foreground transition-colors">
+            Bio
+          </Link>
           <Link href="/info" className="hidden md:inline-block hover:text-muted-foreground transition-colors">
             {t("intro")}
           </Link>
@@ -53,6 +56,13 @@ export function Header() {
               className="hover:text-muted-foreground transition-colors"
             >
               {t("work")}
+            </Link>
+            <Link
+              href="/bio"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-muted-foreground transition-colors"
+            >
+              Bio
             </Link>
             <Link
               href="/info"
