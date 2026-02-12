@@ -3,7 +3,7 @@ export type Locale = "en" | "pt"
 export const translations = {
   en: {
     // Navigation
-    intro: "Intro",
+    intro: "About",
     work: "Work",
     thoughts: "Portfolio",
     connect: "Connect",
@@ -14,7 +14,7 @@ export const translations = {
     availableForWork: "Available for work",
     currently: "CURRENTLY",
     focus: "FOCUS",
-    downloadCV: "Download Resume",
+    downloadCV: "Download CV",
     
     // Languages
     portuguese: "Portuguese (PT)",
@@ -34,7 +34,7 @@ export const translations = {
     updatedOn: "Updated on",
     
     // Connect
-    letsConnect: "Let's Connect",
+    letsConnect: "Contact",
     connectDescription: "Always interested in new opportunities, collaborations, and conversations about technology and design.",
     elsewhere: "ELSEWHERE",
     
@@ -110,8 +110,8 @@ export const translations = {
   },
   pt: {
     // Navegação
-    intro: "Início",
-    work: "Experiência",
+    intro: "Sobre",
+    work: "Projetos",
     thoughts: "Portfólio",
     connect: "Contato",
     articles: "Artigos",
@@ -141,7 +141,7 @@ export const translations = {
     updatedOn: "Atualizado em",
     
     // Conectar
-    letsConnect: "Vamos Conversar",
+    letsConnect: "Contato",
     connectDescription: "Sempre interessado em novas oportunidades, colaborações e conversas sobre tecnologia e design.",
     elsewhere: "REDES",
     
