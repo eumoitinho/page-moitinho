@@ -19,7 +19,7 @@
     },
     "currentCompany": "NineTwo Performance",
     "currentPeriod": "Jan 2026 — Present",
-    "photoUrl": "/1757035963485.jpeg"
+    "photoUrl": "/profile-photo.jpg"
   },
   "skills": [
     "React",
@@ -280,7 +280,8 @@
     {
       "id": "26",
       "title": { "en": "Pesados Web", "pt": "Pesados Web" },
-      "image": "/screenshots/pesados_scroll.gif",
+      "image": "/screenshots/21_pesados-web-4.png",
+      "gifImage": "/screenshots/pesados_scroll.gif",
       "url": "https://pesadosweb.com.br",
       "category": "WEB DEVELOPMENT",
       "type": "Classifieds Platform",
@@ -298,7 +299,8 @@
     {
       "id": "23",
       "title": { "en": "RWTV", "pt": "RWTV" },
-      "image": "/screenshots/rwtv_scroll.gif",
+      "image": "/screenshots/18_rede_web_tv.png",
+      "gifImage": "/screenshots/rwtv_scroll.gif",
       "url": "https://rwtv.com.br",
       "category": "WEB DEVELOPMENT",
       "type": "News Platform",
@@ -316,7 +318,8 @@
     {
       "id": "29",
       "title": { "en": "Live Academia", "pt": "Live Academia" },
-      "image": "/screenshots/live_scroll.gif",
+      "image": "/screenshots/24_liveacademia.png",
+      "gifImage": "/screenshots/live_scroll.gif",
       "url": "https://liveacademia.m2z.com.br",
       "category": "WEB DEVELOPMENT",
       "type": "Fitness / Headless CMS",
@@ -334,7 +337,8 @@
     {
       "id": "33",
       "title": { "en": "NineTwo Insights", "pt": "NineTwo Insights" },
-      "image": "/screenshots/ninetwo_scroll.gif",
+      "image": "/screenshots/28_frontend_1.png",
+      "gifImage": "/screenshots/ninetwo_scroll.gif",
       "url": "https://insights.ninetwo.com.br",
       "category": "WEB DEVELOPMENT",
       "type": "Multi-tenant SaaS",
@@ -352,7 +356,8 @@
     {
       "id": "20",
       "title": { "en": "Roberto Navarro | Transforme sua Mentalidade", "pt": "Roberto Navarro | Transforme sua Mentalidade" },
-      "image": "/screenshots/navarro_scroll.gif",
+      "image": "/screenshots/15_robertonavarro.png",
+      "gifImage": "/screenshots/navarro_scroll.gif",
       "url": "https://robertonavarrooficial.com.br",
       "category": "WEB DEVELOPMENT",
       "type": "Financial Coaching / Education",
@@ -419,10 +424,14 @@
       "url": "https://www.behance.net/gallery/221045579/Mundial-de-Beach-Tennis-World-BT-Rio-Brilhante-ITF",
       "category": "EVENT BRANDING",
       "type": "Print & Digital",
-      "featured": false,
+      "featured": true,
+      "highlight": {
+        "en": "Complete visual identity for an ITF-sanctioned international beach tennis championship",
+        "pt": "Identidade visual completa para campeonato internacional de beach tennis sancionado pela ITF"
+      },
       "description": {
         "en": "Visual identity and promotional campaign for the World BT Rio Brilhante ITF event — posters, social cards and print media designed to increase event visibility and ticket sales.",
-        "pt": "Visual identity and promotional campaign for the World BT Rio Brilhante ITF event — posters, social cards and print media designed to increase event visibility and ticket sales."
+        "pt": "Identidade visual e campanha promocional para o evento World BT Rio Brilhante ITF — cartazes, cards para redes sociais e mídia impressa para aumentar a visibilidade e venda de ingressos."
       },
       "skills": [
         "Advertising",
@@ -818,15 +827,20 @@
       "id": "34",
       "title": { "en": "Silver Panda", "pt": "Silver Panda" },
       "image": "/screenshots/29_silverpanda.png",
+      "gifImage": "/screenshots/silverpanda_scroll.gif",
       "url": "https://silverpanda.moitinho.dev",
       "category": "WEB DEVELOPMENT",
-      "type": "Music",
-      "featured": false,
+      "type": "Music / Digital Presskit",
+      "featured": true,
+      "highlight": {
+        "en": "Digital presskit for DJ duo Silver Panda — 3M+ monthly Spotify listeners",
+        "pt": "Presskit digital para a dupla Silver Panda — 3M+ ouvintes mensais no Spotify"
+      },
       "description": {
         "en": "Presskit digital for the Brazilian and Israeli DJ duo, Leonardo and Shalomi Berg: Silver Panda. 3 million monthly listeners on Spotify.",
         "pt": "Presskit digital para a dupla de DJ's Brasileiro e Israelense, Leonardo e Shalomi Berg: Silver Panda. 3 Milhões de ouvintes mensais no Spotify."
       },
-      "skills": ["Next.js", "Music"]
+      "skills": ["Next.js", "Strapi CMS", "Spotify API", "Music"]
     }
   ],
   "articles": [

@@ -44,6 +44,7 @@ export interface Project {
   description: LocalizedText
   skills: string[]
   highlight?: LocalizedText
+  gifImage?: string
 }
 
 export interface Article {
