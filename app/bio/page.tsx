@@ -138,18 +138,21 @@ export default function BioPage() {
 
             <BioText>
               {locale === "en"
-                ? "I carry my passions close to my chest — sometimes when she asks for affection and lies on top of me, and sometimes when she wants to play fetch and jumps up with her paws on my chest. Those are, respectively, Lola (11 years old) and Ágata (1.5 years old). I love you both."
-                : "Levo minhas paixões no peito às vezes quando pede carinho e deita em cima de mim, e às vezes quando quer brincar de bolinha e pula alto com as patas no meu peito. Essas são, respectivamente, Lola (11 anos) e Ágata (1,5 anos). Eu amo vocês."}
+                ? "I carry my passions close to my chest — sometimes when she asks for affection and lies on top of me, and sometimes when she wants to play fetch and jumps up with her paws on my chest. Those are, respectively, Lola (11 years old) and Ágata (1.5 years old). And now with the presence of Frederico (2 months old). I love you all."
+                : "Levo minhas paixões no peito às vezes quando pede carinho e deita em cima de mim, e às vezes quando quer brincar de bolinha e pula alto com as patas no meu peito. Essas são, respectivamente, Lola (11 anos) e Ágata (1,5 anos). E agora com a presença do Frederico (2 meses). Eu amo vocês."}
             </BioText>
 
             {/* Dogs photos side by side */}
             <Reveal y={30}>
-              <div className="grid grid-cols-2 gap-4 mb-10">
+              <div className="grid grid-cols-3 gap-4 mb-10">
                 <div className="overflow-hidden border border-border">
                   <img src="/bio-lola.jpg" alt="Lola" className="w-full h-full object-cover" style={{ aspectRatio: "1/1" }} />
                 </div>
                 <div className="overflow-hidden border border-border">
                   <img src="/bio-agata.jpg" alt="Ágata" className="w-full h-full object-cover" style={{ aspectRatio: "1/1" }} />
+                </div>
+                <div className="overflow-hidden border border-border">
+                  <img src="/bio-dogs.jpg" alt="Lola & Ágata" className="w-full h-full object-cover" style={{ aspectRatio: "1/1" }} />
                 </div>
               </div>
             </Reveal>
