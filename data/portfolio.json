@@ -56,6 +56,28 @@
   ],
   "experiences": [
     {
+      "id": "10",
+      "year": "Jun 2025 — Present",
+      "role": {
+        "en": "Principal Engineer",
+        "pt": "Engenheiro Principal"
+      },
+      "company": "Pesados Web",
+      "location": "Curitiba, Brasil",
+      "description": {
+        "en": "End-to-end technical leadership for a performance marketing agency, from architecture to production deployment.\nComplete stack migration from WordPress to Next.js/TypeScript, building development infrastructure from scratch (GitHub org, Vercel, CI/CD, Azure).\nLed the full rebuild of a heavy vehicles marketplace — from a WordPress/Hostinger setup to a modern stack with Next.js, TypeScript, PostgreSQL, and Sanity CMS. Built everything from scratch: database modeling, payment integration, admin dashboard, and automation scripts.",
+        "pt": "Liderança técnica end-to-end em uma agência de performance marketing, da arquitetura ao deploy em produção.\nMigração completa de stack de WordPress para Next.js/TypeScript, construindo toda a infraestrutura de desenvolvimento do zero (GitHub org, Vercel, CI/CD, Azure).\nReconstrução completa de um marketplace de veículos pesados de um WordPress na Hostinger para uma stack moderna com Next.js, TypeScript, PostgreSQL e Sanity CMS. Tudo feito do zero: modelagem de banco, integração de pagamentos, dashboard administrativo e scripts de automação."
+      },
+      "tech": [
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Sanity CMS",
+        "Drizzle ORM",
+        "Azure"
+      ]
+    },
+    {
       "id": "1",
       "year": "Jan 2026 — Present",
       "role": {
