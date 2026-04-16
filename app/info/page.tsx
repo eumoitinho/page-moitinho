@@ -77,13 +77,13 @@ export default function InfoPage() {
                       className="h-[2px] shrink-0 transition-all duration-500 ease-out"
                       style={{
                         width: isActive ? "2rem" : "0.75rem",
-                        backgroundColor: isActive ? "#ea580c" : "currentColor",
+                        backgroundColor: isActive ? "#0130B4" : "currentColor",
                       }}
                     />
                     <span
                       className="font-medium tabular-nums whitespace-nowrap transition-all duration-500 ease-out"
                       style={{
-                        color: isActive ? "#ea580c" : "inherit",
+                        color: isActive ? "#0130B4" : "inherit",
                         fontSize: isActive ? "0.95rem" : "0.7rem",
                       }}
                     >
@@ -131,7 +131,7 @@ export default function InfoPage() {
                       <div className="group flex flex-col gap-2">
                         <span className="text-muted-foreground font-medium text-sm opacity-50">{exp.year}</span>
                         <div>
-                          <h3 className="text-2xl font-medium mb-2 group-hover:text-orange-500 transition-colors">{exp.company}</h3>
+                          <h3 className="text-2xl font-medium mb-2 group-hover:text-[#0130B4] transition-colors">{exp.company}</h3>
                           <p className="text-lg text-foreground mb-4">{getLocalizedText(exp.role, locale)}</p>
                           <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
                             {getLocalizedText(exp.description, locale)}

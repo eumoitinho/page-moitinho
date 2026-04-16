@@ -31,7 +31,7 @@ export default async function Image({ params }: { params: Promise<{ id: string }
           <div
             style={{
               fontSize: 22,
-              color: "#ea580c",
+              color: "#0130B4",
               letterSpacing: "0.15em",
               textTransform: "uppercase",
             }}

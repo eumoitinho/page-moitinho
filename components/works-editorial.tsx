@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import Link from "next/link"
 import { motion, useInView } from "framer-motion"
 import { ArrowUpRight, ArrowRight } from "lucide-react"
@@ -95,6 +95,20 @@ interface WorksEditorialProps {
 
 export function WorksEditorial({ personalInfo, projects, socials }: WorksEditorialProps) {
   const { locale } = useLanguage()
+  const [greeting, setGreeting] = useState("")
+
+  useEffect(() => {
+    const hour = new Date().getHours()
+    if (locale === "en") {
+      if (hour < 12) setGreeting("Good morning")
+      else if (hour < 18) setGreeting("Good afternoon")
+      else setGreeting("Good evening")
+    } else {
+      if (hour < 12) setGreeting("Bom dia")
+      else if (hour < 18) setGreeting("Boa tarde")
+      else setGreeting("Boa noite")
+    }
+  }, [locale])
 
   const featuredProjects = projects.filter((p) => p.featured)
   const allProjects = projects
@@ -106,54 +120,72 @@ export function WorksEditorial({ personalInfo, projects, socials }: WorksEditori
 
           {/* ═══ HERO SECTION ═══ */}
           <section className="flex flex-col gap-12">
-            {/* Top row: meta info + headline */}
-            <div className="flex flex-col lg:flex-row gap-4">
-              {/* Left: location + status */}
+            {/* Hero content */}
+            <div className="max-w-3xl space-y-6">
               <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: DURATION, delay: 0.1, ease: EASE }}
-                className="flex flex-col gap-4 pt-1 shrink-0 lg:w-auto"
               >
-                <p className="text-sm text-muted-foreground tracking-tight whitespace-nowrap">
-                  {personalInfo.location}
-                </p>
-                {personalInfo.availableForWork && (
-                  <div className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 bg-muted-foreground" style={{ imageRendering: "pixelated" }} />
-                    <p className="text-sm text-muted-foreground tracking-tight whitespace-nowrap">
-                      {locale === "en" ? "Available for engagements" : "Disponível para projetos"}
-                    </p>
-                  </div>
-                )}
+                <span className="text-lg md:text-xl text-muted-foreground block mb-3">
+                  {greeting}.
+                </span>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight leading-[1.1]">
+                  {locale === "en"
+                    ? `I'm ${personalInfo.name}.`
+                    : `Eu sou ${personalInfo.name}.`}
+                </h1>
               </motion.div>
 
-              {/* Right: main headline */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: DURATION, delay: 0.2, ease: EASE }}
-                className="flex-1"
+                className="space-y-3"
               >
-                <h1 className="text-[clamp(1.75rem,4vw,2.44rem)] font-normal leading-[1.2] tracking-[-0.03em] text-foreground">
-                  {locale === "en" ? (
-                    <>
-                      Fullstack Web Developer.{" "}
-                      <span className="text-muted-foreground">
-                        Building high-performance web applications with founders, studios, and brands on
-                      </span>{" "}
-                      websites, systems, and beyond.
-                    </>
-                  ) : (
-                    <>
-                      Desenvolvedor Web Fullstack.{" "}
-                      <span className="text-muted-foreground">
-                        Construindo aplicações web de alta performance com fundadores, estúdios e marcas em
-                      </span>{" "}
-                      websites, sistemas e além.
-                    </>
-                  )}
-                </h1>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl">
+                  {getLocalizedText(personalInfo.description, locale as "en" | "pt")}
+                </p>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl hidden md:block">
+                  {locale === "en"
+                    ? `Currently at ${personalInfo.currentCompany} as ${getLocalizedText(personalInfo.currentRole, "en")}. Based in ${personalInfo.location}.`
+                    : `Atualmente na ${personalInfo.currentCompany} como ${getLocalizedText(personalInfo.currentRole, "pt")}. Baseado em ${personalInfo.location}.`}
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: DURATION, delay: 0.3, ease: EASE }}
+                className="pt-4 flex flex-col sm:flex-row gap-4 items-start"
+              >
+                <Link
+                  href="/info"
+                  className="inline-flex items-center gap-2 text-base font-medium hover:text-[#0130B4] transition-colors group"
+                >
+                  {locale === "en" ? "More Information" : "Mais Informações"}
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+
+                <div className="flex gap-4 items-center sm:pl-6 sm:border-l border-border/50">
+                  <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-muted-foreground hover:text-[#0130B4] transition-colors uppercase tracking-wider"
+                  >
+                    Resume (EN)
+                  </a>
+                  <span className="text-muted-foreground/30">•</span>
+                  <a
+                    href="/curriculum.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-muted-foreground hover:text-[#0130B4] transition-colors uppercase tracking-wider"
+                  >
+                    Currículo (PT)
+                  </a>
+                </div>
               </motion.div>
             </div>
 

@@ -31,7 +31,7 @@ export default async function Image() {
           <div
             style={{
               fontSize: 24,
-              color: "#ea580c",
+              color: "#0130B4",
               letterSpacing: "0.15em",
               textTransform: "uppercase",
             }}

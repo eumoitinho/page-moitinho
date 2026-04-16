@@ -112,7 +112,7 @@ export default function ProjectPage() {
                      href={project.url} 
                      target="_blank" 
                      rel="noopener noreferrer"
-                     className="text-xl font-medium hover:text-orange-500 transition-colors inline-flex items-center gap-2"
+                     className="text-xl font-medium hover:text-[#0130B4] transition-colors inline-flex items-center gap-2"
                    >
                      {locale === 'en' ? "Visit Live Site" : "Ver Site Online"}
                      <ExternalLink className="w-5 h-5" />
@@ -132,7 +132,7 @@ export default function ProjectPage() {
                       href={`https://wa.me/5541995034442?text=Hi, came from project ${getLocalizedText(project.title, 'en')}`}
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="w-full block text-center px-6 py-4 bg-orange-500 text-white font-medium hover:bg-orange-600 transition-colors"
+                      className="w-full block text-center px-6 py-4 bg-[#0130B4] text-white font-medium hover:bg-[#012a9a] transition-colors"
                    >
                       {locale === 'en' ? "Start a Project" : "Iniciar Projeto"}
                    </a>

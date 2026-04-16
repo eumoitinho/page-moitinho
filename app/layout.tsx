@@ -36,15 +36,15 @@ const BASE_URL = "https://moitinho.dev"
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "João Vitor Moitinho — Tech Lead & Full-stack Developer",
+    default: "João Vitor Moitinho — Fullstack Web Developer",
     template: "%s | Moitinho",
   },
   description:
-    "Tech Lead & Full-stack Developer from Brazil. Building high-performance web applications with Next.js, React, TypeScript and Node.js.",
+    "Fullstack Web Developer from Brazil. Building high-performance web applications with Next.js, React, TypeScript and Node.js.",
   keywords: [
     "João Vitor Moitinho",
-    "Full-stack Developer",
-    "Tech Lead",
+    "Fullstack Web Developer",
+    "TRACTIAN",
     "React",
     "Next.js",
     "TypeScript",
@@ -59,15 +59,15 @@ export const metadata: Metadata = {
     alternateLocale: "pt_BR",
     url: BASE_URL,
     siteName: "Moitinho — Portfolio",
-    title: "João Vitor Moitinho — Tech Lead & Full-stack Developer",
+    title: "João Vitor Moitinho — Fullstack Web Developer",
     description:
-      "Tech Lead & Full-stack Developer from Brazil. Building high-performance web applications with Next.js, React, TypeScript and Node.js.",
+      "Fullstack Web Developer from Brazil. Building high-performance web applications with Next.js, React, TypeScript and Node.js.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "João Vitor Moitinho — Tech Lead & Full-stack Developer",
+    title: "João Vitor Moitinho — Fullstack Web Developer",
     description:
-      "Tech Lead & Full-stack Developer from Brazil. Building high-performance web applications.",
+      "Fullstack Web Developer from Brazil. Building high-performance web applications.",
   },
   robots: {
     index: true,
@@ -99,10 +99,10 @@ export default function RootLayout({
               name: "João Vitor Moitinho",
               url: BASE_URL,
               image: `${BASE_URL}/profile-photo.jpg`,
-              jobTitle: "Tech Lead & Full-stack Developer",
+              jobTitle: "Mid Fullstack Web Developer",
               worksFor: {
                 "@type": "Organization",
-                name: "NineTwo Performance",
+                name: "TRACTIAN",
               },
               address: {
                 "@type": "PostalAddress",
