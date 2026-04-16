@@ -33,8 +33,7 @@ export default function WorkPage() {
           {projects.map((project) => (
             <Link
               key={project.id}
-              href={project.url || "#"}
-              target="_blank"
+              href={`/work/${project.id}`}
               className="group grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
             >
               <div className="aspect-[4/3] bg-muted relative overflow-hidden">

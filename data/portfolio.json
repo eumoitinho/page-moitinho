@@ -3,8 +3,8 @@
     "name": "João Vitor",
     "lastName": "Moitinho",
     "title": {
-      "en": "Tech Lead & Full‑stack Developer",
-      "pt": "Tech Lead & Desenvolvedor Full‑stack"
+      "en": "Mid Fullstack Web Developer",
+      "pt": "Desenvolvedor Web Fullstack Pleno"
     },
     "description": {
       "en": "Full‑stack developer with a degree in Computer Engineering and a background spanning web development, system architecture, and design. I build end‑to‑end solutions from technical planning to production deployment with a focus on performance, clarity, and maintainability.",
@@ -14,11 +14,11 @@
     "location": "Curitiba, Paraná, Brazil",
     "availableForWork": true,
     "currentRole": {
-      "en": "Tech Lead",
-      "pt": "Tech Lead"
+      "en": "Mid Fullstack Web Developer",
+      "pt": "Desenvolvedor Web Fullstack Pleno"
     },
-    "currentCompany": "NineTwo Performance",
-    "currentPeriod": "Jan 2026 — Present",
+    "currentCompany": "TRACTIAN",
+    "currentPeriod": "Mar 2026 — Present",
     "photoUrl": "/profile-photo.jpg"
   },
   "skills": [
@@ -52,9 +52,39 @@
       "name": "Behance",
       "handle": "eumoitinho",
       "url": "https://www.behance.net/joaomoitinh1"
+    },
+    {
+      "name": "Upwork",
+      "handle": "eumoitinho",
+      "url": "https://www.upwork.com/freelancers/~01d7b8e649f2487c3b?p=2033678890793377792"
     }
   ],
   "experiences": [
+    {
+      "id": "tractian",
+      "year": "Mar 2026 — Present",
+      "role": {
+        "en": "Mid Fullstack Web Developer",
+        "pt": "Desenvolvedor Web Fullstack Pleno"
+      },
+      "company": "TRACTIAN",
+      "location": "São Paulo, Brasil • Remote",
+      "description": {
+        "en": "Develop and maintain core web properties including tractian.com, Academy, Events, and Careers pages.\nImplement A/B tests and CRO experiments via PostHog, tracking results and communicating insights to stakeholders.\nBuild analytics dashboards and monitor the full lead-to-deal pipeline using PostHog, HubSpot, and GA4.\nManage content delivery across Ghost, Strapi, Builder.io, and Airtable.\nServe as CRO/Fullstack technical reference for troubleshooting, configurations, and platform improvements.\nCollaborate cross-functionally with Creative, Content, Paid Media, and Product Enablement teams.\nDrive workflow optimization through AI tooling and scalable architecture patterns with OpenTelemetry observability.",
+        "pt": "Desenvolvo e mantenho as principais propriedades web incluindo tractian.com, Academy, Events e Careers.\nImplemento testes A/B e experimentos de CRO via PostHog, rastreando resultados e comunicando insights aos stakeholders.\nConstruo dashboards de analytics e monitoro o pipeline completo de lead-to-deal usando PostHog, HubSpot e GA4.\nGerencio entrega de conteúdo via Ghost, Strapi, Builder.io e Airtable.\nAtuo como referência técnica de CRO/Fullstack para troubleshooting, configurações e melhorias de plataforma.\nColaboração cross-funcional com times de Creative, Content, Paid Media e Product Enablement.\nOtimização de workflows através de ferramentas de IA e padrões de arquitetura escalável com observabilidade OpenTelemetry."
+      },
+      "tech": [
+        "Next.js",
+        "TypeScript",
+        "PostHog",
+        "HubSpot",
+        "GA4",
+        "Ghost",
+        "Strapi",
+        "Builder.io",
+        "OpenTelemetry"
+      ]
+    },
     {
       "id": "10",
       "year": "Jun 2025 — Present",
@@ -79,16 +109,16 @@
     },
     {
       "id": "1",
-      "year": "Jan 2026 — Present",
+      "year": "Feb 2025 — Feb 2026",
       "role": {
-        "en": "Tech Lead",
-        "pt": "Tech Lead"
+        "en": "Mid Fullstack Web Developer",
+        "pt": "Desenvolvedor Web Fullstack Pleno"
       },
       "company": "NineTwo Performance",
       "location": "Curitiba, Brasil",
       "description": {
-        "en": "Own the end-to-end technical strategy for a performance marketing agency from architecture design to production deployment. Build and ship full-stack applications using Next.js, Vue.js, Nest, Java, TypeScript, Prisma and Azure.\nDeveloping in-house martech products including a multi-tenant analytics platform (Google Ads, GA4, Meta Ads integrations) and a proprietary user tracking SDK published to npm.\nLead the dev team through code reviews, PR approvals and hands-on mentorship, having established the company's entire engineering ecosystem from scratch.",
-        "pt": "Responsável pela estratégia técnica de ponta a ponta de uma agência de marketing de performance, do design de arquitetura ao deploy em produção. Construo e entrego aplicações full-stack usando Next.js, Vue.js, Nest, Java, TypeScript, Prisma e Azure.\nDesenvolvendo produtos martech internos incluindo plataforma analytics multi-tenant (Google Ads, GA4, Meta Ads) e um SDK proprietário de rastreamento de usuários publicado no npm.\nLidero o time de dev com code reviews, aprovações de PR e mentoria hands-on, tendo estabelecido todo o ecossistema de engenharia da empresa do zero."
+        "en": "Owned the end-to-end technical strategy for a performance marketing agency from architecture design to production deployment. Built and shipped full-stack applications using Next.js, Vue.js, Nest, Java, TypeScript, Prisma and Azure.\nDeveloped in-house martech products including a multi-tenant analytics platform (Google Ads, GA4, Meta Ads integrations) and a proprietary user tracking SDK published to npm.\nComplete stack migration from WordPress to Next.js/TypeScript. Built the development infrastructure from scratch (GitHub org, Vercel, CI/CD, Azure).\n29+ projects delivered: SaaS platforms, institutional websites and landing pages.\nLed the dev team through code reviews, PR approvals and hands-on mentorship, having established the company's entire engineering ecosystem from scratch.",
+        "pt": "Responsável pela estratégia técnica de ponta a ponta de uma agência de marketing de performance, do design de arquitetura ao deploy em produção. Construí e entreguei aplicações full-stack usando Next.js, Vue.js, Nest, Java, TypeScript, Prisma e Azure.\nDesenvolvimento de produtos martech internos incluindo plataforma analytics multi-tenant (Google Ads, GA4, Meta Ads) e um SDK proprietário de rastreamento de usuários publicado no npm.\nMigração completa do stack de WordPress para Next.js/TypeScript. Construí a infraestrutura de desenvolvimento do zero (GitHub org, Vercel, CI/CD, Azure).\n29+ projetos entregues: plataformas SaaS, sites institucionais e landing pages.\nLiderei o time de dev com code reviews, aprovações de PR e mentoria hands-on, tendo estabelecido todo o ecossistema de engenharia da empresa do zero."
       },
       "tech": [
         "Next.js",
@@ -96,47 +126,9 @@
         "TypeScript",
         "Java",
         "Prisma",
-        "Azure"
-      ]
-    },
-    {
-      "id": "2",
-      "year": "May 2025 — Jan 2026",
-      "role": {
-        "en": "Full-stack Developer",
-        "pt": "Desenvolvedor Full-stack"
-      },
-      "company": "NineTwo Performance",
-      "location": "Curitiba, Brasil",
-      "description": {
-        "en": "Complete stack migration from WordPress to Next.js/TypeScript. Built the development infrastructure from scratch (GitHub org, Vercel, CI/CD, Azure).\n29+ projects delivered: SaaS platforms, institutional websites and landing pages.",
-        "pt": "Migração completa do stack de WordPress para Next.js/TypeScript. Construí a infraestrutura de desenvolvimento do zero (GitHub org, Vercel, CI/CD, Azure).\n29+ projetos entregues: plataformas SaaS, sites institucionais e landing pages."
-      },
-      "tech": [
-        "Next.js",
-        "TypeScript",
-        "Vercel",
         "Azure",
+        "Vercel",
         "CI/CD"
-      ]
-    },
-    {
-      "id": "3",
-      "year": "Feb 2025 — May 2025",
-      "role": {
-        "en": "Web Designer",
-        "pt": "Web Designer"
-      },
-      "company": "NineTwo Performance",
-      "location": "Curitiba, Brasil",
-      "description": {
-        "en": "Interface design, social media and WordPress website development for agency clients.",
-        "pt": "Design de interfaces, mídias sociais e desenvolvimento de sites WordPress para clientes da agência."
-      },
-      "tech": [
-        "Figma",
-        "WordPress",
-        "UI/UX"
       ]
     },
     {
@@ -319,14 +311,32 @@
       "skills": ["Next.js 14", "TypeScript", "PostgreSQL", "Drizzle ORM", "Asaas", "Sanity CMS", "Azure"]
     },
     {
+      "id": "clinimais",
+      "title": { "en": "Clinimais", "pt": "Clinimais" },
+      "image": "/screenshots/clinimais.png",
+      "url": "https://clinimais.com",
+      "category": "WEB DEVELOPMENT",
+      "type": "Telemedicine Platform",
+      "featured": true,
+      "highlight": {
+        "en": "Enterprise telemedicine platform — HIPAA/LGPD compliant with Twilio Video and real-time chat",
+        "pt": "Plataforma corporativa de telemedicina — conforme HIPAA/LGPD com Twilio Video e chat em tempo real"
+      },
+      "description": {
+        "en": "Enterprise telemedicine platform connecting patients with healthcare professionals through secure teleconsultations, fully compliant with Brazilian regulations (CFM, LGPD) and international standards (HIPAA). Features video teleconsultations with Twilio Video, robust appointment scheduling, online payments via Pagar.me (PIX, Credit Card, Boleto), real-time chat with Azure SignalR, and secure authentication with Azure AD B2C + NextAuth v5.",
+        "pt": "Plataforma corporativa de telemedicina conectando pacientes a profissionais de saúde através de teleconsultas seguras, totalmente em conformidade com regulamentações brasileiras (CFM, LGPD) e padrões internacionais (HIPAA). Teleconsultas em vídeo com Twilio Video, agendamento robusto, pagamentos online via Pagar.me (PIX, Cartão, Boleto), chat em tempo real com Azure SignalR e autenticação segura com Azure AD B2C + NextAuth v5."
+      },
+      "skills": ["Next.js", "TypeScript", "Twilio Video", "Azure SignalR", "Azure AD B2C", "NextAuth v5", "Pagar.me"]
+    },
+    {
       "id": "23",
       "title": { "en": "RWTV", "pt": "RWTV" },
       "image": "/screenshots/18_rede_web_tv.png",
       "gifImage": "/screenshots/rwtv_scroll.gif",
-      "url": "https://rwtv.com.br",
+      "url": "https://rede-web-k47rgdvab-m2z.vercel.app",
       "category": "WEB DEVELOPMENT",
       "type": "News Platform",
-      "featured": true,
+      "featured": false,
       "highlight": {
         "en": "Full news platform with Sanity CMS — location-based articles and regional ad system",
         "pt": "Plataforma de notícias completa com Sanity CMS — artigos por localização e sistema de ads regional"

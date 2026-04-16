@@ -53,8 +53,7 @@ function ProjectCard({
 
   return (
     <Link
-      href={project.url || "#"}
-      target="_blank"
+      href={`/work/${project.id}`}
       className="group block relative overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -74,9 +73,9 @@ function ProjectCard({
           </div>
         )}
         {/* Hover overlay */}
-        <div className="absolute inset-0 bg-[#0a0908]/0 group-hover:bg-[#0a0908]/40 transition-all duration-500 flex items-end p-6 opacity-0 group-hover:opacity-100">
-          <div className="flex items-center gap-2 text-white">
-            <span className="text-sm font-medium tracking-tight">
+        <div className="absolute inset-0 bg-[#0a0908]/0 group-hover:bg-[#0a0908]/60 transition-all duration-500 flex items-end p-6 opacity-0 group-hover:opacity-100">
+          <div className="flex items-center gap-2 text-white drop-shadow-lg">
+            <span className="text-base font-semibold tracking-tight">
               {getLocalizedText(project.title, locale as "en" | "pt")}
             </span>
             <ArrowUpRight className="w-4 h-4" />
@@ -106,7 +105,7 @@ export function WorksEditorial({ personalInfo, projects, socials }: WorksEditori
         <div className="flex flex-col gap-24">
 
           {/* ═══ HERO SECTION ═══ */}
-          <section className="flex flex-col gap-4">
+          <section className="flex flex-col gap-12">
             {/* Top row: meta info + headline */}
             <div className="flex flex-col lg:flex-row gap-4">
               {/* Left: location + status */}
@@ -139,7 +138,7 @@ export function WorksEditorial({ personalInfo, projects, socials }: WorksEditori
                 <h1 className="text-[clamp(1.75rem,4vw,2.44rem)] font-normal leading-[1.2] tracking-[-0.03em] text-foreground">
                   {locale === "en" ? (
                     <>
-                      Tech Lead & Full-stack Developer.{" "}
+                      Fullstack Web Developer.{" "}
                       <span className="text-muted-foreground">
                         Building high-performance web applications with founders, studios, and brands on
                       </span>{" "}
@@ -147,7 +146,7 @@ export function WorksEditorial({ personalInfo, projects, socials }: WorksEditori
                     </>
                   ) : (
                     <>
-                      Tech Lead & Desenvolvedor Full-stack.{" "}
+                      Desenvolvedor Web Fullstack.{" "}
                       <span className="text-muted-foreground">
                         Construindo aplicações web de alta performance com fundadores, estúdios e marcas em
                       </span>{" "}
