@@ -1,14 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Playfair_Display, Space_Grotesk, Space_Mono } from "next/font/google"
+import { Inter, Playfair_Display, Space_Grotesk, Space_Mono } from "next/font/google"
 import "./globals.css"
 import { LanguageProvider } from "@/contexts/language-context"
 import { ThemeProvider } from "@/components/theme-provider"
 
-const geist = Geist({
+const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-geist",
+  variable: "--font-inter",
 })
 
 const playfairDisplay = Playfair_Display({
@@ -88,7 +88,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geist.variable} ${playfairDisplay.variable} ${spaceGrotesk.variable} ${spaceMono.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${playfairDisplay.variable} ${spaceGrotesk.variable} ${spaceMono.variable}`} suppressHydrationWarning>
       <body className="font-sans antialiased">
         <script
           type="application/ld+json"

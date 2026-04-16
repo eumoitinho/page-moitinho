@@ -12,32 +12,30 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-background/80 backdrop-blur-sm border-none transition-all duration-300">
-      <div className="max-w-[1600px] mx-auto flex h-20 items-center justify-between px-6 md:px-12">
-        <div className="flex items-center">
-          <Link href="/" className="text-sm font-medium hover:text-muted-foreground transition-colors uppercase tracking-widest">
-            @eumoitinho
-          </Link>
-        </div>
-        <nav className="flex items-center gap-8 text-sm font-medium">
-          <Link href="/work" className="hidden md:inline-block hover:text-muted-foreground transition-colors">
+    <header className="fixed top-0 z-50 w-full bg-background/90 backdrop-blur-sm transition-all duration-300">
+      <div className="max-w-[1200px] mx-auto flex h-14 items-center justify-between px-6 md:px-8">
+        <Link href="/" className="text-sm font-medium text-foreground hover:text-muted-foreground transition-colors tracking-tight">
+          @eumoitinho
+        </Link>
+        <nav className="flex items-center gap-6 text-sm">
+          <Link href="/work" className="hidden md:inline-block text-muted-foreground hover:text-foreground transition-colors tracking-tight">
             {t("work")}
           </Link>
-          <Link href="/bio" className="hidden md:inline-block hover:text-muted-foreground transition-colors">
+          <Link href="/bio" className="hidden md:inline-block text-muted-foreground hover:text-foreground transition-colors tracking-tight">
             Bio
           </Link>
-          <Link href="/info" className="hidden md:inline-block hover:text-muted-foreground transition-colors">
+          <Link href="/info" className="hidden md:inline-block text-muted-foreground hover:text-foreground transition-colors tracking-tight">
             {t("intro")}
           </Link>
-          <Link href="/contact" className="hidden md:inline-block hover:text-muted-foreground transition-colors">
+          <Link href="/contact" className="hidden md:inline-block text-muted-foreground hover:text-foreground transition-colors tracking-tight">
             {t("letsConnect")}
           </Link>
-          <div className="pl-4 flex items-center gap-2">
+          <div className="flex items-center gap-1.5">
             <LanguageToggle />
             <ThemeToggle />
           </div>
           <button
-            className="md:hidden p-1 hover:text-muted-foreground transition-colors"
+            className="md:hidden p-1 text-muted-foreground hover:text-foreground transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -49,33 +47,17 @@ export function Header() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-sm">
-          <div className="flex flex-col px-6 py-6 gap-5 text-sm font-medium">
-            <Link
-              href="/work"
-              onClick={() => setMenuOpen(false)}
-              className="hover:text-muted-foreground transition-colors"
-            >
+          <div className="flex flex-col px-6 py-5 gap-4 text-sm">
+            <Link href="/work" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground transition-colors tracking-tight">
               {t("work")}
             </Link>
-            <Link
-              href="/bio"
-              onClick={() => setMenuOpen(false)}
-              className="hover:text-muted-foreground transition-colors"
-            >
+            <Link href="/bio" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground transition-colors tracking-tight">
               Bio
             </Link>
-            <Link
-              href="/info"
-              onClick={() => setMenuOpen(false)}
-              className="hover:text-muted-foreground transition-colors"
-            >
+            <Link href="/info" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground transition-colors tracking-tight">
               {t("intro")}
             </Link>
-            <Link
-              href="/contact"
-              onClick={() => setMenuOpen(false)}
-              className="hover:text-muted-foreground transition-colors"
-            >
+            <Link href="/contact" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground transition-colors tracking-tight">
               {t("letsConnect")}
             </Link>
           </div>

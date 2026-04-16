@@ -22,18 +22,17 @@ export default function Home() {
   if (loading || !data) {
     return (
       <div
-        className="min-h-screen flex items-center justify-center"
-        style={{ backgroundColor: "#f7f6f2" }}
+        className="min-h-screen flex items-center justify-center bg-background"
       >
         <div
-          className="w-6 h-6 border border-[#3d7068] border-t-transparent rounded-full animate-spin"
+          className="w-5 h-5 border border-foreground/20 border-t-foreground/60 rounded-full animate-spin"
         />
       </div>
     )
   }
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-14">
       <Header />
       <WorksEditorial
         personalInfo={data.personalInfo}

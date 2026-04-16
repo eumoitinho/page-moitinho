@@ -1,24 +1,22 @@
 "use client"
 
-import { useRef, useEffect, useState } from "react"
+import { useRef, useState } from "react"
 import Link from "next/link"
-import { motion, useInView, AnimatePresence } from "framer-motion"
-import { ArrowUpRight, ArrowRight, MapPin, Circle } from "lucide-react"
+import { motion, useInView } from "framer-motion"
+import { ArrowUpRight, ArrowRight } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import { getLocalizedText } from "@/lib/localized-text"
 import type { PersonalInfo, Project, Social } from "@/types/portfolio"
 
 /* ── Animation constants ── */
-const EDITORIAL_EASE = [0.16, 1, 0.3, 1] as const
-const DURATION_FAST = 0.4
-const DURATION_BASE = 0.7
-const DURATION_SLOW = 1.0
+const EASE = [0.16, 1, 0.3, 1] as const
+const DURATION = 0.7
 
 /* ── Reusable scroll-reveal wrapper ── */
 function Reveal({
   children,
   delay = 0,
-  y = 40,
+  y = 30,
   className = "",
 }: {
   children: React.ReactNode
@@ -27,13 +25,13 @@ function Reveal({
   className?: string
 }) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-15% 0px" })
+  const isInView = useInView(ref, { once: true, margin: "-10% 0px" })
   return (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: DURATION_BASE, delay, ease: EDITORIAL_EASE }}
+      transition={{ duration: DURATION, delay, ease: EASE }}
       className={className}
     >
       {children}
@@ -41,209 +39,47 @@ function Reveal({
   )
 }
 
-/* ── Grid background ── */
-function GridBackground() {
-  return (
-    <div
-      className="fixed inset-0 z-0 pointer-events-none"
-      style={{
-        backgroundImage:
-          "linear-gradient(rgba(28,28,28,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(28,28,28,0.04) 1px, transparent 1px)",
-        backgroundSize: "40px 40px",
-        maskImage: "radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 70%)",
-        WebkitMaskImage: "radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 70%)",
-      }}
-    />
-  )
-}
-
-/* ── Featured Case Study Card ── */
-function CaseStudyCard({
+/* ── Project Card ── */
+function ProjectCard({
   project,
-  index,
   locale,
-  reversed,
+  aspectClass,
 }: {
   project: Project
-  index: number
   locale: string
-  reversed: boolean
+  aspectClass: string
 }) {
-  const num = String(index + 1).padStart(2, "0")
   const [isHovered, setIsHovered] = useState(false)
 
   return (
     <Link
       href={project.url || "#"}
       target="_blank"
-      className="group block"
+      className="group block relative overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div
-        className={`grid grid-cols-1 lg:grid-cols-2 gap-0 border overflow-hidden transition-all`}
-        style={{
-          borderColor: isHovered ? "var(--editorial-border-dark)" : "var(--editorial-border)",
-          boxShadow: isHovered ? "0 8px 30px rgba(28,28,28,0.08)" : "none",
-          transitionDuration: "700ms",
-          transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-        }}
-      >
-        {/* Image side */}
-        <div
-          className={`aspect-[16/10] lg:aspect-auto overflow-hidden ${reversed ? "lg:order-2" : ""}`}
-          style={{ borderRight: reversed ? "none" : "1px solid var(--editorial-border)", borderLeft: reversed ? "1px solid var(--editorial-border)" : "none" }}
-        >
-          {project.image ? (
-            <img
-              src={isHovered && project.gifImage ? project.gifImage : project.image}
-              alt={getLocalizedText(project.title, locale as "en" | "pt")}
-              className={`w-full h-full transition-all ${isHovered && project.gifImage ? "object-contain" : "object-cover"}`}
-              style={{
-                transitionDuration: "700ms",
-                transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-                transform: isHovered && !project.gifImage ? "scale(1.05)" : "scale(1)",
-                minHeight: "400px",
-                backgroundColor: isHovered && project.gifImage ? "#1c1c1c" : "transparent",
-              }}
-            />
-          ) : (
-            <div
-              className="w-full h-full flex items-center justify-center"
-              style={{ background: "var(--editorial-card-bg)", color: "var(--editorial-muted)", minHeight: "400px" }}
-            >
-              <span style={{ fontFamily: "var(--font-space-mono)", fontSize: "0.7rem", textTransform: "uppercase", letterSpacing: "0.2em" }}>
-                No Preview
-              </span>
-            </div>
-          )}
-        </div>
-
-        {/* Content side */}
-        <div className={`p-8 md:p-12 flex flex-col justify-between ${reversed ? "lg:order-1" : ""}`}>
-          <div>
-            {/* Number + Category */}
-            <div className="flex items-center justify-between mb-8">
-              <span
-                style={{
-                  fontFamily: "var(--font-space-mono)",
-                  fontSize: "0.65rem",
-                  letterSpacing: "0.3em",
-                  color: "var(--editorial-muted)",
-                }}
-              >
-                {num}
-              </span>
-              <span
-                style={{
-                  fontFamily: "var(--font-space-mono)",
-                  fontSize: "0.6rem",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.2em",
-                  color: "var(--editorial-muted)",
-                }}
-              >
-                {project.type}
-              </span>
-            </div>
-
-            {/* Title */}
-            <h3
-              className="mb-5 leading-tight"
-              style={{
-                fontFamily: "var(--font-playfair)",
-                fontSize: "clamp(1.5rem, 2.5vw, 2.2rem)",
-                fontWeight: 400,
-                color: "var(--editorial-fg)",
-                letterSpacing: "-0.02em",
-              }}
-            >
+      <div className={`relative ${aspectClass} overflow-hidden`}>
+        {project.image ? (
+          <img
+            src={isHovered && project.gifImage ? project.gifImage : project.image}
+            alt={getLocalizedText(project.title, locale as "en" | "pt")}
+            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          />
+        ) : (
+          <div className="w-full h-full bg-secondary flex items-center justify-center">
+            <span className="text-muted-foreground text-sm tracking-wider">
               {getLocalizedText(project.title, locale as "en" | "pt")}
-            </h3>
-
-            {/* Highlight quote */}
-            {project.highlight && (
-              <div
-                className="mb-6 pl-4"
-                style={{ borderLeft: "2px solid var(--editorial-accent)" }}
-              >
-                <p
-                  style={{
-                    fontFamily: "var(--font-space-grotesk)",
-                    fontSize: "0.9rem",
-                    fontStyle: "italic",
-                    lineHeight: 1.6,
-                    color: "var(--editorial-accent)",
-                  }}
-                >
-                  {getLocalizedText(project.highlight, locale as "en" | "pt")}
-                </p>
-              </div>
-            )}
-
-            {/* Description */}
-            <p
-              className="mb-8"
-              style={{
-                fontFamily: "var(--font-space-grotesk)",
-                fontSize: "0.88rem",
-                lineHeight: 1.7,
-                color: "var(--editorial-muted)",
-              }}
-            >
-              {getLocalizedText(project.description, locale as "en" | "pt")}
-            </p>
-
-            {/* Skills tags */}
-            <div className="flex flex-wrap gap-2 mb-8">
-              {project.skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5"
-                  style={{
-                    fontFamily: "var(--font-space-mono)",
-                    fontSize: "0.6rem",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.15em",
-                    color: "var(--editorial-fg)",
-                    border: "1px solid var(--editorial-border)",
-                    background: "var(--editorial-card-bg)",
-                  }}
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* View Project link */}
-          <div
-            className="flex items-center gap-2 pt-6"
-            style={{ borderTop: "1px solid var(--editorial-border)" }}
-          >
-            <span
-              className="transition-all"
-              style={{
-                fontFamily: "var(--font-space-mono)",
-                fontSize: "0.7rem",
-                textTransform: "uppercase",
-                letterSpacing: "0.2em",
-                color: isHovered ? "var(--editorial-accent)" : "var(--editorial-fg)",
-                transitionDuration: "400ms",
-                transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-              }}
-            >
-              {locale === "en" ? "View Project" : "Ver Projeto"}
             </span>
-            <ArrowUpRight
-              className="w-4 h-4 transition-all"
-              style={{
-                color: isHovered ? "var(--editorial-accent)" : "var(--editorial-fg)",
-                transform: isHovered ? "translate(2px, -2px)" : "translate(0, 0)",
-                transitionDuration: "400ms",
-                transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-              }}
-            />
+          </div>
+        )}
+        {/* Hover overlay */}
+        <div className="absolute inset-0 bg-[#0a0908]/0 group-hover:bg-[#0a0908]/40 transition-all duration-500 flex items-end p-6 opacity-0 group-hover:opacity-100">
+          <div className="flex items-center gap-2 text-white">
+            <span className="text-sm font-medium tracking-tight">
+              {getLocalizedText(project.title, locale as "en" | "pt")}
+            </span>
+            <ArrowUpRight className="w-4 h-4" />
           </div>
         </div>
       </div>
@@ -262,353 +98,179 @@ export function WorksEditorial({ personalInfo, projects, socials }: WorksEditori
   const { locale } = useLanguage()
 
   const featuredProjects = projects.filter((p) => p.featured)
+  const allProjects = projects
 
   return (
-    <div
-      className="relative min-h-screen"
-      style={{
-        backgroundColor: "var(--editorial-bg)",
-        color: "var(--editorial-fg)",
-      }}
-    >
-      <GridBackground />
+    <div className="bg-background text-foreground min-h-screen">
+      <div className="max-w-[1200px] mx-auto px-6 md:px-8 py-8">
+        <div className="flex flex-col gap-24">
 
-      <div className="relative z-10">
-        {/* ═══ HERO ═══ */}
-        <section className="pt-32 md:pt-40 pb-16 px-6 md:px-12 max-w-[1400px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 items-end">
-            {/* Name — spans 3 cols */}
-            <div className="md:col-span-3">
-              <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: DURATION_BASE, delay: 0.2, ease: EDITORIAL_EASE }}
-                style={{
-                  fontFamily: "var(--font-playfair)",
-                  fontWeight: 400,
-                  letterSpacing: "-0.03em",
-                  lineHeight: 0.95,
-                  color: "var(--editorial-fg)",
-                }}
-                className="text-[3.5rem] md:text-[5.5rem] lg:text-[7rem]"
+          {/* ═══ HERO SECTION ═══ */}
+          <section className="flex flex-col gap-4">
+            {/* Top row: meta info + headline */}
+            <div className="flex flex-col lg:flex-row gap-4">
+              {/* Left: location + status */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: DURATION, delay: 0.1, ease: EASE }}
+                className="flex flex-col gap-4 pt-1 shrink-0 lg:w-auto"
               >
-                {personalInfo.name}
-                <br />
-                {personalInfo.lastName}
-              </motion.h1>
-            </div>
-
-            {/* Meta info — col 4 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: DURATION_BASE, delay: 0.4, ease: EDITORIAL_EASE }}
-              className="flex flex-col gap-3"
-            >
-              {personalInfo.availableForWork && (
-                <div className="flex items-center gap-2 shrink-0">
-                  <span
-                    className="w-1.5 h-1.5 rounded-full animate-pulse shrink-0"
-                    style={{ backgroundColor: "var(--editorial-accent)" }}
-                  />
-                  <span
-                    className="whitespace-nowrap"
-                    style={{
-                      fontFamily: "var(--font-space-mono)",
-                      fontSize: "0.6rem",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.15em",
-                      color: "var(--editorial-accent)",
-                    }}
-                  >
-                    {locale === "en" ? "Available for work" : "Disponível"}
-                  </span>
-                </div>
-              )}
-              <div className="flex items-center gap-2">
-                <MapPin className="w-3 h-3" style={{ color: "var(--editorial-muted)" }} />
-                <span
-                  style={{
-                    fontFamily: "var(--font-space-mono)",
-                    fontSize: "0.65rem",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.2em",
-                    color: "var(--editorial-muted)",
-                  }}
-                >
+                <p className="text-sm text-muted-foreground tracking-tight whitespace-nowrap">
                   {personalInfo.location}
-                </span>
-              </div>
-              <a
-                href={`mailto:${personalInfo.email}`}
-                className="transition-colors"
-                style={{
-                  fontFamily: "var(--font-space-mono)",
-                  fontSize: "0.7rem",
-                  color: "var(--editorial-muted)",
-                  transitionDuration: "400ms",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--editorial-accent)")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "var(--editorial-muted)")}
-              >
-                {personalInfo.email}
-              </a>
-              <a
-                href={locale === "en" ? "/resume.pdf" : "/curriculum.pdf"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 transition-colors"
-                style={{
-                  fontFamily: "var(--font-space-mono)",
-                  fontSize: "0.65rem",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.2em",
-                  color: "var(--editorial-muted)",
-                  borderBottom: "1px solid var(--editorial-border)",
-                  paddingBottom: "2px",
-                  transitionDuration: "400ms",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.color = "var(--editorial-accent)"
-                  e.currentTarget.style.borderBottomColor = "var(--editorial-accent)"
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.color = "var(--editorial-muted)"
-                  e.currentTarget.style.borderBottomColor = "var(--editorial-border)"
-                }}
-              >
-                {locale === "en" ? "Download CV" : "Baixar Currículo"}
-                <ArrowUpRight className="w-3 h-3" />
-              </a>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* ═══ DIVIDER ═══ */}
-        <div className="px-6 md:px-12 max-w-[1400px] mx-auto">
-          <motion.div
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: DURATION_SLOW, delay: 0.5, ease: EDITORIAL_EASE }}
-            style={{
-              height: "1px",
-              backgroundColor: "var(--editorial-border)",
-              transformOrigin: "left",
-            }}
-          />
-        </div>
-
-        {/* ═══ FEATURED WORK HEADER ═══ */}
-        <section className="pt-12 pb-8 px-6 md:px-12 max-w-[1400px] mx-auto">
-          <Reveal delay={0.6} y={20}>
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-              <div>
-                <h2
-                  style={{
-                    fontFamily: "var(--font-space-mono)",
-                    fontSize: "0.7rem",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.3em",
-                    color: "var(--editorial-fg)",
-                  }}
-                >
-                  {locale === "en" ? "Featured Work" : "Trabalhos em Destaque"}
-                </h2>
-                <p
-                  className="mt-3 max-w-md"
-                  style={{
-                    fontFamily: "var(--font-space-grotesk)",
-                    fontSize: "0.88rem",
-                    lineHeight: 1.6,
-                    color: "var(--editorial-muted)",
-                  }}
-                >
-                  {locale === "en"
-                    ? "Selected case studies from products I've built end-to-end."
-                    : "Estudos de caso selecionados de produtos que construí do início ao fim."}
                 </p>
-              </div>
-              <span
-                style={{
-                  fontFamily: "var(--font-space-mono)",
-                  fontSize: "0.7rem",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.3em",
-                  color: "var(--editorial-muted)",
-                }}
+                {personalInfo.availableForWork && (
+                  <div className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-muted-foreground" style={{ imageRendering: "pixelated" }} />
+                    <p className="text-sm text-muted-foreground tracking-tight whitespace-nowrap">
+                      {locale === "en" ? "Available for engagements" : "Disponível para projetos"}
+                    </p>
+                  </div>
+                )}
+              </motion.div>
+
+              {/* Right: main headline */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: DURATION, delay: 0.2, ease: EASE }}
+                className="flex-1"
               >
-                {String(featuredProjects.length).padStart(2, "0")} {locale === "en" ? "Projects" : "Projetos"}
-              </span>
+                <h1 className="text-[clamp(1.75rem,4vw,2.44rem)] font-normal leading-[1.2] tracking-[-0.03em] text-foreground">
+                  {locale === "en" ? (
+                    <>
+                      Tech Lead & Full-stack Developer.{" "}
+                      <span className="text-muted-foreground">
+                        Building high-performance web applications with founders, studios, and brands on
+                      </span>{" "}
+                      websites, systems, and beyond.
+                    </>
+                  ) : (
+                    <>
+                      Tech Lead & Desenvolvedor Full-stack.{" "}
+                      <span className="text-muted-foreground">
+                        Construindo aplicações web de alta performance com fundadores, estúdios e marcas em
+                      </span>{" "}
+                      websites, sistemas e além.
+                    </>
+                  )}
+                </h1>
+              </motion.div>
             </div>
-          </Reveal>
-        </section>
 
-        {/* ═══ DIVIDER ═══ */}
-        <div className="px-6 md:px-12 max-w-[1400px] mx-auto">
-          <Reveal delay={0.7} y={0}>
-            <div style={{ height: "1px", backgroundColor: "var(--editorial-border)" }} />
-          </Reveal>
-        </div>
-
-        {/* ═══ FEATURED CASE STUDIES ═══ */}
-        <section className="py-12 px-6 md:px-12 max-w-[1400px] mx-auto">
-          <div className="space-y-8">
-            {featuredProjects.map((project, index) => (
-              <Reveal key={project.id} delay={0.1 * Math.min(index, 4)} y={50}>
-                <CaseStudyCard
-                  project={project}
-                  index={index}
-                  locale={locale}
-                  reversed={index % 2 !== 0}
-                />
-              </Reveal>
-            ))}
-          </div>
-        </section>
-
-        {/* ═══ VIEW ALL PROJECTS ═══ */}
-        <div className="px-6 md:px-12 max-w-[1400px] mx-auto pb-12">
-          <Reveal y={20}>
-            <div
-              className="py-8 flex items-center justify-center"
-              style={{ borderTop: "1px solid var(--editorial-border)", borderBottom: "1px solid var(--editorial-border)" }}
-            >
-              <Link
-                href="/work"
-                className="inline-flex items-center gap-3 group transition-all"
-                style={{
-                  fontFamily: "var(--font-space-mono)",
-                  fontSize: "0.75rem",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.2em",
-                  color: "var(--editorial-fg)",
-                  transitionDuration: "400ms",
-                  transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--editorial-accent)")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "var(--editorial-fg)")}
+            {/* Image grid - first row */}
+            {featuredProjects.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: DURATION, delay: 0.4, ease: EASE }}
+                className="flex gap-4 w-full"
               >
-                {locale === "en" ? "View All Projects" : "Ver Todos os Projetos"}
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </div>
-          </Reveal>
-        </div>
+                {featuredProjects[0] && (
+                  <div className="flex-[2] min-w-0">
+                    <ProjectCard
+                      project={featuredProjects[0]}
+                      locale={locale}
+                      aspectClass="aspect-[1.55/1]"
+                    />
+                  </div>
+                )}
+                {featuredProjects[1] && (
+                  <div className="flex-1 min-w-0 hidden md:block">
+                    <ProjectCard
+                      project={featuredProjects[1]}
+                      locale={locale}
+                      aspectClass="aspect-[0.78/1]"
+                    />
+                  </div>
+                )}
+                {featuredProjects[2] && (
+                  <div className="flex-1 min-w-0 hidden md:block">
+                    <ProjectCard
+                      project={featuredProjects[2]}
+                      locale={locale}
+                      aspectClass="aspect-[0.78/1]"
+                    />
+                  </div>
+                )}
+              </motion.div>
+            )}
+          </section>
 
-        {/* ═══ FOOTER DIVIDER ═══ */}
-        <div className="px-6 md:px-12 max-w-[1400px] mx-auto">
-          <Reveal y={0}>
-            <div style={{ height: "1px", backgroundColor: "var(--editorial-border)" }} />
-          </Reveal>
-        </div>
-
-        {/* ═══ FOOTER CTA ═══ */}
-        <footer className="py-24 md:py-32 px-6 md:px-12 max-w-[1400px] mx-auto">
-          <Reveal y={30}>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
-              {/* CTA text */}
-              <div className="md:col-span-2">
-                <h2
-                  className="text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] leading-[0.95] mb-8"
-                  style={{
-                    fontFamily: "var(--font-playfair)",
-                    fontWeight: 400,
-                    letterSpacing: "-0.03em",
-                    color: "var(--editorial-fg)",
-                  }}
-                >
-                  {locale === "en" ? <>Let&rsquo;s work<br />together.</> : <>Vamos trabalhar<br />juntos.</>}
-                </h2>
-                <a
-                  href={`mailto:${personalInfo.email}`}
-                  className="inline-block transition-colors"
-                  style={{
-                    fontFamily: "var(--font-space-mono)",
-                    fontSize: "0.75rem",
-                    letterSpacing: "0.1em",
-                    color: "var(--editorial-muted)",
-                    borderBottom: "1px solid var(--editorial-border)",
-                    paddingBottom: "4px",
-                    transitionDuration: "400ms",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.color = "var(--editorial-accent)"
-                    e.currentTarget.style.borderBottomColor = "var(--editorial-accent)"
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.color = "var(--editorial-muted)"
-                    e.currentTarget.style.borderBottomColor = "var(--editorial-border)"
-                  }}
-                >
-                  {personalInfo.email}
-                </a>
-              </div>
-
-              {/* Socials */}
-              <div className="md:col-span-1 md:col-start-4 flex flex-col gap-3">
-                <span
-                  className="mb-2"
-                  style={{
-                    fontFamily: "var(--font-space-mono)",
-                    fontSize: "0.6rem",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.3em",
-                    color: "var(--editorial-muted)",
-                  }}
-                >
-                  {locale === "en" ? "Connect" : "Contato"}
-                </span>
-                {socials.map((social) => (
-                  <a
-                    key={social.name}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 transition-all"
-                    style={{
-                      fontFamily: "var(--font-space-grotesk)",
-                      fontSize: "0.95rem",
-                      color: "var(--editorial-fg)",
-                      transitionDuration: "400ms",
-                      transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.color = "var(--editorial-accent)"
-                      e.currentTarget.style.transform = "translateY(-2px)"
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.color = "var(--editorial-fg)"
-                      e.currentTarget.style.transform = "translateY(0)"
-                    }}
+          {/* ═══ ALL PROJECTS SECTION ═══ */}
+          {allProjects.length > 3 && (
+            <section>
+              <Reveal y={20}>
+                <div className="flex items-end justify-between mb-8">
+                  <h2 className="text-sm text-muted-foreground tracking-tight">
+                    {locale === "en" ? "Selected work" : "Trabalhos selecionados"}
+                  </h2>
+                  <Link
+                    href="/work"
+                    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {social.name}
-                    <ArrowUpRight className="w-3 h-3" />
-                  </a>
+                    {locale === "en" ? "View all" : "Ver todos"}
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+              </Reveal>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {allProjects.slice(3).map((project, i) => (
+                  <Reveal key={project.id} delay={0.05 * Math.min(i, 6)} y={20}>
+                    <ProjectCard
+                      project={project}
+                      locale={locale}
+                      aspectClass="aspect-[1.4/1]"
+                    />
+                  </Reveal>
                 ))}
               </div>
-            </div>
-          </Reveal>
+            </section>
+          )}
 
-          {/* Copyright */}
-          <Reveal delay={0.2} y={10}>
-            <div
-              className="mt-24 pt-8"
-              style={{ borderTop: "1px solid var(--editorial-border)" }}
-            >
-              <span
-                style={{
-                  fontFamily: "var(--font-space-mono)",
-                  fontSize: "0.6rem",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.2em",
-                  color: "var(--editorial-muted)",
-                }}
-              >
-                &copy; {new Date().getFullYear()} {personalInfo.name} {personalInfo.lastName}. All rights reserved.
-              </span>
-            </div>
-          </Reveal>
-        </footer>
+          {/* ═══ FOOTER ═══ */}
+          <footer className="pt-16">
+            <Reveal y={20}>
+              <div className="flex flex-col gap-12">
+                {/* CTA */}
+                <div>
+                  <h2 className="text-[clamp(2rem,5vw,3rem)] font-normal leading-[1.1] tracking-[-0.03em] text-foreground mb-6">
+                    {locale === "en" ? <>Let&rsquo;s work together.</> : <>Vamos trabalhar juntos.</>}
+                  </h2>
+                  <a
+                    href={`mailto:${personalInfo.email}`}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {personalInfo.email}
+                  </a>
+                </div>
+
+                {/* Bottom row */}
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 pt-8 border-t border-border">
+                  <span className="text-xs text-muted-foreground">
+                    &copy; {new Date().getFullYear()} {personalInfo.name} {personalInfo.lastName}
+                  </span>
+                  <div className="flex gap-6">
+                    {socials.map((social) => (
+                      <a
+                        key={social.name}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                      >
+                        {social.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+            <div className="h-8" />
+          </footer>
+
+        </div>
       </div>
     </div>
   )
