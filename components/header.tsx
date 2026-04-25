@@ -27,9 +27,13 @@ export function Header() {
           <Link href="/info" className="hidden md:inline-block text-muted-foreground hover:text-foreground transition-colors tracking-tight">
             {t("intro")}
           </Link>
-          <Link href="/contact" className="hidden md:inline-block text-muted-foreground hover:text-foreground transition-colors tracking-tight">
+          <a
+            href="https://calendar.moitinho.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-block text-muted-foreground hover:text-foreground transition-colors tracking-tight">
             {t("letsConnect")}
-          </Link>
+          </a>
           <div className="flex items-center gap-1.5">
             <LanguageToggle />
             <ThemeToggle />
@@ -57,9 +61,14 @@ export function Header() {
             <Link href="/info" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground transition-colors tracking-tight">
               {t("intro")}
             </Link>
-            <Link href="/contact" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground transition-colors tracking-tight">
+            <a
+              href="https://calendar.moitinho.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="text-muted-foreground hover:text-foreground transition-colors tracking-tight">
               {t("letsConnect")}
-            </Link>
+            </a>
           </div>
         </div>
       )}
