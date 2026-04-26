@@ -12,12 +12,15 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-background/90 backdrop-blur-sm transition-all duration-300">
-      <div className="max-w-[1200px] mx-auto flex h-14 items-center justify-between px-6 md:px-8">
-        <Link href="/" className="text-sm font-medium text-foreground hover:text-muted-foreground transition-colors tracking-tight">
+    <header className="fixed top-0 z-50 w-full border-b border-border bg-background/90 backdrop-blur-sm transition-all duration-300">
+      <div className="max-w-[1280px] mx-auto flex h-[84px] items-center justify-between px-8 md:px-12">
+        <Link
+          href="/"
+          className="font-mono text-[17px] font-medium text-foreground hover:text-muted-foreground transition-colors tracking-tight"
+        >
           @eumoitinho
         </Link>
-        <nav className="flex items-center gap-6 text-sm">
+        <nav className="flex items-center gap-9 text-base">
           <Link href="/work" className="hidden md:inline-block text-muted-foreground hover:text-foreground transition-colors tracking-tight">
             {t("work")}
           </Link>
