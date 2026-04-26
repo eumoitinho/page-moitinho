@@ -31,7 +31,7 @@ export function Header() {
             {t("intro")}
           </Link>
           <a
-            href="https://calendar.moitinho.dev"
+            href="https://calendar.moitinho.dev/joao"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-block text-muted-foreground hover:text-foreground transition-colors tracking-tight">
@@ -65,7 +65,7 @@ export function Header() {
               {t("intro")}
             </Link>
             <a
-              href="https://calendar.moitinho.dev"
+              href="https://calendar.moitinho.dev/joao"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
