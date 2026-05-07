@@ -30,13 +30,9 @@ export function Header() {
           <Link href="/info" className="hidden md:inline-block text-muted-foreground hover:text-foreground transition-colors tracking-tight">
             {t("intro")}
           </Link>
-          <a
-            href="https://calendar.moitinho.dev/joao"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:inline-block text-muted-foreground hover:text-foreground transition-colors tracking-tight">
-            {t("letsConnect")}
-          </a>
+          <Link href="/info" className="hidden md:inline-block text-muted-foreground hover:text-foreground transition-colors tracking-tight">
+            {t("connect")}
+          </Link>
           <div className="flex items-center gap-1.5">
             <LanguageToggle />
             <ThemeToggle />

@@ -311,6 +311,24 @@
       "skills": ["Next.js 14", "TypeScript", "PostgreSQL", "Drizzle ORM", "Asaas", "Sanity CMS", "Azure"]
     },
     {
+      "id": "tractian-industries",
+      "title": { "en": "Tractian Industry Pages", "pt": "Páginas de Indústria da Tractian" },
+      "image": "/screenshots/tractian.png",
+      "url": "https://tractian.com/industria/usinas-e-agricola",
+      "category": "WEB DEVELOPMENT",
+      "type": "Multilingual Industry Pages",
+      "featured": true,
+      "highlight": {
+        "en": "Industry category pages for Tractian delivered in pt-BR, en-US and es-MX across multiple sectors",
+        "pt": "Páginas de categoria de indústria da Tractian entregues em pt-BR, en-US e es-MX para múltiplos setores"
+      },
+      "description": {
+        "en": "Built and shipped Tractian's industry category pages for energy/agriculture, automotive, and mining. The implementation covered multilingual delivery for Brazil, United States, and Mexico locales (pt-BR, en-US, es-MX), maintaining consistent SEO structure, conversion-oriented content flow, and localized messaging. Reference pages: https://tractian.com/industria/usinas-e-agricola, https://tractian.com/industria/automotiva, https://tractian.com/industria/setor-mineracao.",
+        "pt": "Desenvolvi e publiquei as páginas de categoria de indústria da Tractian para usinas/agro, automotivo e mineração. A implementação cobriu entrega multilíngue para Brasil, Estados Unidos e México (pt-BR, en-US, es-MX), mantendo estrutura de SEO consistente, fluxo de conteúdo orientado à conversão e mensagens localizadas. Páginas de referência: https://tractian.com/industria/usinas-e-agricola, https://tractian.com/industria/automotiva, https://tractian.com/industria/setor-mineracao."
+      },
+      "skills": ["Next.js", "TypeScript", "Internationalization", "SEO", "Landing Pages", "Content Architecture"]
+    },
+    {
       "id": "clinimais",
       "title": { "en": "Clinimais", "pt": "Clinimais" },
       "image": "/screenshots/clinimais.png",
@@ -355,7 +373,7 @@
       "url": "https://liveacademia.m2z.com.br",
       "category": "WEB DEVELOPMENT",
       "type": "Fitness / Headless CMS",
-      "featured": true,
+      "featured": false,
       "highlight": {
         "en": "Gym chain platform with Sanity CMS — per-unit plan filtering and integrated checkout",
         "pt": "Plataforma de rede de academias com Sanity CMS — filtro de planos por unidade e checkout integrado"
@@ -411,7 +429,7 @@
         "pt": "G.O UP Company"
       },
       "image": "/screenshots/30_goup.png.png",
-      "url": "https://preview.goupcompany.com.br",
+      "url": "https://site-goup.vercel.app/",
       "category": "WEB DEVELOPMENT",
       "type": "Marketing / Tech",
       "featured": false,
