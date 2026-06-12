@@ -1,0 +1,236 @@
+%-------------------------
+% Resume in LaTeX (v3 EN)
+% Optimized for 2 pages, international market (English version)
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.2cm, top=0.7cm, right=1.0cm, bottom=0.8cm}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-1mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-1 mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+\newcommand{\name}{João Moitinho}
+\newcommand{\roll}{Brazil}
+\newcommand{\phone}{41 99503-4442}
+\newcommand{\emaila}{joao@moitinho.dev}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +55-\phone}\\
+  {Full Stack Developer \& Senior Graphic Designer} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  {\roll \ (100\% Remote, US/EU Time Zones)} & \href{https://moitinho.dev}{\raisebox{0.0\height}{\footnotesize \faGlobe}\ {moitinho.dev}} \ \textbar\ \href{https://www.linkedin.com/in/eumoitinho/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn}} \ \textbar\ \href{https://github.com/eumoitinho}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub}} \ \textbar\ \href{https://www.behance.net/joaomoitinh1}{\raisebox{0.0\height}{\footnotesize \faBehance}\ {Behance}} \\
+\end{tabularx}
+}
+
+\section{\textbf{Professional Summary}}
+\vspace{2mm}
+\small{Full stack developer with 6+ years building production web platforms and AI-powered applications. Specialist in TypeScript, React, Next.js, Node.js, and PostgreSQL, delivering SaaS products, analytics systems, and content platforms end to end. Focused on AI-first development: integrating LLMs (Azure OpenAI, Claude) and automation (n8n) into user-facing products, shipping fast with Claude Code, Cursor, v0, and Lovable. 50+ projects delivered for clients across Brazil, the US, and Europe, working 100\% remotely on distributed teams. A hybrid background in marketing technology (HubSpot, GA4, GTM) and 10+ years of senior graphic design (with credits for Spinnin Records and Groovy Society) pairs product thinking with technical and creative execution. C2 Proficient English and native Portuguese.}
+\vspace{-2mm}
+
+\section{\textbf{Professional Experience}}
+\vspace{2mm}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+  {Founder \& Lead Developer (Independent Practice)}{Brazil $\cdot$ 100\% Remote}
+  {MSYNC (moitinho.dev)}{2018 -- Present}
+  \resumeItemListStart
+    \item{Run an independent software development, design, and marketing technology practice serving 50+ clients across Brazil, the US, and Europe, in both solo projects and agency partnerships with M2Z Creative and Catalisti Holding.}
+    \item{Ship fast with AI-assisted development: Claude Code, Cursor, v0, Lovable, and Replit. Author of a personal set of Claude Code skills covering Next.js + Sanity, Vercel deploys, n8n + Evolution API + Azure OpenAI architectures, and GTM/LGPD consent patterns.}
+    \item{Build production applications with Next.js 14/15, TypeScript, React, Node.js, Sanity CMS, Drizzle, PostgreSQL, and Vercel; integrate AI features via Azure OpenAI (GPT-4o, Whisper, Vision) and Claude with n8n, Redis, and anti-loop layers.}
+    \item{Key deliveries in the last 12 months: multi-tenant SaaS aggregating Meta Ads, Google Ads, and GA4 for marketing agencies (Bun, Elysia, Next.js, Drizzle, Clerk, Cube.dev, Fivetran, Stripe); port terminal corporate site with an interactive react-globe.gl globe; Next.js + Sanity portfolio/proposal platform with per-client private routes; Azure OpenAI WhatsApp chatbot with Redis memory.}
+    \item{Implement marketing technology stacks across client web properties: HubSpot CMS + Marketing Hub, GA4, GTM with Consent Mode v2, Meta Business, RD Station, and LGPD/GDPR-compliant tracking.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Mid Full Stack Developer, Growth Team}{São Paulo, Brazil $\cdot$ 100\% Remote}
+  {TRACTIAN (Industrial AI / IoT, Series B)}{Feb 2026 -- May 2026}
+  \resumeItemListStart
+    \item{Owned the main public web properties on the Growth team: tractian.com, Tractian Academy, Events, and Careers, serving global B2B traffic.}
+    \item{Designed and delivered a careers analytics dashboard in PostHog using HogQL, pivot columns, and conditional formatting for the HR audience.}
+    \item{Built A/B tests and CRO experiments with PostHog; maintained the lead-to-deal analytics pipeline integrating PostHog, HubSpot, and GA4; managed multi-source content delivery across Ghost, Strapi, Builder.io, and Airtable.}
+    \item{Accelerated delivery using Cursor and Claude Code for refactors, feature scaffolding, and OpenTelemetry-based observability instrumentation.}
+  \resumeItemListEnd
+
+   \resumeSubheading
+  {Tech Lead, Full Stack Engineering (Performance Agency)}{Curitiba, Brazil $\cdot$ 100\% Remote}
+  {NineTwo Performance (Catalisti Holding)}{Jan 2025 -- Feb 2026}
+  \resumeItemListStart
+    \item{End-to-end technical leadership for a digital performance agency with 25+ client accounts, owning architecture, observability, and martech integrations (GA4, Google Ads, Meta Ads, GTM, HubSpot, and RD Station).}
+    \item{Early adopter of Claude Code (in use since its 2025 launch); delivered all client projects with AI-assisted development combining Claude Code, Cursor, and v0 across the agency stack.}
+    \item{Migrated the agency's entire client portfolio from WordPress to Next.js / TypeScript, building the development infrastructure from scratch (GitHub organization, Vercel, CI/CD on Azure); delivered 29+ production projects for clients in the US, Europe, and LATAM (B2B SaaS, multi-tenant marketing dashboards, e-commerce, corporate sites).}
+    \item{Architected content infrastructure with a wide range of headless and traditional CMS platforms: Sanity CMS across 20+ projects, plus Strapi, Ghost, Payload CMS, Builder.io, and Tina CMS depending on each project's editorial and modeling needs.}
+    \item{Built interactive dashboards integrated with GA4 and Meta Business APIs for clients with six-figure ad spend; acted as sole technical owner across concurrent projects with distributed teams.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Webmaster \& Digital Producer}{Campo Grande, Brazil $\cdot$ Remote}
+  {Donatti Turismo}{Aug 2022 -- Jan 2025}
+  \resumeItemListStart
+    \item{Owned the company's full digital presence: web development, landing pages with Google Sheets API automation, and conversion-focused content production.}
+    \item{Managed integrated campaigns across Meta Business, Instagram, WhatsApp, Google Business, and Facebook; defined the digital marketing strategy aligned with tourism market seasonality.}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+\section{\textbf{Technical Skills}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, JavaScript, Python, Java, SQL, HTML, CSS.} \\
+     \textbf{Frontend}{: React, Next.js (App Router, Server Components, Server Actions), Vue, TailwindCSS with custom design systems (CSS custom property tokens, CI token gating), shadcn/ui, Redux, TanStack Query, TanStack Table, Recharts, next-intl (real pt-BR/en/es i18n).} \\
+     \textbf{Backend \& API}{: Node.js, NestJS, Elysia (boundary architecture: public OAuth/webhook routes vs authenticated /v1), Bun monorepos (workspaces, Eden Treaty for end-to-end type safety), Spring Boot, REST, GraphQL.} \\
+     \textbf{Data \& Cloud}{: PostgreSQL, MongoDB, Redis, Drizzle ORM (schema design, migrations, org/workspace multi-tenancy); Azure (Container Apps, Container Apps Jobs, Bicep IaC, Key Vault, Postgres Flex), Vercel, Cloudflare (R2, custom image loader), Docker, Kubernetes, Azure DevOps Pipelines, GitHub Actions, CI/CD.} \\
+     \textbf{Integrations}{: end-to-end custom OAuth for Meta Ads, Google Ads, GA4 (signed state, encrypted token storage); Fivetran ELT (idempotent provisioning, sync orchestration); Cube.dev semantic layer; Clerk (SDK-level auth/orgs); Stripe + AbacatePay/PIX billing; DevCycle/OpenFeature per-org feature flags.} \\
+     \textbf{AI Stack}{: Claude Code, Cursor, v0, Lovable, Replit, GitHub Copilot; Azure OpenAI (GPT-4o, Whisper, Vision), Claude API, n8n, OpenTelemetry, RAG, prompt engineering.} \\
+     \textbf{CMS}{: Sanity, Strapi, Ghost, Payload, Builder.io, Tina CMS, HubSpot CMS.} \\
+     \textbf{Marketing \& Analytics}{: HubSpot (CMS + Marketing Hub), GA4, GTM (Consent Mode v2), Google Ads, Meta Business, PostHog (HogQL), RD Station, Salesforce.} \\
+     \textbf{Design \& Creative}{: Figma, Adobe Photoshop, Illustrator, InDesign, After Effects, Premiere; brand identity, EPKs, motion graphics.} \\
+     \textbf{Engineering Practices}{: multi-tenancy \& data isolation, applied security (token encryption, webhook signature verification, signed OAuth state), LGPD/GDPR compliance, clean architecture (feature code to abstractions to vendors), measurable code quality (CodeScene, disciplined refactoring), mandatory code review, Agile (Scrum, Kanban), TDD, A/B testing, CRO.} \\
+    }}
+ \end{itemize}
+ \vspace{-10pt}
+
+\section{\textbf{Achievements}}
+ \vspace{-0.4mm}
+ \resumeSubHeadingListStart
+ \resumePOR{Patent registered with INPI (Brazilian National Institute of Industrial Property)}{}{2024}
+ \resumePOR{Research published at TISE 2023}{ -- International Conference on Informatics in Education}{2023}
+ \resumePOR{Design and EPK credits for Spinnin Records, Groovy Society, and Silver Panda}{}{2018 -- Present}
+ \resumeSubHeadingListEnd
+ \vspace{-5mm}
+
+\section{\textbf{Certifications}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+    \resumePOR {}
+        {\href{https://verify.skilljar.com/c/bfrsmrfj3bzt}{Building with the Claude API -- Anthropic}}
+        {2026}
+    \resumePOR {}
+        {\href{https://verify.skilljar.com/c/xjs8afiak8vv}{Claude Code in Action -- Anthropic}}
+        {2026}
+    \resumePOR {}
+        {\href{https://verify.skilljar.com/c/6jrkvs9p54u9}{Claude Code 101 -- Anthropic}}
+        {2026}
+    \resumePOR {}
+        {\href{https://verify.skilljar.com/c/xeqrcwuynqib}{AI Fluency: Framework \& Foundations -- Anthropic}}
+        {2026}
+    \resumePOR {}
+        {\href{https://verify.skilljar.com/c/s5nvotjcapt6}{Introduction to Claude Cowork -- Anthropic}}
+        {2026}
+    \resumePOR {}
+        {\href{https://cert.efset.org/en/pFP3vr}{EF SET English Certificate -- C2 Proficient}}
+        {2026}
+    \resumePOR {}
+        {\href{https://cursos.alura.com.br/program/certificate/3fcc6b19-b023-4a20-b202-ef4bcffd0591?lang}{Oracle Next Education F2 T6 -- Backend Program}}
+        {2024}
+    \resumePOR {}
+        {\href{https://cursos.alura.com.br/user/eumoitinho/degree-java-web-spring-boot-596328/certificate}{Java Web -- Building Applications with Spring Boot}}
+        {2024}
+    \resumePOR {}
+        {\href{https://cursos.alura.com.br/user/eumoitinho/degree-spring-framework-turma6-one-733547/certificate}{Java and Spring Framework T6 -- ONE}}
+        {2024}
+    \resumePOR {}
+        {\href{https://cursos.alura.com.br/user/eumoitinho/degree-java-turma6-one-733558/certificate}{Java and Object-Oriented Programming T6 -- ONE}}
+        {2024}
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor's in Computer Engineering}{GPA: 4.92 / 5.00}
+      {Federal University of Grande Dourados (UFGD), Brazil}{2018 -- 2025}
+      \resumeItemListStart
+        \item{Emphasis on software engineering, distributed systems, embedded systems, and computer networks.}
+        \item{Research published at TISE 2023: UFFA, a Progressive Web App for financial education.}
+        \item{Patent registered with INPI (Brazilian National Institute of Industrial Property), 2024.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+\end{document}
