@@ -1,0 +1,797 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e6]:
+      - navigation [ref=e7]:
+        - link "fabrica®" [ref=e8] [cursor=pointer]:
+          - /url: ./
+          - paragraph [ref=e12]: fabrica®
+        - link "Studio" [ref=e14] [cursor=pointer]:
+          - /url: ./studio
+          - paragraph [ref=e16]: Studio
+          - generic:
+            - paragraph
+        - link "Projects 27" [ref=e18] [cursor=pointer]:
+          - /url: ./projects
+          - paragraph [ref=e20]: Projects
+          - paragraph [ref=e22]: "27"
+        - link "Blog" [ref=e24] [cursor=pointer]:
+          - /url: ./blog
+          - paragraph [ref=e26]: Blog
+        - link "Contact" [ref=e28] [cursor=pointer]:
+          - /url: ./contact
+          - paragraph [ref=e30]: Contact
+      - generic [ref=e36]:
+        - navigation [ref=e37]:
+          - link "Home Home" [ref=e40] [cursor=pointer]:
+            - /url: ./
+            - paragraph [ref=e42]: Home
+            - paragraph [ref=e44]: Home
+          - link "Studio Studio" [ref=e47] [cursor=pointer]:
+            - /url: ./studio
+            - paragraph [ref=e49]: Studio
+            - paragraph [ref=e51]: Studio
+          - link "Projects Projects" [ref=e54] [cursor=pointer]:
+            - /url: ./projects
+            - paragraph [ref=e56]: Projects
+            - paragraph [ref=e58]: Projects
+          - link "Blog Blog" [ref=e61] [cursor=pointer]:
+            - /url: ./blog
+            - paragraph [ref=e63]: Blog
+            - paragraph [ref=e65]: Blog
+          - link "Contact Contact" [ref=e68] [cursor=pointer]:
+            - /url: ./contact
+            - paragraph [ref=e70]: Contact
+            - paragraph [ref=e72]: Contact
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - paragraph [ref=e76]:
+              - link "(312) 555-2468" [ref=e77] [cursor=pointer]:
+                - /url: tel:555-666-7777
+            - link "hello@fabrica.com" [ref=e79] [cursor=pointer]:
+              - /url: mailto:hello@fabrica.com
+              - paragraph [ref=e86]: hello@fabrica.com
+          - generic [ref=e88]:
+            - paragraph [ref=e90] [cursor=pointer]:
+              - link "Privacy Policy" [ref=e91]:
+                - /url: ./legal/privacy-policy
+            - paragraph [ref=e93] [cursor=pointer]:
+              - link "Terms of Service" [ref=e94]:
+                - /url: ./legal/terms-of-service
+          - paragraph [ref=e96]: © 2025 fabrica® Studio
+    - generic [ref=e97]:
+      - generic [ref=e99]:
+        - generic:
+          - generic:
+            - generic:
+              - paragraph:
+                - generic:
+                  - generic: f
+                  - generic: a
+                  - generic: b
+                  - generic: r
+                  - generic: i
+                  - generic: c
+                  - generic: a
+                  - generic: ®
+      - main [ref=e100]:
+        - generic [ref=e101]:
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - generic [ref=e107]:
+                - generic [ref=e108]:
+                  - generic [ref=e109]:
+                    - img [ref=e110]:
+                      - paragraph [ref=e112]: fabrica
+                    - img [ref=e113]:
+                      - paragraph [ref=e115]: fabrica
+                  - img [ref=e116]:
+                    - paragraph [ref=e118]: ®
+                - img [ref=e121]:
+                  - paragraph [ref=e123]: Studio
+              - generic [ref=e125]:
+                - paragraph [ref=e128]: Branding and Identity
+                - paragraph [ref=e131]: Social Media Marketing
+                - paragraph [ref=e134]: Web Design and Development
+                - paragraph [ref=e137]: SEO Optimization
+            - generic [ref=e159]:
+              - generic [ref=e160]:
+                - heading "No generic websites. No empty marketing promises. Just tools and strategies that help your business grow and your brand shine." [level=1] [ref=e162]
+                - paragraph [ref=e164]: © 2025 fabrica® Studio
+              - link "Team Lead at fabrica® Lauren Thompson Let’s talk Let’s talk" [ref=e167] [cursor=pointer]:
+                - /url: ./contact
+                - generic [ref=e171]:
+                  - generic [ref=e172]:
+                    - generic [ref=e173]:
+                      - paragraph [ref=e175]: Team Lead
+                      - paragraph [ref=e177]: at fabrica®
+                    - paragraph [ref=e179]: Lauren Thompson
+                  - generic [ref=e181]:
+                    - paragraph [ref=e183]: Let’s talk
+                    - paragraph [ref=e185]: Let’s talk
+          - generic [ref=e204]:
+            - paragraph [ref=e213]: Our clients
+            - paragraph [ref=e216]: (2016-25©)
+        - generic [ref=e249]:
+          - generic [ref=e250]:
+            - paragraph [ref=e252]: (27)
+            - generic [ref=e253]:
+              - heading "Projects." [level=2] [ref=e256]
+              - paragraph [ref=e259]: ©2025
+            - paragraph [ref=e262]: We’ve helped businesses across industries achieve their goals. Here are some of our recent projects.
+          - generic [ref=e263]:
+            - link "Boltshift. / 2025" [ref=e266] [cursor=pointer]:
+              - /url: ./projects/boltshift
+              - generic [ref=e268]:
+                - paragraph [ref=e270]: Boltshift.
+                - generic [ref=e271]:
+                  - paragraph [ref=e273]: /
+                  - paragraph [ref=e275]: "2025"
+            - link "Ephemeral. / 2025" [ref=e289] [cursor=pointer]:
+              - /url: ./projects/ephemeral
+              - generic [ref=e291]:
+                - paragraph [ref=e293]: Ephemeral.
+                - generic [ref=e294]:
+                  - paragraph [ref=e296]: /
+                  - paragraph [ref=e298]: "2025"
+            - link "Powersurge. / 2024" [ref=e312] [cursor=pointer]:
+              - /url: ./projects/powersurge
+              - generic [ref=e314]:
+                - paragraph [ref=e316]: Powersurge.
+                - generic [ref=e317]:
+                  - paragraph [ref=e319]: /
+                  - paragraph [ref=e321]: "2024"
+            - link "Mastermail. / 2024" [ref=e335] [cursor=pointer]:
+              - /url: ./projects/mastermail
+              - generic [ref=e337]:
+                - paragraph [ref=e339]: Mastermail.
+                - generic [ref=e340]:
+                  - paragraph [ref=e342]: /
+                  - paragraph [ref=e344]: "2024"
+            - link "Warpspeed. / 2023" [ref=e358] [cursor=pointer]:
+              - /url: ./projects/warpspeed
+              - generic [ref=e360]:
+                - paragraph [ref=e362]: Warpspeed.
+                - generic [ref=e363]:
+                  - paragraph [ref=e365]: /
+                  - paragraph [ref=e367]: "2023"
+            - link "CloudWatch. / 2020" [ref=e381] [cursor=pointer]:
+              - /url: ./projects/cloudwatch
+              - generic [ref=e383]:
+                - paragraph [ref=e385]: CloudWatch.
+                - generic [ref=e386]:
+                  - paragraph [ref=e388]: /
+                  - paragraph [ref=e390]: "2020"
+        - generic [ref=e403]:
+          - generic [ref=e404]:
+            - paragraph [ref=e413]: Why choose us
+            - heading "Proven results for every project, with a focus on design and functionality." [level=2] [ref=e416]
+          - generic [ref=e417]:
+            - generic [ref=e420]:
+              - generic [ref=e421]:
+                - paragraph [ref=e423]: Your digital journey begins with a conversation. Let's talk today.
+                - link "Let's talk Let's talk" [ref=e425] [cursor=pointer]:
+                  - /url: ./contact
+                  - paragraph [ref=e427]: Let's talk
+                  - paragraph [ref=e429]: Let's talk
+              - img "Close-up portrait of a person wearing a gray insulated hooded jacket with the hood up, showing their face framed by the hood against a light background." [ref=e436]
+            - generic [ref=e442]:
+              - paragraph [ref=e444]: No fluff, just results. Thoughtful design and tools that make your work easier. We focus on smart design and useful features, project after project.
+              - generic [ref=e445]:
+                - generic [ref=e448]:
+                  - generic [ref=e449]:
+                    - generic [ref=e451]:
+                      - generic [ref=e452]: "0"
+                      - generic [ref=e453]: +
+                    - paragraph [ref=e455]: "01"
+                  - generic [ref=e456]:
+                    - paragraph [ref=e459]: Successful projects completed
+                    - paragraph [ref=e461]: We’ve delivered 50+ projects that help companies generate real results.
+                - generic [ref=e464]:
+                  - generic [ref=e465]:
+                    - generic [ref=e467]:
+                      - generic [ref=e468]: "0"
+                      - generic [ref=e469]: "%"
+                    - paragraph [ref=e471]: "02"
+                  - paragraph [ref=e475]: Customer satisfaction rate
+        - generic [ref=e483]:
+          - generic [ref=e484]:
+            - generic [ref=e485]:
+              - paragraph [ref=e494]: What we do
+              - generic [ref=e495]:
+                - heading "Services." [level=2] [ref=e498]
+                - paragraph [ref=e501]: (4)
+            - generic [ref=e504]:
+              - generic [ref=e506] [cursor=pointer]:
+                - paragraph [ref=e509]: (001)
+                - generic [ref=e510]:
+                  - generic [ref=e511]:
+                    - generic [ref=e520]:
+                      - paragraph [ref=e522]: Web design and development
+                      - paragraph [ref=e524]: Modern, responsive, and user-friendly websites designed to engage visitors and drive conversions.
+                    - generic [ref=e525]:
+                      - paragraph [ref=e527]: Categories
+                      - generic [ref=e528]:
+                        - paragraph [ref=e532]: Packaging design
+                        - paragraph [ref=e536]: Logo design
+                        - paragraph [ref=e540]: Rebranding
+                        - paragraph [ref=e544]: Typography
+                        - paragraph [ref=e548]: Guidelines
+                        - paragraph [ref=e552]: Visual identity
+                        - paragraph [ref=e555]: 6+
+                  - paragraph [ref=e561]: Web design and development
+              - generic [ref=e563] [cursor=pointer]:
+                - paragraph [ref=e566]: (002)
+                - generic [ref=e567]:
+                  - generic [ref=e568]:
+                    - generic [ref=e577]:
+                      - paragraph [ref=e579]: Social media marketing
+                      - paragraph [ref=e581]: Strategic, data-driven social media campaigns designed to build brand awareness and connect with your target audience.
+                    - generic [ref=e582]:
+                      - paragraph [ref=e584]: Categories
+                      - generic [ref=e585]:
+                        - paragraph [ref=e589]: Content strategy
+                        - paragraph [ref=e593]: Community management
+                        - paragraph [ref=e597]: Paid advertising
+                        - paragraph [ref=e601]: Analytics & reporting
+                        - paragraph [ref=e605]: Platform optimization
+                        - paragraph [ref=e608]: 6+
+                  - paragraph [ref=e615]: Social media marketing
+              - generic [ref=e617] [cursor=pointer]:
+                - paragraph [ref=e620]: (003)
+                - generic [ref=e621]:
+                  - generic [ref=e622]:
+                    - generic [ref=e631]:
+                      - paragraph [ref=e633]: SEO and content marketing
+                      - paragraph [ref=e635]: Comprehensive search optimization and engaging content that increases visibility, drives organic traffic, and establishes thought leadership.
+                    - generic [ref=e636]:
+                      - paragraph [ref=e638]: Categories
+                      - generic [ref=e639]:
+                        - paragraph [ref=e643]: Keyword research
+                        - paragraph [ref=e647]: On-page optimization
+                        - paragraph [ref=e651]: Content creation
+                        - paragraph [ref=e655]: Link building
+                        - paragraph [ref=e658]: 4+
+                  - paragraph [ref=e665]: SEO and content marketing
+              - generic [ref=e667] [cursor=pointer]:
+                - paragraph [ref=e670]: (004)
+                - generic [ref=e671]:
+                  - generic [ref=e672]:
+                    - generic [ref=e681]:
+                      - paragraph [ref=e683]: Branding and identity
+                      - paragraph [ref=e685]: Distinctive, memorable brand experiences that communicate your values and create emotional connections with your customers.
+                    - generic [ref=e686]:
+                      - paragraph [ref=e688]: Categories
+                      - generic [ref=e689]:
+                        - paragraph [ref=e693]: Brand strategy
+                        - paragraph [ref=e697]: Logo design
+                        - paragraph [ref=e701]: Brand voice
+                        - paragraph [ref=e705]: Color systems
+                        - paragraph [ref=e709]: Brand guidelines
+                        - paragraph [ref=e713]: Identity applications
+                        - paragraph [ref=e716]: 6+
+                  - paragraph [ref=e723]: Branding and identity
+            - link "Get started Get started" [ref=e729] [cursor=pointer]:
+              - /url: ./contact
+              - paragraph [ref=e731]: Get started
+              - paragraph [ref=e733]: Get started
+          - img "Dark gradiend background" [ref=e739]
+        - generic [ref=e744]:
+          - generic [ref=e745]:
+            - paragraph [ref=e754]: About us
+            - generic [ref=e755]:
+              - paragraph [ref=e760]: fabrica®
+              - generic [ref=e761]:
+                - heading "How we launch websites and marketing campaigns." [level=2] [ref=e763]
+                - paragraph [ref=e765]: See how our team combines creativity, technology, and strategy to build powerful digital solutions.
+          - generic [ref=e766]:
+            - generic [ref=e767]:
+              - generic [ref=e770]:
+                - paragraph [ref=e779]: "01"
+                - generic [ref=e780]:
+                  - img "Team members in an office setting having a discussion, representing clear communication throughout the project process." [ref=e783]
+                  - paragraph [ref=e785]: The team that communicates every step
+              - generic [ref=e788]:
+                - paragraph [ref=e797]: "02"
+                - generic [ref=e798]:
+                  - img "Documents and planning materials on a desk, representing customized solutions tailored to client needs." [ref=e801]
+                  - paragraph [ref=e803]: Customized solutions for your unique needs
+              - generic [ref=e806]:
+                - paragraph [ref=e815]: "03"
+                - generic [ref=e816]:
+                  - img "Chart or graph showing pricing information, representing transparent pricing with no hidden fees." [ref=e819]
+                  - paragraph [ref=e821]: Transparent pricing with no hidden fees
+              - generic [ref=e824]:
+                - paragraph [ref=e833]: "04"
+                - generic [ref=e834]:
+                  - img "Hands working on a device or document, representing professional results delivered to clients." [ref=e837]
+                  - paragraph [ref=e839]: Proven track record with measurable results
+            - generic [ref=e844] [cursor=pointer]:
+              - img [ref=e848]
+              - generic [ref=e850]:
+                - paragraph [ref=e852]: Watch showreel
+                - paragraph [ref=e854]: (2016-25©)
+        - generic [ref=e858]:
+          - generic [ref=e859]:
+            - paragraph [ref=e868]: Testimonials
+            - generic [ref=e869]:
+              - heading "Experiences." [level=2] [ref=e871]
+              - paragraph [ref=e874]: ©2025
+          - generic [ref=e875]:
+            - generic [ref=e876]:
+              - generic [ref=e877]:
+                - generic [ref=e878]:
+                  - paragraph [ref=e881]: "4.9"
+                  - paragraph [ref=e883]: /5
+                - paragraph [ref=e885]: We’ve delivered 56+ projects that help companies generate real results.
+              - generic [ref=e886]:
+                - generic [ref=e887]:
+                  - paragraph [ref=e892]: fabrica®
+                  - generic [ref=e895]:
+                    - paragraph [ref=e907]: 56+
+                    - generic [ref=e912]:
+                      - paragraph [ref=e914]: Trusted by
+                      - paragraph [ref=e916]: clients worldwide
+                - link "Leave a review Leave a review" [ref=e919] [cursor=pointer]:
+                  - /url: https://tally.so
+                  - paragraph [ref=e921]: Leave a review
+                  - paragraph [ref=e923]: Leave a review
+            - generic [ref=e926]:
+              - generic [ref=e931]:
+                - paragraph [ref=e933]: James Carter
+                - paragraph [ref=e935]: Wilson & Co
+              - paragraph [ref=e946]: Incredible team! They delivered exactly what we needed, on time and beyond expectations.
+            - generic [ref=e949]:
+              - generic [ref=e954]:
+                - paragraph [ref=e956]: Emily Davis
+                - paragraph [ref=e958]: StartUp Hub
+              - paragraph [ref=e969]: A smooth process from start to finish. Highly professional team!
+            - generic [ref=e972]:
+              - generic [ref=e977]:
+                - paragraph [ref=e979]: Anna Martinez
+                - paragraph [ref=e981]: Marketing Director
+              - paragraph [ref=e992]: "Our new branding is exactly what we envisioned—clean, modern, and unique. #1 in our industry."
+        - generic [ref=e994]:
+          - generic [ref=e996]:
+            - generic [ref=e999]:
+              - generic [ref=e1001]:
+                - generic [ref=e1002]: "0"
+                - generic [ref=e1003]: m+
+              - paragraph [ref=e1005]: Ad impressions managed
+            - generic [ref=e1008]:
+              - generic [ref=e1010]:
+                - generic [ref=e1011]: "0"
+                - generic [ref=e1012]: +
+              - paragraph [ref=e1014]: Successful projects launched
+            - generic [ref=e1017]:
+              - generic [ref=e1019]:
+                - generic [ref=e1020]: "0"
+                - generic [ref=e1021]: "%"
+              - paragraph [ref=e1023]: Client satisfaction rate
+            - generic [ref=e1026]:
+              - generic [ref=e1028]:
+                - generic [ref=e1029]: "0"
+                - generic [ref=e1030]: k+
+              - paragraph [ref=e1032]: Monthly visitors driven through SEO
+          - generic [ref=e1037]:
+            - generic [ref=e1038]:
+              - paragraph [ref=e1043]: fabrica®
+              - paragraph [ref=e1045]: Every project we take on is designed for long-term success.
+            - generic [ref=e1047]:
+              - paragraph [ref=e1050]:
+                - generic [ref=e1051]:
+                  - generic [ref=e1052]: Our
+                  - generic [ref=e1053]: approach
+                  - generic [ref=e1054]: is
+                  - generic [ref=e1055]: "simple:"
+                - generic [ref=e1056]: we
+                - generic [ref=e1057]: focus
+                - generic [ref=e1058]: "on"
+                - generic [ref=e1059]: functionality,
+                - generic [ref=e1060]: speed,
+                - generic [ref=e1061]: and
+                - generic [ref=e1062]: clarity,
+                - generic [ref=e1063]: ensuring
+                - generic [ref=e1064]: that
+                - generic [ref=e1065]: every
+                - generic [ref=e1066]: project
+                - generic [ref=e1067]: serves
+                - generic [ref=e1068]: a
+                - generic [ref=e1069]: clear
+                - generic [ref=e1070]: purpose
+                - generic [ref=e1071]: without
+                - generic [ref=e1072]: unnecessary
+                - generic [ref=e1073]: complexity.
+              - paragraph [ref=e1076]: We don’t overpromise or use flashy marketing language. We simply build well-designed, functional websites and strategies that help businesses succeed.
+        - generic [ref=e1078]:
+          - generic [ref=e1079]:
+            - generic [ref=e1081]:
+              - paragraph [ref=e1083]: Case study
+              - paragraph [ref=e1085]: UX/UI Redesign, Frontend Optimization.
+            - img [ref=e1091]:
+              - paragraph [ref=e1093]: fabrica®
+            - generic [ref=e1094]:
+              - link "Live website" [ref=e1097] [cursor=pointer]:
+                - /url: https://templifica.com
+                - generic [ref=e1098]:
+                  - paragraph [ref=e1100]: Live website
+                  - img [ref=e1107]
+              - generic [ref=e1109]:
+                - paragraph [ref=e1112]: From branding to web development and marketing
+                - paragraph [ref=e1115]: We do it all.
+            - img "Dark gradiend background" [ref=e1123]
+          - generic [ref=e1124]:
+            - generic [ref=e1125]:
+              - generic [ref=e1126]:
+                - generic [ref=e1127]:
+                  - paragraph [ref=e1129]: "Performance Boost:"
+                  - generic [ref=e1130]:
+                    - paragraph [ref=e1131]: Page speed +48%,
+                    - paragraph [ref=e1132]: Bounce rate -23%
+                - generic [ref=e1133]:
+                  - paragraph [ref=e1135]: "Conversion Rate Improvement:"
+                  - paragraph [ref=e1137]: 4.2% → 5.9%
+              - generic [ref=e1138]:
+                - paragraph [ref=e1145]: “Thanks to the redesign, we've seen a steady 60% increase in leads.”
+                - paragraph [ref=e1151]: Angela Smith
+              - img [ref=e1154]
+            - generic [ref=e1156]:
+              - generic [ref=e1157]:
+                - paragraph [ref=e1160]: "100"
+                - generic [ref=e1161]:
+                  - paragraph [ref=e1163]: Pagespeed score
+                  - paragraph [ref=e1165]: We prioritize performance without sacrificing visual appeal or functionality.
+              - generic [ref=e1166]:
+                - generic [ref=e1167]:
+                  - generic [ref=e1168]:
+                    - generic [ref=e1171]:
+                      - generic [ref=e1172]: "0"
+                      - generic [ref=e1173]: K
+                    - paragraph [ref=e1177]: +30%
+                  - paragraph [ref=e1179]: Quarterly visits
+                - generic [ref=e1180]:
+                  - generic [ref=e1183]:
+                    - paragraph [ref=e1186]: +1k
+                    - paragraph [ref=e1188]: Dec
+                  - generic [ref=e1191]:
+                    - paragraph [ref=e1194]: +1.3k
+                    - paragraph [ref=e1196]: Jan
+                  - generic [ref=e1199]:
+                    - paragraph [ref=e1202]: +1.1k
+                    - paragraph [ref=e1204]: Feb
+                  - generic [ref=e1207]:
+                    - paragraph [ref=e1210]: +1.5k
+                    - paragraph [ref=e1212]: Feb
+                  - generic [ref=e1215]:
+                    - paragraph [ref=e1218]: +2.3k
+                    - paragraph [ref=e1220]: Feb
+                  - generic [ref=e1223]:
+                    - paragraph [ref=e1226]: +5.9k
+                    - paragraph [ref=e1228]: Mar
+        - generic [ref=e1229]:
+          - generic [ref=e1230]:
+            - generic [ref=e1231]:
+              - paragraph [ref=e1241]: Simple pricing
+              - heading "Pricing." [level=2] [ref=e1244]
+            - generic [ref=e1245]:
+              - generic [ref=e1248]:
+                - generic [ref=e1251]:
+                  - paragraph [ref=e1255] [cursor=pointer]: Per project
+                  - paragraph [ref=e1259] [cursor=pointer]: Monthly
+                - generic [ref=e1261]:
+                  - generic [ref=e1262]:
+                    - generic [ref=e1263]:
+                      - paragraph [ref=e1265]: Want more traffic and leads?
+                      - paragraph [ref=e1267]: Get marketing and SEO that starts with your goals.
+                    - paragraph [ref=e1271] [cursor=pointer]: +$1,490
+                  - generic [ref=e1274]:
+                    - generic [ref=e1275]:
+                      - generic [ref=e1276]:
+                        - paragraph [ref=e1278]: $2,490
+                        - paragraph [ref=e1280]: /project
+                      - generic [ref=e1281]:
+                        - paragraph [ref=e1289]: Homepage + up to 4 inner pages
+                        - paragraph [ref=e1297]: Design and Development
+                        - paragraph [ref=e1305]: Mobile-Optimized Design
+                    - generic [ref=e1306]:
+                      - generic [ref=e1307]:
+                        - paragraph [ref=e1309]: Delivery time
+                        - paragraph [ref=e1311]: 3-4 weeks
+                      - link "Get in touch Get in touch" [ref=e1316] [cursor=pointer]:
+                        - /url: ./contact
+                        - paragraph [ref=e1318]: Get in touch
+                        - paragraph [ref=e1320]: Get in touch
+              - generic [ref=e1321]:
+                - paragraph [ref=e1324]: Looking for more?
+                - generic [ref=e1325]:
+                  - paragraph [ref=e1328]:
+                    - generic [ref=e1329]:
+                      - generic [ref=e1330]: Add
+                      - generic [ref=e1331]: marketing,
+                      - generic [ref=e1332]: SEO,
+                      - generic [ref=e1333]: or
+                      - generic [ref=e1334]: content
+                      - generic [ref=e1335]: creation—
+                    - generic [ref=e1336]: flexible
+                    - generic [ref=e1337]: tools
+                    - generic [ref=e1338]: to
+                    - generic [ref=e1339]: strengthen
+                    - generic [ref=e1340]: your
+                    - generic [ref=e1341]: project.
+                    - generic [ref=e1342]: We’ll
+                    - generic [ref=e1343]: shape
+                    - generic [ref=e1344]: a
+                    - generic [ref=e1345]: solution
+                    - generic [ref=e1346]: that
+                    - generic [ref=e1347]: fits
+                    - generic [ref=e1348]: your
+                    - generic [ref=e1349]: business,
+                    - generic [ref=e1350]: not
+                    - generic [ref=e1351]: ours.
+                  - generic [ref=e1356]:
+                    - paragraph [ref=e1358]: George Stern
+                    - paragraph [ref=e1360]: Client Success Manager
+          - img "Dark gradiend background" [ref=e1366]
+        - generic [ref=e1371]:
+          - generic [ref=e1372]:
+            - generic [ref=e1373]:
+              - paragraph [ref=e1378]: fabrica®
+              - heading "The faces behind the projects." [level=2] [ref=e1381]:
+                - generic [ref=e1382]: The
+                - generic [ref=e1383]: faces
+                - generic [ref=e1384]:
+                  - generic [ref=e1385]: behind
+                  - generic [ref=e1386]: the
+                  - generic [ref=e1387]: projects.
+            - generic [ref=e1388]:
+              - generic [ref=e1395]:
+                - generic [ref=e1396]:
+                  - paragraph [ref=e1398]: Be part of our mission
+                  - paragraph [ref=e1400]: If you’re ready to create and collaborate, we’d love to hear from you.
+                - link "Apply now Apply now" [ref=e1403] [cursor=pointer]:
+                  - /url: mailto:hello@fabrica.com
+                  - paragraph [ref=e1405]: Apply now
+                  - paragraph [ref=e1407]: Apply now
+              - paragraph [ref=e1417]: We believe great work comes from collaboration. That’s why we work closely with each other to ensure every project meets your goals and exceeds expectations.
+          - generic [ref=e1418]:
+            - generic [ref=e1422]:
+              - generic [ref=e1428]:
+                - paragraph [ref=e1430]: Team Lead
+                - paragraph [ref=e1432]: at fabrica®
+              - generic [ref=e1433]:
+                - paragraph [ref=e1435]: Lauren Thompson
+                - paragraph [ref=e1437]: Blends aesthetics with functionality to create designs that not only look great but drive results.
+            - generic [ref=e1443]:
+              - generic [ref=e1449]:
+                - paragraph [ref=e1451]: Full Stack Developer
+                - paragraph [ref=e1453]: at fabrica®
+              - generic [ref=e1454]:
+                - paragraph [ref=e1456]: Michael Wilson
+                - paragraph [ref=e1458]: Transforms ideas into seamless, high-performing websites with clean code and attention to detail.
+            - generic [ref=e1464]:
+              - generic [ref=e1470]:
+                - paragraph [ref=e1472]: Creative Director
+                - paragraph [ref=e1474]: at fabrica®
+              - generic [ref=e1475]:
+                - paragraph [ref=e1477]: Sarah Johnson
+                - paragraph [ref=e1479]: Crafts compelling narratives that connect with audiences and strengthen brand identity.
+            - generic [ref=e1485]:
+              - generic [ref=e1491]:
+                - paragraph [ref=e1493]: UX/UI Designer
+                - paragraph [ref=e1495]: at fabrica®
+              - generic [ref=e1496]:
+                - paragraph [ref=e1498]: Christopher Miller
+                - paragraph [ref=e1500]: Keeps everything on track, ensuring smooth collaboration and timely delivery.
+        - generic [ref=e1504]:
+          - generic [ref=e1505]:
+            - heading "FAQ." [level=2] [ref=e1508]
+            - paragraph [ref=e1510]: Got questions? We’ve got answers. Here’s everything you need to know about working with us.
+          - generic [ref=e1516]:
+            - generic [ref=e1517]:
+              - generic [ref=e1520] [cursor=pointer]: How long does it take to build a website?
+              - paragraph [ref=e1524]: The timeline for building a website depends on its complexity and specific requirements. On averageю We’ll provide a detailed timeline during the initial consultation to ensure clear expectations.
+            - generic [ref=e1525]:
+              - generic [ref=e1528] [cursor=pointer]: Do you offer custom websites or use templates?
+              - paragraph [ref=e1532]: We create fully custom websites tailored to your brand. No generic templates—just unique, high-performing designs.
+            - generic [ref=e1533]:
+              - generic [ref=e1536] [cursor=pointer]: What’s included in your SEO services?
+              - paragraph [ref=e1540]: We optimize your site structure, content, and speed, ensuring better search rankings and visibility.
+            - generic [ref=e1541]:
+              - generic [ref=e1544] [cursor=pointer]: How does the monthly subscription model work?
+              - paragraph [ref=e1548]: You pay a fixed monthly fee, and we handle everything—design, updates, and ongoing support. No large upfront costs, just a seamless experience.
+            - generic [ref=e1549]:
+              - generic [ref=e1552] [cursor=pointer]: Can you redesign my existing website?
+              - paragraph [ref=e1556]: Yes! We can refresh your current site while improving its design, functionality, and performance.
+            - generic [ref=e1557]:
+              - generic [ref=e1560] [cursor=pointer]: How do I get started?
+              - paragraph [ref=e1564]: Just reach out! We’ll discuss your needs, create a plan, and get to work on your website.
+        - generic [ref=e1566]:
+          - generic [ref=e1567]:
+            - heading "Newest trends and insights from our team." [level=2] [ref=e1570]:
+              - generic [ref=e1571]: Newest
+              - generic [ref=e1572]: trends
+              - generic [ref=e1573]:
+                - generic [ref=e1574]: and
+                - generic [ref=e1575]: insights
+                - generic [ref=e1576]: from
+                - generic [ref=e1577]: our
+                - generic [ref=e1578]: team.
+            - generic [ref=e1579]:
+              - paragraph [ref=e1581]: Stay informed about our latest projects, trends, and industry insights.
+              - link "See all See all" [ref=e1584] [cursor=pointer]:
+                - /url: ./blog
+                - paragraph [ref=e1586]: See all
+                - paragraph [ref=e1588]: See all
+          - generic [ref=e1591]:
+            - generic [ref=e1592]:
+              - link "February 2, 2025 How a well-designed website can transform your business Discover the latest design trends shaping the digital world and how they impact business." [ref=e1595] [cursor=pointer]:
+                - /url: ./blog/how-a-well-designed-website-can-transform-your-business
+                - generic [ref=e1603]:
+                  - paragraph [ref=e1605]: February 2, 2025
+                  - generic [ref=e1606]:
+                    - paragraph [ref=e1608]: How a well-designed website can transform your business
+                    - paragraph [ref=e1610]: Discover the latest design trends shaping the digital world and how they impact business.
+              - link "January 26, 2025 The Psychology of Color in Branding Colors influence emotions and decisions. Here’s how to use them strategically in branding." [ref=e1613] [cursor=pointer]:
+                - /url: ./blog/the-psychology-of-color-in-branding-how-it-shapes-perception-and-behavior
+                - generic [ref=e1621]:
+                  - paragraph [ref=e1623]: January 26, 2025
+                  - generic [ref=e1624]:
+                    - paragraph [ref=e1626]: The Psychology of Color in Branding
+                    - paragraph [ref=e1628]: Colors influence emotions and decisions. Here’s how to use them strategically in branding.
+            - generic [ref=e1629]:
+              - paragraph [ref=e1635]: fabrica®
+              - generic [ref=e1643]:
+                - paragraph [ref=e1644]: What’s new
+                - paragraph [ref=e1645]: in digital?
+              - img "Person in a white off-shoulder top using a MacBook laptop, with text overlay 'What's new in digital?' and the fabrica® logo in the top corner." [ref=e1649]
+        - generic [ref=e1653]:
+          - generic [ref=e1654]:
+            - generic [ref=e1656]:
+              - generic [ref=e1657]:
+                - paragraph [ref=e1661]: fabrica®
+                - paragraph [ref=e1663]: Have a project in mind?
+              - generic [ref=e1664]:
+                - generic [ref=e1665]:
+                  - paragraph [ref=e1667]: Your name*
+                  - textbox "Your name*" [ref=e1669]:
+                    - /placeholder: John Doe
+                - generic [ref=e1670]:
+                  - paragraph [ref=e1672]: E-mail*
+                  - textbox "E-mail*" [ref=e1674]:
+                    - /placeholder: hello@site.com
+                - generic [ref=e1675]:
+                  - paragraph [ref=e1677]: Message
+                  - textbox "Message" [ref=e1679]:
+                    - /placeholder: Your message
+              - button "Send Message Send Message" [ref=e1681] [cursor=pointer]:
+                - paragraph [ref=e1683]: Send Message
+                - paragraph [ref=e1685]: Send Message
+              - paragraph [ref=e1687]:
+                - text: By submitting, you agree to our
+                - link "Terms" [ref=e1688] [cursor=pointer]:
+                  - /url: ./legal/terms-of-service
+                - text: and
+                - link "Privacy Policy" [ref=e1689] [cursor=pointer]:
+                  - /url: ./legal/privacy-policy
+                - text: .
+            - paragraph [ref=e1693]: © 2025 fabrica® Studio
+          - generic [ref=e1694]:
+            - heading "Let’s talk." [level=2] [ref=e1696]
+            - generic [ref=e1697]:
+              - generic [ref=e1698]:
+                - paragraph [ref=e1700]: Tell us about your project—whether it’s a website, SEO, or marketing.
+                - generic [ref=e1704]:
+                  - generic [ref=e1706]:
+                    - paragraph [ref=e1710]: Quick response.
+                    - paragraph [ref=e1712]: If you’re ready to create and collaborate, we’d love to hear from you.
+                  - generic [ref=e1714]:
+                    - paragraph [ref=e1718]: Clear next steps.
+                    - paragraph [ref=e1720]: After the consultation, we’ll provide you with a detailed plan and timeline.
+              - link "Team Lead at fabrica® Lauren Thompson Ask directly Ask directly" [ref=e1722] [cursor=pointer]:
+                - /url: mailto:hello@fabrica.com
+                - generic [ref=e1726]:
+                  - generic [ref=e1727]:
+                    - generic [ref=e1728]:
+                      - paragraph [ref=e1730]: Team Lead
+                      - paragraph [ref=e1732]: at fabrica®
+                    - paragraph [ref=e1734]: Lauren Thompson
+                  - generic [ref=e1736]:
+                    - paragraph [ref=e1738]: Ask directly
+                    - paragraph [ref=e1740]: Ask directly
+    - contentinfo [ref=e1750]:
+      - generic [ref=e1751]:
+        - generic [ref=e1752]:
+          - generic [ref=e1753]:
+            - paragraph [ref=e1755]: Whether you’re looking to build a stunning website, boost your brand, or drive measurable results, we’re here to help.
+            - generic [ref=e1760]:
+              - paragraph [ref=e1762]: George Stern
+              - paragraph [ref=e1764]: Client Success Manager
+          - generic [ref=e1765]:
+            - paragraph [ref=e1767]: Newsletter
+            - generic [ref=e1768]:
+              - generic [ref=e1769]:
+                - textbox [ref=e1774]:
+                  - /placeholder: Your name *
+                - textbox "Email *" [ref=e1782]
+              - button "Subscribe Subscribe" [ref=e1788] [cursor=pointer]:
+                - paragraph [ref=e1790]: Subscribe
+                - paragraph [ref=e1792]: Subscribe
+            - paragraph [ref=e1796]: Join our newsletter and stay updated on the latest trends in digital design.
+        - generic [ref=e1797]:
+          - generic [ref=e1803]:
+            - paragraph [ref=e1805]:
+              - link "(312) 555-2468" [ref=e1806] [cursor=pointer]:
+                - /url: tel:555-666-7777
+            - link "hello@fabrica.com" [ref=e1809] [cursor=pointer]:
+              - /url: mailto:hello@fabrica.com
+              - paragraph [ref=e1816]: hello@fabrica.com
+          - generic [ref=e1818]:
+            - generic [ref=e1819]:
+              - generic [ref=e1825]:
+                - paragraph [ref=e1827]: Navigation
+                - generic [ref=e1828]:
+                  - link "Home" [ref=e1831] [cursor=pointer]:
+                    - /url: ./
+                    - paragraph [ref=e1834]: Home
+                  - link "Studio" [ref=e1837] [cursor=pointer]:
+                    - /url: ./studio
+                    - paragraph [ref=e1840]: Studio
+                  - link "Projects" [ref=e1843] [cursor=pointer]:
+                    - /url: ./projects
+                    - paragraph [ref=e1846]: Projects
+                  - link "Blog" [ref=e1849] [cursor=pointer]:
+                    - /url: ./blog
+                    - paragraph [ref=e1852]: Blog
+              - generic [ref=e1858]:
+                - paragraph [ref=e1860]: Social
+                - generic [ref=e1861]:
+                  - link "Twitter" [ref=e1864] [cursor=pointer]:
+                    - /url: https://x.com/bynneh
+                    - paragraph [ref=e1867]: Twitter
+                  - link "Instagram" [ref=e1875] [cursor=pointer]:
+                    - /url: https://instagram.com
+                    - paragraph [ref=e1878]: Instagram
+                  - link "Dribbble" [ref=e1886] [cursor=pointer]:
+                    - /url: https://dribbble.com
+                    - paragraph [ref=e1889]: Dribbble
+            - generic [ref=e1895]:
+              - img [ref=e1896]:
+                - paragraph [ref=e1898]: fabrica®
+              - paragraph [ref=e1901]: Studio
+      - generic [ref=e1903]:
+        - paragraph [ref=e1906]: © 2025 fabrica® Studio. All rights reserved.
+        - generic [ref=e1907]:
+          - generic [ref=e1908]:
+            - paragraph [ref=e1910]:
+              - link "Privacy Policy" [ref=e1911] [cursor=pointer]:
+                - /url: ./legal/privacy-policy
+            - paragraph [ref=e1913]:
+              - link "Terms of Service" [ref=e1914] [cursor=pointer]:
+                - /url: ./legal/terms-of-service
+            - link "Built in Framer Built in Framer" [ref=e1916] [cursor=pointer]:
+              - /url: https://framer.link/bynneh
+              - img [ref=e1919]
+              - generic [ref=e1921]:
+                - paragraph [ref=e1923]: Built in Framer
+                - paragraph [ref=e1925]: Built in Framer
+          - link "Created by Profile portrait of a man in a grey shirt Anatolii Dmitrienko" [ref=e1929] [cursor=pointer]:
+            - /url: https://templifica.com/
+            - paragraph [ref=e1931]: Created by
+            - generic [ref=e1932]:
+              - img "Profile portrait of a man in a grey shirt" [ref=e1935]
+              - img [ref=e1939]
+            - paragraph [ref=e1942]: Anatolii Dmitrienko
+    - generic [ref=e1952] [cursor=pointer]:
+      - generic [ref=e1953]:
+        - paragraph [ref=e1955]: Fabrica® Template
+        - paragraph [ref=e1957]: See What You Get
+      - generic [ref=e1958]:
+        - paragraph [ref=e1960]: from
+        - paragraph [ref=e1962]: $129
+  - generic:
+    - link "Create a free website with Framer, the website builder loved by startups, designers and agencies.":
+      - /url: https://www.framer.com
+      - paragraph [ref=e1963] [cursor=pointer]: Create a free website with Framer, the website builder loved by startups, designers and agencies.
+  - img [ref=e1964]
+  - img [ref=e1968]
+  - img [ref=e1973]
+  - img [ref=e1975]
